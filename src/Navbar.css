@@ -1,0 +1,394 @@
+body{
+  font-family: 'Courier New', Courier, monospace;
+ background: url('XGWC2016.PNG') no-repeat;
+ background-size: 100%  90%;
+ background-position: center top;
+ background-color: grey;
+}
+.navbar ul {
+    list-style-type: none;
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    text-decoration: none;
+    display: inline-block;
+  }
+  li a{
+  text-decoration: none;  
+  color: white;
+ 
+  }
+  /* li a:hover {
+    background-color: white;
+    color: black;
+  } */
+  .Img{
+height: 45px;
+float: right;
+
+  }
+  .dropdown {
+    display: block;
+    position: fixed;
+}
+
+.dropdown button {
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: linear-gradient(to right, black, #fff);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.dropdown .content {
+    display: none;
+    background-color: black;
+    position: relative;
+    min-width: 150px; 
+    top: 100%;
+    left: 0;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 15px;
+   
+}
+
+.dropdown button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .content {
+    display: block;
+}
+
+
+  
+  Img{
+    width: 30px;
+    height: 300px;
+    margin: 25px;
+  
+  }
+  .image-gallery{
+float: right;
+display: flex;
+flex-direction: row ;
+
+  }
+  /*these AASoftware selectors are handling styling for imageGallery software dev related photos */
+  .AASoftware1{
+    height: 150px;
+    width: 150px;
+  }
+  .AASoftware1:hover{
+    transform: translateY(-20px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+  }
+  .AASoftware2:hover{
+    transform: translateY(-20px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+  }
+  .AASoftware3:hover{
+    transform: translateY(-20px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+  }
+  .AASoftware4:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+  }
+  .AASoftware2{
+    height: 150px;
+    width: 150px;
+  }
+  .AASoftware3{
+    height: 150px;
+    width: 150px;
+   
+  }
+  .AASoftware4{
+    height: 150px;
+    width: 150px;
+  }
+ 
+
+
+  .image {
+height: auto;
+display: flex-end;
+  }
+
+  .header {
+    justify-content: center;
+    text-align: center;
+  }
+.wrap{
+  position: fixed;
+  top: 0px;
+display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 1200px;
+  box-shadow: 2px black;
+}
+.HireMe{
+  font-family: 'Courier New', Courier, monospace;
+  box-shadow: 2px black;
+}
+.AnOrSimble{
+  font-family: 'Courier New', Courier, monospace;
+  box-shadow: 2px black;
+  font-size: x-large;
+  color: grey;
+}
+.center-Blog{
+  text-align: center;
+  border: 2px solid black;
+  position: relative; 
+  top: 90px;
+}
+.contact-tag{
+  position: relative; 
+  top: 90px;
+}
+.contact-UL{
+  position: relative; 
+  top: 90px;
+  list-style-type: none;
+}
+.contact-container{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin: 20px;
+  width: 300px;
+  border: 2px solid blue;
+  align-items: center;
+  color: white;
+  font-weight: 900;
+  position: relative;
+  bottom: 300px;
+  right: 20px;
+}
+.contact-container2{
+  position: relative;
+  bottom: 450px;
+  color: white;
+  font-weight: 900;
+}
+
+
+.HireMeButton{
+float: right;
+  background-color: rgb(187, 54, 54);
+  border: none;
+  width: 150px;
+  height: 100px;
+  color: white;
+  font-size: larger;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 2px 0px;
+  letter-spacing: 0.15rem;
+  font-weight: 900;
+  font-size: 1.75rem;
+  height: 70px;
+
+}
+.container2{
+  background-color: black;
+  list-style-type: none;
+  
+ 
+}
+.Img-label a {
+display: flex;
+flex-direction: row;
+align-items: center;
+border: none;
+color: white;
+font-size: larger;
+text-shadow: rgba(0, 0, 0, 0.25) 0px 2px 0px;
+letter-spacing: 0.15rem;
+font-weight: 900;
+font-size: 1.75rem;
+height: 70px;
+}
+.Img-label a:hover {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transition:  0.3s ease, box-shadow 0.3s ease; 
+  }
+.unorderdList{
+  list-style-type: none;
+}
+.MenuButton{
+  float: right;
+  background-color: Black;
+  border: none;
+  width: 150px;
+  height: 100px;
+  color: white;
+  font-size: larger;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 2px 0px;
+  letter-spacing: 0.15rem;
+  font-weight: 900;
+  font-size: 1.75rem;
+  height: 70px;
+
+}
+.MenuButton a{
+  text-decoration: none;
+  color: white;
+}
+.MenuButton:hover {
+  background-color: rgba(255, 255, 255, 0.8); 
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); 
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+}
+.HireMeButton:hover{
+  background-color: rgba(255, 255, 255, 0.8); 
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); 
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+}
+.HireMeButton a{
+  text-decoration: none;
+  color: white;
+}
+.backgroundImage{
+  height: 766px;
+  width: 1300px;
+  position: relative;
+  bottom: 175px;
+  
+  
+}
+
+
+.text-overlay {
+  position: relative;
+  bottom: 200px;
+  top: 20%;
+  left: 50%;
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  
+}
+.second-navbar {
+  background-color: rgb(0, 0, 0, 0.5); /*asjust the transparesency with an aplha value*/
+  width: 100%;
+  height: 50px;
+  display: flex;
+
+  justify-content: center;
+}
+
+.second-navbar li {
+  display: inline-block; /*tigthens the second navbar, and eliminate the list styles*/
+  margin: 0 10px; 
+  padding: 10px; 
+  
+}
+
+.second-navbar a {
+  color: white;
+  text-decoration: none; /* Remove underline from links */
+  padding: 10px; 
+  font-weight: 900;
+}
+
+.second-navbar a:hover {
+  color: black; 
+  background-color: white; 
+  font-weight: 900;
+}
+.second-navbar a:hover {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transition:  0.3s ease, box-shadow 0.3s ease; 
+  font-weight: 900;
+}
+
+
+.container {
+display: flex;
+flex-direction: row;
+  justify-content: space-evenly;
+  position: relative;
+  bottom: 350px;
+  text-align: center;
+}
+
+
+.hyperLinkBox1{
+
+ text-decoration: none;
+  color: white;
+}
+.hyperLinkBox2{
+  text-decoration: none;
+  color: white;
+}
+.hyperLinkBox3{
+text-decoration: none;
+color: white;
+
+}
+.hyperLinkBox4{
+  text-decoration: none;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start with opacity 0 */
+  }
+  to {
+    opacity: 1; /* End with opacity 1 */
+  }
+}
+.container-flex{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 750px;
+}
+
+
+
+
+.text-overlay {
+  opacity: 0; 
+  animation: fadeIn 1s ease forwards; 
+  position: relative;
+  bottom: 0px; 
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+} 
+@keyframes fadeIn {
+  from {
+    opacity: 0; 
+  }
+  to {
+    opacity: 1; /* End with opacity 1 */
+  }
+}
+

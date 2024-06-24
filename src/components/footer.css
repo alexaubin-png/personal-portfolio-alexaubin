@@ -1,0 +1,24 @@
+.footer-background {
+    background-color: black;
+    position: relative;
+    top: 640px;
+    
+    color: white;
+    list-style-type: none;
+}
+.ul-footer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    /* justify-content: space-evenly; Center items horizontally */
+    width: 100%;
+    height: 145px;
+    justify-content: center;
+  }
+  
+  .ul-footer li {
+    margin: 0 10px; /* Adjust the space between list items */
+    
+  }
