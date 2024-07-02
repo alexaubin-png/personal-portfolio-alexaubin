@@ -39,8 +39,8 @@ export default function Navbar() {//the image tag should take the user to a form
 <div className="second-navbar">
 <li><a href='#'>Resume</a></li>
 <li><a href='#'>About</a></li>
-<li><a href='#'>test</a></li>
-<li><a href='#'>test</a></li>
+<li><a href='#'>Blog</a></li>
+<li><a href='#'>image gallery</a></li>
 
 </div>
  </div>

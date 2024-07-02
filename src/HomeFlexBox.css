@@ -50,3 +50,74 @@
     height: 348px;
     width: 400px;
   }
+  @media only screen and (max-width: 599px) {
+    body{
+      background-size: 400%;
+    }
+    .HireMeButton{
+      font-size: .9rem;
+      
+    }
+    .navbar{
+font-size: .8rem;
+    }
+    .box1{
+      width: 400px;
+      height: 300px;
+    }
+    .box2{
+      width: 400px;
+      height: 300px;
+    }
+    .box3{
+      width: 400px;
+      height: 300px;
+    }
+   .box4{
+    width: 400px;
+    height: 300px;
+ 
+   }
+.container-flex{
+ width: 790px;
+ position: relative;
+ top: 790px
+}
+.logo-container{
+  display: none;
+}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+body{
+  background-color: red;
+}
+}
+
+
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
+ body{
+  background-color: yellow;
+ }
+}
+
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+body{
+  background-color: blue;
+}
+}
+
+
+
+@media only screen and (min-width: 1600px) {
+ body{
+  background-color: green;
+ }
+ .container-flex{
+  margin-left: 60px;
+ }
+}
+
+

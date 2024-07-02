@@ -18,10 +18,9 @@ function App() {
   return (
   <Router>
     <Navbar />
-    <TestLogo />
     <HomeFlexBox />
     <SocialNavigation />
-    <RecentProject/>
+
     <Footer />
     <Routes>
      <Route path="/" element={<Home />} />

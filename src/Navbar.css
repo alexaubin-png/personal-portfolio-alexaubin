@@ -391,4 +391,36 @@ color: white;
     opacity: 1; /* End with opacity 1 */
   }
 }
+@media only screen and (max-width: 599px) {
 
+    .HireMeButton{
+      position: relative;
+      left: 80px;
+    }
+    .MenuButton{
+position: relative;
+left: 80px;
+    }
+  
+  .container2{
+    padding: 20px;
+display: flex;
+   
+  }
+  .content{
+    
+  }
+  .box1{
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  body{
+  width: 100%;
+  }
+  .navbar{
+  display: inline;
+  
+  }
+}
