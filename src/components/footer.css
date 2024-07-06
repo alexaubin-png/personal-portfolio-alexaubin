@@ -16,12 +16,12 @@
     width: 100%;
     height: 145px;
     justify-content: center;
-  }
+}
   
   .ul-footer li {
     margin: 0 10px; /* Adjust the space between list items */
     
-  }
+}
   @media only screen and (max-width: 599px) {
     .navbar{
       width: 790px;
@@ -41,6 +41,5 @@
         position: relative;
         top: 1000px
         
-      }
-     
-  }
+      } 
+}

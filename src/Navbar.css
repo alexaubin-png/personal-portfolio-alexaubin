@@ -81,42 +81,12 @@ flex-direction: row ;
 
   }
   /*these AASoftware selectors are handling styling for imageGallery software dev related photos */
-  .AASoftware1{
-    height: 150px;
-    width: 150px;
-  }
-  .AASoftware1:hover{
-    transform: translateY(-20px); 
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
-  }
-  .AASoftware2:hover{
-    transform: translateY(-20px); 
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
-  }
-  .AASoftware3:hover{
-    transform: translateY(-20px); 
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
-  }
-  .AASoftware4:hover{
-    transform: translateY(-20px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
-  }
-  .AASoftware2{
-    height: 150px;
-    width: 150px;
-  }
-  .AASoftware3{
-    height: 150px;
-    width: 150px;
-   
-  }
+ 
   .AASoftware4{
     height: 150px;
     width: 150px;
   }
  
-
-
   .image {
 height: auto;
 display: flex-end;
@@ -148,43 +118,6 @@ display: flex;
   font-size: x-large;
   color: grey;
 }
-.center-Blog{
-  text-align: center;
-  border: 2px solid black;
-  position: relative; 
-  top: 90px;
-}
-.contact-tag{
-  position: relative; 
-  top: 90px;
-}
-.contact-UL{
-  position: relative; 
-  top: 90px;
-  list-style-type: none;
-}
-.contact-container{
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  padding: 15px;
-  margin: 20px;
-  width: 300px;
-  border: 2px solid blue;
-  align-items: center;
-  color: white;
-  font-weight: 900;
-  position: relative;
-  bottom: 300px;
-  right: 20px;
-}
-.contact-container2{
-  position: relative;
-  bottom: 450px;
-  color: white;
-  font-weight: 900;
-}
-
 
 .HireMeButton{
 float: right;

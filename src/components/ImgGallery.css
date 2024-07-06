@@ -2,19 +2,48 @@
     height: 150px;
     width: 150px;
     position: relative;
-    top: -690px;
+    top: -620px;
   }
-  .AASoftware1:hover{
-    transform: translateY(-20px); 
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
-    position: relative;
-    top: -690px;
-  }
+
   .AASoftware2:hover{
     transform: translateY(-20px); 
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
     position: relative;
-    top: -690px; 
+    top: -620px;
+  }
+  
+  
+  .AASoftware2{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    top: -620px;
+  }
+  
+  .AASoftware3{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    top: -620px;
+   
+  }
+  .AASoftware4{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    top: -620px;
+  }
+  .AASoftware1{
+    height: 150px;
+    width: 150px;
+  }
+  .AASoftware1:hover{
+    transform: translateY(-20px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+  }
+  .AASoftware2:hover{
+    transform: translateY(-20px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
   }
   .AASoftware3:hover{
     transform: translateY(-20px); 
@@ -27,21 +56,11 @@
   .AASoftware2{
     height: 150px;
     width: 150px;
-    position: relative;
-    top: -690px;
   }
   .AASoftware3{
     height: 150px;
     width: 150px;
-    position: relative;
-    top: -690px;
    
-  }
-  .AASoftware4{
-    height: 150px;
-    width: 150px;
-    position: relative;
-    top: -690px;
   }
   .content2{
     position: relative;

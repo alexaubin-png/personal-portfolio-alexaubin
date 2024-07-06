@@ -3,10 +3,8 @@ import React from 'react'
 
 export default function About() {
   return (
-
-
     <div >
-          <img src='#'></img>
+      <img src='#'></img>
       <h1>About Me</h1>
       <p>Im training to get my certificate in full stack software development, Lets fucking go.  </p>
     </div>

@@ -1,0 +1,46 @@
+body{
+    background-color: black;
+   margin: 0px;
+   padding: 0px;
+
+}
+.center-Blog{
+    text-align: center;
+    border: 2px solid black;
+    position: relative; 
+    top: -90px;
+    margin: 25px;
+  }
+  .contact-tag{
+    position: relative; 
+    top: -110px;
+    padding: 10px;
+    margin: 20px;
+  }
+  .contact-UL{
+    position: relative; 
+    top: 90px;
+    list-style-type: none;
+  }
+  .contact-container{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 20px;
+    width: 300px;
+    border: 2px solid blue;
+    align-items: center;
+    color: white;
+    font-weight: 900;
+  
+  margin: -100px 320px;
+  }
+  .contact-container2{
+    position: relative;
+    bottom: 450px;
+    color: white;
+    font-weight: 900;
+  }
+  
+  

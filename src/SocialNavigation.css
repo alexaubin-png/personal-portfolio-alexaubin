@@ -8,15 +8,13 @@
     flex-direction: row;
     justify-content: space-evenly;
     list-style-type: none;
-    padding: 0;
+   
     width: 360px;
-    height: 100px;
     background-color: transparent;
     margin: 0 auto; 
     position: relative;
-    top: 575px;
+ 
     float: right;
-  
   }
   
   .Navigation-Socials-Label {
@@ -26,9 +24,9 @@
     background-color: transparent;
     padding: 10px;
     border-radius: 5px;
-    margin-bottom: 10px; 
-    position: relative;
-    top: 550px;
-   left: 666px
+ margin-right: -1185px;
+position: relative;
+bottom: 30px
   }
+  
   
