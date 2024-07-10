@@ -2,8 +2,8 @@
     background-color: black;
     position: relative;
     top: 640px;
-    
-    color: white;
+    font-weight: 900;
+    color: #1e90ff;
     list-style-type: none;
 }
 .ul-footer {

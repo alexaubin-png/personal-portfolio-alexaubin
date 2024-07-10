@@ -152,6 +152,7 @@ letter-spacing: 0.15rem;
 font-weight: 900;
 font-size: 1.75rem;
 height: 70px;
+width: 20%;
 }
 .Img-label a:hover {
   display: flex;
@@ -258,8 +259,8 @@ height: 70px;
 
 
 .container {
-display: flex;
-flex-direction: row;
+  display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   position: relative;
   bottom: 350px;
@@ -269,16 +270,16 @@ flex-direction: row;
 
 .hyperLinkBox1{
 
- text-decoration: none;
-  color: white;
-}
-.hyperLinkBox2{
   text-decoration: none;
   color: white;
 }
+.hyperLinkBox2{
+    text-decoration: none;
+  color: white;
+} 
 .hyperLinkBox3{
-text-decoration: none;
-color: white;
+  text-decoration: none;
+  color: white;
 
 }
 .hyperLinkBox4{
@@ -331,23 +332,19 @@ color: white;
       left: 80px;
     }
     .MenuButton{
-position: relative;
-left: 80px;
+  position: relative;
+  left: 80px;
     }
   
   .container2{
     padding: 20px;
-display: flex;
+  display: flex;
    
-  }
-  .content{
-    
   }
   .box1{
     width: 60%;
   }
 }
-
 @media only screen and (min-width: 600px) and (max-width: 899px) {
   body{
   width: 100%;

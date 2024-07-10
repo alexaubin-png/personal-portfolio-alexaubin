@@ -2,14 +2,14 @@
     height: 150px;
     width: 150px;
     position: relative;
-    top: -620px;
+    top: -450px;
   }
 
   .AASoftware2:hover{
     transform: translateY(-20px); 
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
     position: relative;
-    top: -620px;
+    top: -450px;
   }
   
   
@@ -17,28 +17,28 @@
     height: 150px;
     width: 150px;
     position: relative;
-    top: -620px;
+    top: -450px;
   }
   
   .AASoftware3{
     height: 150px;
     width: 150px;
     position: relative;
-    top: -620px;
+    top: -450px;
    
   }
   .AASoftware4{
     height: 150px;
     width: 150px;
     position: relative;
-    top: -620px;
+    top: -450px;
   }
   .AASoftware1{
     height: 150px;
     width: 150px;
   }
   .AASoftware1:hover{
-    transform: translateY(-20px); 
+  transform: translateY(-20px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
   }
   .AASoftware2:hover{
@@ -64,21 +64,21 @@
   }
   .content2{
     position: relative;
-    top: -650px;
+    top: -450px;
     display: flex;
     flex-direction: row;
     text-align: center;
     width: 100%;
-    color: white;
+    color: black;
     
   }
   .pastprojects{
     position: relative;
-    top: -650px;
+    top: -450px;
     display: flex;
     flex-direction: row;
     text-align: center;
     width: 100%;
-    color: aliceblue;
+    color: black;
   }
  

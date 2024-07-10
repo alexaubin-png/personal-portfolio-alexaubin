@@ -9,29 +9,29 @@ import Projects from './components/Projects';
 import Navbar from './components/Navbar';
 import ImageGallery from './components/ImageGallery';
 import HomeFlexBox from './components/HomeFlexBox';
-import SocialNavigation from './SocialNavigation';
+import SocialNavigation2 from './components/SocialNavigation';
 import Footer from './components/footer';
-import TestLogo from './components/testlogo';
 import RecentProject from './components/RecentProject';
- 
+import Hobbies from './components/Hobbies'
 function App() {
   return (
+ 
   <Router>
     <Navbar />
+ 
     <HomeFlexBox />
-    <SocialNavigation />
-
-    <Footer />
     <Routes>
      <Route path="/" element={<Home />} />
-     <Route path="/About" element={<About />} />
+      <Route path="/About" element={<About />} />
      <Route path="/Contact" element={<Contact />} />
      <Route path="/Resume" element={<Resume />} />
      <Route path="/Projects" element={<Projects />} />
      <Route path='/ImageGallery' element={<ImageGallery />}/>
-     {/* <Route path="/homeFlexBox" element={<homeFlexBox />} /> */}
-     
+     <Route path="/HomeFlexBox" element={<HomeFlexBox />} /> 
+     <Route path='/SocialNavigation' element={<SocialNavigation2/>}/>
+     <Route path='/Hobbies' element={<Hobbies />}/>
    </Routes>
+   <Footer />
  </Router>
   );
 }

@@ -1,0 +1,86 @@
+
+.instagram{
+  width: 20%;
+  height: 400px;
+  position: relative;
+  left: 120px;
+  bottom: 370px;
+  border: 2px solid black;
+}
+.instagram:hover{
+  border-color: black;
+  border-width: 4px;
+}
+.linked-in{
+  width: 20%;
+  height: 400px;
+  position: relative;
+  left: 120px;
+  bottom: 370px;
+  border: 2px solid black;
+
+}
+.linked-in:hover{
+ border-color: black;
+ border-width: 4px;
+}
+.X{
+
+  width: 20%;
+  height: 400px;
+  position: relative;
+  left: 120px;
+  bottom: 370px;
+  border: 2px solid black;
+}
+.X:hover{
+  border-color: black;
+  border-width: 4px;
+}
+@media only screen and (max-width: 768px) {
+.second-navbar{
+width: 70%;
+}
+.image-gallery{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  top: -800px;
+}
+.container-flex{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  top: 1200px;
+justify-content: center;
+align-items: center;
+}
+.Parent.Navigation.Container{
+display: flex;
+flex-direction: column;
+  display: none;
+}
+.content2{
+  position: relative;
+  top: -2000px;
+  left: 200px;
+  width: 50%;
+  text-align: center;
+    color: white;
+}
+.pastprojects{
+  position: relative;
+  top: -2000px;
+  left: 200px;
+  width: 50%;
+  text-align: center;
+    color: white;
+}
+}
+  
+
+
+  
+  

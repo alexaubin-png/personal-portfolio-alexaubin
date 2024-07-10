@@ -19,15 +19,12 @@ import './Home.css'
 export default function Home() {
   return (
 <>
-
-{/* <HomeFlexBox /> */}
-</>    
-  // <div >
-  // {/* <img className='backgroundImage' src='background.jpg'></img> */}
+  <div >
+  {/* <img className='backgroundImage' src='src\assets\XGWC2016.PNG'></img> */}
    
-  // <div class='text-overlay'>Hello, im Alex Aubin Im intensively pursuing my <strong>software development certificate</strong> at, Upright Education</div>
-  // </div>
- 
+  <div class='text-overlay'>Hello, im Alex Aubin Im intensively pursuing my <strong>software development certificate</strong> at, Upright Education</div>
+  </div>
+ </>
   )
 
 }

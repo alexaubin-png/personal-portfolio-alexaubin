@@ -32,7 +32,7 @@
     
   }
   .box2{
-  background: url('C:\Users\aubin\OneDrive\Desktop\Personal Portfolio\portfolio-project-alexaubin-png\portfolio-project-alexaubin-png\image5.png');
+  background: url('https://i.gyazo.com/1e6ff7775bb84859a528908d1c624a83.jpg');
   background-size: 100% 100%;
   height: 348px;
   width: 400px;
@@ -43,9 +43,10 @@
     background-size: 100% 90%;
     height: 348px;
     width: 400px;
+    color: white;
   }
   .box4{
-    background: url('https://1.bp.blogspot.com/-zaoiLHspoKI/XeI_0uFAeCI/AAAAAAAAF38/CyHgdY8bdOQ7d979yOJ0voSIA8b5bAF2wCLcBGAsYHQ/s1600/Youtube-Icon-2000x2000.png');
+    background: url('https://i.gyazo.com/74c0ca3f449d6dc07dcb8dcc915eea66.png');
     background-size: 360px 366px;
     height: 348px;
     width: 400px;
@@ -111,16 +112,19 @@ body{
   background-color: blue;
 }
 }
+@media only screen and (min-width: 1600px) {
 
+}
 
 
 @media only screen and (min-width: 1600px) {
  body{
   background-color: green;
  }
- .container-flex{
-  margin-left: 60px;
- }
+.box1, .box2, .box3, .box4{
+  width: 400px;
+  height: 300px;
+}
 }
 
 
