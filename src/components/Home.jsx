@@ -1,6 +1,7 @@
 import React from 'react'
 import {Router } from 'react-router-dom'
 import './Home.css'
+import HomeFlexBox from '../components/HomeFlexBox';
 // import { useLocation } from 'react-router-dom'
 
 // const HomeFlexBox = () => {
@@ -24,6 +25,8 @@ export default function Home() {
    
   <div class='text-overlay'>Hello, im Alex Aubin Im intensively pursuing my <strong>software development certificate</strong> at, Upright Education</div>
   </div>
+  <HomeFlexBox/>
+
  </>
   )
 

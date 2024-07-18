@@ -326,31 +326,87 @@ width: 20%;
   }
 }
 @media only screen and (max-width: 599px) {
-
-    .HireMeButton{
-      position: relative;
-      left: 80px;
-    }
-    .MenuButton{
-  position: relative;
-  left: 80px;
-    }
-  
   .container2{
     padding: 20px;
   display: flex;
    
   }
   .box1{
-    width: 60%;
+    width: 100%;
+    position: relative;
+    bottom: 1000px;
+    margin-left: 110px;
+
+  }
+  .box1:hover{
+    transform: translateY(-5px)
+  }
+  .box2{
+width: 100%;
+
+position: relative;
+bottom: 1000px;
+margin-left: 110px;
+
+  }
+  .box3{
+    width: 100%;
+    position: relative;
+    bottom: 1000px;
+    margin-left: 110px;
+
+  }
+  .box4{
+    width: 100%;
+    position: relative;
+    bottom: 1000px;
+margin-left: 110px;
+
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 899px) {
   body{
-  width: 100%;
+    width: 100%;
   }
+  
   .navbar{
-  display: inline;
+width: 90%;
   
   }
+  .second-navbar{
+font-size: 8px;
+  }
+  .box1{
+    width: 100%;
+    position: relative;
+    bottom: 1000px;
+  }
+
+  
+}
+@media only screen and (max-width: 599px){
+  .container2{/*this is a selctor for the navbars black background*/
+    height: 55px
+  }
+  .second-navbar{
+    width: 70%;
+    margin: 0px 70px;
+  }
+  .HireMeButton{
+    position: relative;
+    left: 400px;
+  }
+  .MenuButton{
+    position: relative;
+    left: 370px;
+  }
+  .relative-image{/*this is a selctor for my fac next the home hyper link*/
+    position: relative;
+    bottom: 70px;
+  }
+  .navbar{
+    display: flex;
+    flex-direction: column;
+  }
+
 }

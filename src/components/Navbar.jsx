@@ -21,31 +21,22 @@ export default function Navbar() {//the image tag should take the user to a form
 
 
    <div  className='container2'>
-  <div className="content">
-  <button className='HireMeButton'><a href='/Contact'>Hire Me</a></button>
-  <button className='MenuButton'><a href='/ImageGallery'>Menu</a></button>
-  <li className='Img-label'><a className='relative-image'href='/'><img  className='image' src='HFWV2189.PNG'></img>Home</a></li>
-  
-{/* 
-    <ul className='unorderdList'>
-      <li className='Img-label'><a href='/'><img class='image' src='HFWV2189.PNG'></img>Home</a></li>
-      <li><a href='/About'>About</a></li>
-      <li><a href='/Resume'>Resume</a></li>
-      <li><a href='/Projects'>Projects</a></li>
-      <li><a href='/Contact'>Contact</a ></li>
-    </ul> */}
+    <div className="content">
+      <button className='HireMeButton'><a href='/Contact'>Hire Me</a></button>
+      <button className='MenuButton'><a href='/ImageGallery'>Menu</a></button>
+      <li className='Img-label'><a className='relative-image'href='/'><img  className='image' src='HFWV2189.PNG'></img>Home</a></li>
+    </div>
+  </div>
+<div className="second-navbar">
+    <li><a href='/Resume'>Resume</a></li>
+  <li><a href='/About'>About</a></li>
+  <li><a href='/Hobbies'>Hobbies</a></li>
+  <li><a href='#'>Work History</a></li>
+  <li><a href='/SocialNavigation'>Socials</a></li>
+  <li><a href='/A````````````     uth'>Login</a></li>
   </div>
 </div>
-<div className="second-navbar">
-<li><a href='/Resume'>Resume</a></li>
-<li><a href='/About'>About</a></li>
-<li><a href='/Hobbies'>Hobbies</a></li>
-<li><a href='#'>Work History</a></li>
-<li><a href='/SocialNavigation'>Socials</a></li>
-
-</div>
- </div>
-
+        
    //nav bar commented out because it was not needed atm
   //   <nav className='navbar'>
   //     <ul>
