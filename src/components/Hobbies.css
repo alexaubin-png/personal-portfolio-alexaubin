@@ -1,0 +1,147 @@
+
+.Hobbies-UL{
+list-style-type: none;
+text-align: center;
+text-decoration: none;
+padding: 100px;
+margin: 15px;
+font-weight: 700;
+color: white;
+}
+.Coding {
+    display: inline-block; /* Use inline-block instead of flex for individual images */
+    width: 400px;
+    height: 300px;
+    
+    margin: -50px 900px 20px 0px; /* Adjust margin as needed */
+    transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
+  }
+  .Coding-Text{
+    position: relative;
+    bottom: 350px;
+    display: flex;
+    float: right;
+    width: 40%;
+  }
+  .Coding-Header{
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    bottom: 360px;
+    left: 240px;
+  }
+  .Reading{
+    width: 400px;
+    display: flex;
+    float: right;
+    position: relative;
+    bottom: 30px;
+    right: -400px;
+  }
+  .Reading-Header{
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+    top: -380px;
+    left: -295px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+ 
+  }
+  .Reading-Text{
+    position: relative;
+    bottom: 350px;
+    right: 100px;
+    display: flex;
+    width: 50%;
+  }
+  @media only screen and (max-width: 599px) {
+.Coding{
+  width: 50%;
+}
+  }
+  
+
+  @media only screen and (min-width: 600px) and (max-width: 899px) {
+
+
+.Coding{
+  width: 100%;
+  position: relative;
+  right: 75px;;
+}
+.Coding-Text{
+position: relative;
+left: 100px;
+}
+.Coding-Header{
+  width: 20%;
+  margin: 0px 130px;
+}
+.Reading{
+  position: relative;
+  bottom: 200px;
+  right: -125px;
+}
+.Reading-Text{
+position: relative;
+right: 115px;
+top: -550px;
+
+}
+.Reading-Header{
+  position: relative;
+  right: 10px 0px;
+}
+
+  }
+  
+
+  @media only screen and (min-width: 900px) and (max-width: 1199px) {
+
+  }
+  
+  
+
+  @media only screen and (min-width: 1200px) and (max-width: 1599px) {
+   
+  }
+  
+  
+
+  @media only screen and (min-width: 1600px) {
+    .Coding{
+    position: relative;
+    left: 1500px;
+    top: 250px;
+    }
+    .Coding-Text{
+    position: relative;
+    top: 200px;
+    right: -500px;
+    }
+    .Coding-Header{
+      position: relative;
+      top: -160px;
+      margin: 0px 0px 5px 1600px;
+    }
+   .Reading-Header{
+position: relative;
+top: 0px;
+left: 10px;
+   }
+   .Reading-Text{
+    position: relative;
+    top: 100px;
+   }
+   .Reading{
+    position: relative;
+    top: 50px;
+    right: 500px;
+    }
+ 
+  }
+

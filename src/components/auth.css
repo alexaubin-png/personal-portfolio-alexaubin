@@ -1,0 +1,307 @@
+.Login-Title{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+  }
+  .container-section {
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(194, 192, 192, 0.671);
+    width: 50%;
+    height: 400px;
+    position: relative;
+  }
+  .Ternary-Button{
+    background-color: #00539F;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  .Ternary-Button:hover{
+    background-color: lightblue;
+  }
+  .signup-or-login {
+    background-color: #00539F;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  
+  .guestButton {
+    background-color: #00539F;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  .guestButton:hover{
+  background-color: lightblue;
+  transition: all 0.2s ease-in-out;
+  }
+  
+  .signup-header{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+    right: 260px;
+    bottom: 25%;
+  }
+  .prompt-overlay {
+    font-size: small;
+    display: flex;
+    color: black;
+  }
+  .username-input-login {
+    width: 250px;
+    padding: 10px 20px;
+    margin: 10px 0;
+  }
+  .password-input-login {
+    width: 250px;
+    padding: 10px 20px;
+    margin: 10px 0;
+  }
+  .username-input-signup{
+    width: 250px;
+    padding: 10px 20px;
+    margin: 10px 0;
+  }
+  .password-input-signup{
+    width: 250px;
+    padding: 10px 20px;
+    margin: 10px 0;
+  }
+  
+  .ternary-text{
+    font-size: small;
+    display: flex;
+    color: black;
+    position: relative;
+  }
+  
+  @media only screen and (min-width: 1600px) {
+    .container-section {
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      width: 50%;
+      height: 430px;
+      position: relative;
+    }
+    
+  
+    .signup-header {
+      font-size: 40px;
+      font-weight: 600;margin-bottom: 20px;
+      position: relative;right: 340px;
+      bottom: 30%;
+    }}
+  @media only screen and (max-width: 599px) {
+    .username-input-login {
+      width: 100px;
+       padding: 10px 20px;
+       margin: 10px 0;
+     }
+     .password-input-login{
+       width: 100px;
+       padding: 10px 20px;
+       margin: 10px 0;
+     }
+  }
+  @media only screen and (max-width: 952px){
+    .container-section{
+      width: 200px;
+      height: 450px;
+      position: relative;
+    }
+    .password-input-signup{
+      width: 120px;
+      padding: 10px 20px;
+      margin: 10px 5px;
+    }
+    .usernaem-input-signup{
+      width: 120px;
+     padding: 10px 20px;
+     margin: 10px 5px;
+    }
+  }
+  
+  .Login-Title{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+  }
+  .container-section {
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(194, 192, 192, 0.671);
+    width: 50%;
+    height: 400px;
+    position: relative;
+  }
+  .Ternary-Button{
+    background-color: #00539F;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  .Ternary-Button:hover{
+    background-color: lightblue;
+  }
+  .signup-or-login {
+    background-color: #00539F;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  
+  .guestButton {
+    background-color: #00539F;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  .guestButton:hover{
+  background-color: lightblue;
+  transition: all 0.2s ease-in-out;
+  }
+  
+  .signup-header{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+    right: 260px;
+    bottom: 25%;
+  }
+  .prompt-overlay {
+    font-size: small;
+    display: flex;
+    color: black;
+  }
+  .username-input-login {
+    width: 250px;
+    padding: 10px 20px;
+    margin: 10px 0;
+  }
+  .password-input-login {
+    width: 250px;
+    padding: 10px 20px;
+    margin: 10px 0;
+  }
+  .username-input-signup{
+    width: 250px;
+    padding: 10px 20px;
+    margin: 10px 0;
+  }
+  .password-input-signup{
+    width: 250px;
+    padding: 10px 20px;
+    margin: 10px 0;
+  }
+  
+  .ternary-text{
+    font-size: small;
+    display: flex;
+    color: black;
+    position: relative;
+  }
+  
+  @media only screen and (min-width: 1600px) {
+    .container-section {
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      width: 50%;
+      height: 430px;
+      position: relative;
+    }
+    
+  
+    .signup-header {
+      font-size: 40px;
+      font-weight: 600;margin-bottom: 20px;
+      position: relative;right: 340px;
+      bottom: 30%;
+    }}
+  @media only screen and (max-width: 599px) {
+    .username-input-login {
+      width: 100px;
+       padding: 10px 20px;
+       margin: 10px 0;
+     }
+     .password-input-login{
+       width: 100px;
+       padding: 10px 20px;
+       margin: 10px 0;
+     }
+  }
+  @media only screen and (max-width: 952px){
+    .container-section{
+      width: 200px;
+      height: 450px;
+      position: relative;
+    }
+    .password-input-signup{
+      width: 120px;
+      padding: 10px 20px;
+      margin: 10px 5px;
+    }
+    .usernaem-input-signup{
+      width: 120px;
+     padding: 10px 20px;
+     margin: 10px 5px;
+    }
+  }
+  
+  

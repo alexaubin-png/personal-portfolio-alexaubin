@@ -16,16 +16,16 @@ export default function Contact() {
     </ul>
   <div className="contact-container">
     <h2 className='contact-form-header'>Contact Me Via Form</h2>
-    <label>name:
-    <input type='name'></input>
+    <label className='name-label'>name:
+    <input className='name-input' type='name'></input>
     </label>
-    <label>email:
-    <input type='email'></input>
+    <label className='email-label'>email:
+    <input  className='email-input' type='email'></input>
     </label><br></br>
-    <label>Message:
-    <input type='text'></input>
+    <label className='Message-Label'>Message:
+    <input className='message-input' type='text'></input>
   </label>
-  <button>Send Message</button>
+  <button className='message-button'>Send Message</button>
   </div>
   </div>
 </>
