@@ -1,5 +1,4 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
 import './Auth.css'
 export default function auth() {
 const [password, setPassword] = useState('')
