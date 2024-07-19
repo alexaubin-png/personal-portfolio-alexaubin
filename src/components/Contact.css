@@ -20,8 +20,8 @@ body{
   }
   .contact-UL{
     position: relative;
-    
-    left: 290px;
+    left: 20px;
+   bottom: 100px;
     list-style-type: none;
   }
   .contact-container{
@@ -30,13 +30,14 @@ body{
     padding: 15px;
     width: 366px;
     height: 400px;
-
     border-radius: 20px;
     background-color:rgba(0, 0, 0, 0.100);
     align-items: center;
     color: white;
     font-weight: 900;
-  margin: -100px 320px;
+  margin: -100px 680px;
+  position: relative;
+  right: 0px;
   }
   .email-label{
     position: relative;
@@ -52,10 +53,10 @@ body{
   }
 
   .name-label{
-padding: 5px;
-position: relative;
-right: 20px;
-font-size: 18px;
+    padding: 5px;
+    position: relative;
+    right: 20px;
+    font-size: 18px;
   }
   .message-input{
     padding: 0px 0px 100px 200px;
@@ -77,8 +78,8 @@ font-size: 18px;
     border-radius: 10px;
   }
   .contact-container2{
-top: 100px;
-position: relative;
+    top: 100px;
+    position: relative;
     color: white;
     font-weight: 900;
   }

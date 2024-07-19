@@ -5,3 +5,51 @@ body{
 .text-overlay{
 padding: 100px;
 }
+.typing-animation {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    color: #555; /* Adjust color to your preference */
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid #000; /* The cursor */
+    width: 0; /* Start with zero width */
+    animation: typing 2.5s steps(30, end) infinite, blink .75s step-end infinite;
+    position: relative;
+    bottom: 800px;
+    left: 660px;
+    color: white;
+    font-weight: 900;
+  }
+  .inspirational-paragraph {
+    display: flex;
+    text-align: center;
+    padding: 45px;
+    padding-bottom: 65px; /* Add extra space at the bottom */
+    width: 100%;
+    font-size: larger;
+    color: white;
+    background-color: black;
+    position: relative;
+    right: 35px;
+    margin-bottom: -20px; /* Pull the div down */
+  }
+  
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 100%; /* Full width at halfway point */
+    }
+    100% {
+      width: 0; /* Reset to zero width */
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  
