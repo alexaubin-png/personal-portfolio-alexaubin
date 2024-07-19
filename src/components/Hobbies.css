@@ -9,10 +9,9 @@ font-weight: 700;
 color: white;
 }
 .Coding {
-    display: inline-block; /* Use inline-block instead of flex for individual images */
+    
     width: 400px;
     height: 300px;
-    
     margin: -50px 900px 20px 0px; /* Adjust margin as needed */
     transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
@@ -66,8 +65,6 @@ color: white;
   
 
   @media only screen and (min-width: 600px) and (max-width: 899px) {
-
-
 .Coding{
   width: 100%;
   position: relative;
@@ -96,18 +93,33 @@ top: -550px;
   position: relative;
   right: 10px 0px;
 }
+.second-navbar{
+  position: relative;
+  right: 100px;
+  font-size: larger;
+  width: 100%;
+  }
+  .box1 .box2 .box3 .box4{
+    position: relative;
+    top: 1000px;
+  }
+  .typing-animation{
+    position: relative;
+    bottom: 650px;
+    right: 500px
+
+  }
 
   }
   
 
   @media only screen and (min-width: 900px) and (max-width: 1199px) {
-
   }
   
   
 
   @media only screen and (min-width: 1200px) and (max-width: 1599px) {
-   
+  
   }
   
   
