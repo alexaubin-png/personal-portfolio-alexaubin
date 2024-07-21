@@ -6,8 +6,8 @@ export default function footer() {
       <ul className='ul-footer'>
         <li>Essex Junction</li>
         <li>Vermont</li>
-        <li>test</li>
-        <li>test</li>
+        <li>Alex Aubin</li>
+        <li>Burlington Coding Academy</li>
       </ul>
     </div>
   )

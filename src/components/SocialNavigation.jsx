@@ -18,13 +18,14 @@ export default function SocialNavigation() {
     
   <h1>All GITHUB PROJECTS</h1>
   <ul>
-    <li>Jeopardy pt1</li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li>Jeopardy pt1 - Jeopardy pt2</li>
+    <li>Zorkington1 - Zorkington 2</li>
+    <li>Server-Blog</li>
+    <li>Capstone 05-24/24</li>
+    <li>Lightmode-darkmode</li>
+    <li>guess-the-number</li>
+    <li>react-chat-JIA</li>
+    <li>article-preview</li>
     <li></li>
    </ul>
    </>

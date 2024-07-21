@@ -4,6 +4,7 @@ body{
 }
 .text-overlay{
 padding: 100px;
+color: black;
 }
 .typing-animation {
     font-family: 'Courier New', Courier, monospace;
@@ -15,9 +16,9 @@ padding: 100px;
     width: 0; /* Start with zero width */
     animation: typing 2.5s steps(30, end) infinite, blink .75s step-end infinite;
     position: relative;
-    bottom: 800px;
-    left: 660px;
-    color: white;
+    bottom: 750px;
+    left: 280px;
+    color: #3cd070;
     font-weight: 900;
   }
   .inspirational-paragraph {
@@ -45,7 +46,7 @@ padding: 100px;
       width: 0; /* Reset to zero width */
     }
   }
-  
+
   @keyframes blink {
     50% {
       border-color: transparent;
