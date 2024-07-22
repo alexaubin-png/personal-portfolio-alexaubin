@@ -1,40 +1,46 @@
-import React from 'react'
-import {Router } from 'react-router-dom'
-import './Home.css'
+import React, { useState } from 'react';
+import './Home.css';
 import HomeFlexBox from '../components/HomeFlexBox';
-// import { useLocation } from 'react-router-dom'
 
-// const HomeFlexBox = () => {
-// const location = useLocation()
-
-// if(location.pathname === '/'){
-// return(
-//   <div>
-//     {<HomeFlexBox />}
-//   </div>
-// )
-// }else{
-//   return null;
-//  }
-// };
 export default function Home() {
-  return (
-<>
-  <div >
-  {/* <img className='backgroundImage' src='src\assets\XGWC2016.PNG'></img> */}
-   
-  <div class='text-overlay'>Hello, im Alex Aubin Im intensively pursuing my <strong>software development certificate</strong> at, Upright Education</div>
-  </div>
-  <div className="inspirational-paragraph">
-Ive recently finished my program, and with the skills I learned at BCA Im happy to announce I will be developing software as a passion.
-If you have an idea for a software application, but arent quite sure how to make it work come to me and Ill be your best solution.
-Theirs an art to making full stack web applications, additonally a variety of qualification/skills implemented to achieve a succesfull project
-  </div>
-  <HomeFlexBox/>
-<div  className="typing-animation">
-  im excited to work on other projects
-</div>
- </>
-  )
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
+  // Define styles for light and dark modes
+  const lightModeStyle = {
+    backgroundColor: '#FFFFFF',
+    color: '#000000',
+  };
+
+  const darkModeStyle = {
+    backgroundColor: '#000000',
+    color: '#FFFFFF',
+  };
+
+  // Function to toggle between light and dark mode
+  const toggleMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
+  // Determine current mode styles
+  const currentModeStyles = isDarkMode ? darkModeStyle : lightModeStyle; 
+
+  // Additional styles for inspirational paragraph
+
+  return (
+    <div>
+      <div style={currentModeStyles}>
+        {/* <img className='backgroundImage' src='src\assets\XGWC2016.PNG'></img> */}
+        <div style={currentModeStyles} className='text-overlay'>
+          Hello, I'm Alex Aubin. I'm intensively pursuing my <strong>software development certificate</strong> at Upright Education.
+        </div>
+      </div>
+      <div style={currentModeStyles} className="inspirational-paragraph">
+        I've recently finished my program, and with the skills I learned at BCA, I'm happy to announce I will be developing software as a passion. If you have an idea for a software application but aren't quite sure how to make it work, come to me and I'll be your best solution. There's an art to making full stack web applications, additionally a variety of qualifications/skills implemented to achieve a successful project.
+      </div>
+      <HomeFlexBox />
+      <div className="typing-animation">
+        I'm excited to work on other projects.
+      </div>
+    </div>
+  );
 }

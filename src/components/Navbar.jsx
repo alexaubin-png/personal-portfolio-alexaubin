@@ -1,51 +1,51 @@
-//navigation bar to navigate user through, Contact, About, projects, resume, home
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './Navbar.css';
 
-import { Link } from 'react-router-dom'
-import '../Navbar.css'
-import SpeechBubble from './SpeechBubble'
-// import '../App.jsx'
+const Navbar = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
-export default function Navbar() {//the image tag should take the user to a form that automates an email from myself and then taking them to a styles contact page
-//   const [menu, setMenu] = useState(false)
-// function toggleMenu(e){
-//   e.preventDefault()
-// setMenu(!menu)
-// }
+  // Define styles for light and dark modes
+  const lightModeStyle = {
+    backgroundColor: '#FFFFFF',
+    color: '#000000',
+  };
+
+  const darkModeStyle = {
+    backgroundColor: '#000000',
+    color: '#FFFFFF',
+  };
+
+  // Function to toggle between light and dark mode
+  const toggleMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
+  // Apply dark mode styles conditionally
+  const currentModeStyles = isDarkMode ? darkModeStyle : lightModeStyle;
   return (
-//put the software dev picutres/logos ina diff file because it doesnt realte to navigation
-<div className="navbar">
-  
-
-
-
-
-   <div  className='container2'>
-    <div className="content">
-      <button className='HireMeButton'><a href='/Contact'>Hire Me</a></button>
-      <button className='MenuButton'><a href='/ImageGallery'>Menu</a></button>
-      <li className='Img-label'><a className='relative-image'href='/'><img  className='image' src='HFWV2189.PNG'></img>Home</a></li>
+    <div style={currentModeStyles} className="navbar">
+      <div className="container2">
+        <div className="content">
+          <button className='HireMeButton'><Link to='/Contact'>Hire Me</Link></button>
+          <button className='MenuButton'><Link to='/ImageGallery'>Menu</Link></button>
+          <li className='Img-label'><Link className='relative-image' to='/'><img className='image' src='HFWV2189.PNG' alt="Home"></img>Home</Link></li>
+        </div>
+      </div>
+      <div className="second-navbar">
+        <li><Link to='/Resume'>Resume</Link></li>
+        <li><Link to='/About'>About</Link></li>
+        <li><Link to='/Hobbies'>Hobbies</Link></li>
+        <li><Link to='#'>Work History</Link></li>
+        <li><Link to='/SocialNavigation'>Socials</Link></li>
+        <li><Link to='/Auth'>Login</Link></li>
+        {/* Toggle mode button */}
+        <button className="mode-toggle-button" onClick={toggleMode}>
+          Dark Mode
+        </button>
+      </div>
     </div>
-  </div>
-<div className="second-navbar">
-    <li><a href='/Resume'>Resume</a></li>
-  <li><a href='/About'>About</a></li>
-  <li><a href='/Hobbies'>Hobbies</a></li>
-  <li><a href='#'>Work History</a></li>
-  <li><a href='/SocialNavigation'>Socials</a></li>
-  <li><a href='/A````````````     uth'>Login</a></li>
-  </div>
-</div>
-        
-   //nav bar commented out because it was not needed atm
-  //   <nav className='navbar'>
-  //     <ul>
-  //     <li><Link path='/About'>About</Link ></li>
-  //     <li><Link path='/Projects'>Projects</Link ></li>
-  //     <li><Link path='/Resume'>Job History</Link ></li>
-  //     <li><Link path='/Contact'>Contact</Link ></li>
-  //   </ul>
- 
-  // </nav>
-  )
+  );
 }
+
+export default Navbar;

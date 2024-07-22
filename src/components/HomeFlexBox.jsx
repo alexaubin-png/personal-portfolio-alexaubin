@@ -8,7 +8,7 @@ export default function homeFlexBox() {
     <div className='box2'>Partners
       <a className='hyperLinkBox2' href='https://sagepvp.org/'><p>Click to view  a gaming server I moderate</p></a>
     </div>
-    <div className='box3'>Checkout my personal github<br></br>alexaubinpng
+    <div className='box3'> github<br></br>alexaubinpng
       <a className='hyperLinkBox3' href='https://github.com/alexaubin-png'><p>Follow my code</p></a>
     </div>
     <div className='box4'>Youtube Channel

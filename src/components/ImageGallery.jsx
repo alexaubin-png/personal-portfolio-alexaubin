@@ -7,7 +7,7 @@ export default function imageGallery() {
     <div>
       <h1>#</h1>
   <div className="image-gallery">
-      <img className='AASoftware1' src='../VGSP9759.PNG'/> 
+     <a href=''><img className='AASoftware1' src='../VGSP9759.PNG'/></a> 
      <img className='AASoftware2' src='../RAEB0599.PNG'/>
       {/* <a href='https://www.linkedin.com/in/alex-aubin-5740602a7/'>Linked-in</a> */}
       <img  className='AASoftware3' src='../HMZN6707.PNG'/>
