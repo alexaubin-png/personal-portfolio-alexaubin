@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import HomeFlexBox from './HomeFlexBox'
 
 const Navbar = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -24,7 +25,7 @@ const Navbar = () => {
   // Apply dark mode styles conditionally
   const currentModeStyles = isDarkMode ? darkModeStyle : lightModeStyle;
   return (
-    <div style={currentModeStyles} className="navbar">
+    <div style={currentModeStyles} className="navbar-parent">
       <div className="container2">
         <div className="content">
           <button className='HireMeButton'><Link to='/Contact'>Hire Me</Link></button>
@@ -44,7 +45,23 @@ const Navbar = () => {
           Dark Mode
         </button>
       </div>
+      <div>
+      <div style={currentModeStyles}>
+        {/* <img className='backgroundImage' src='src\assets\XGWC2016.PNG'></img> */}
+        <div style={currentModeStyles} className='text-overlay'>
+          Hello, I'm Alex Aubin. I'm intensively pursuing my <strong>software development certificate</strong> at Upright Education.
+        </div>
+      </div>
+      <div style={currentModeStyles} className="inspirational-paragraph">
+        I've recently finished my program, and with the skills I learned at BCA, I'm happy to announce I will be developing software as a passion. If you have an idea for a software application but aren't quite sure how to make it work, come to me and I'll be your best solution. There's an art to making full stack web applications, additionally a variety of qualifications/skills implemented to achieve a successful project.
+      </div>
+      <HomeFlexBox />
+      <div className="typing-animation">
+        I'm excited to work on other projects.
+      </div>
     </div>
+    </div>
+    
   );
 }
 
