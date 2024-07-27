@@ -1,7 +1,4 @@
 
-body{
-    background: url('/src/assets/XGWC2016.PNG');
-}
 .text-overlay{
 padding: 100px;
 color: black;
@@ -33,6 +30,7 @@ color: black;
     position: relative;
     right: 35px;
     margin-bottom: -20px; /* Pull the div down */
+    animation: fadeIn 1s ease forwards;
   }
   
   @keyframes typing {
@@ -51,6 +49,11 @@ color: black;
     50% {
       border-color: transparent;
     }
+  }
+  .btn-primary{
+    padding: 20px 20px;
+    margin: 20px 20px;
+    background-color: rebeccapurple;
   }
   
   

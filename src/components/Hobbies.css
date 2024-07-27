@@ -62,8 +62,6 @@ color: white;
   width: 50%;
 }
   }
-  
-
   @media only screen and (min-width: 600px) and (max-width: 899px) {
 .Coding{
   width: 100%;
@@ -92,37 +90,31 @@ top: -550px;
 .Reading-Header{
   position: relative;
   right: 10px 0px;
-}
+  }
 .second-navbar{
   position: relative;
   right: 100px;
   font-size: larger;
   width: 100%;
-  }
+    }
   .box1 .box2 .box3 .box4{
     position: relative;
     top: 1000px;
-  }
+    }
   .typing-animation{
     position: relative;
     bottom: 650px;
     right: 500px
-
-  }
-
+   }
   }
   
 
   @media only screen and (min-width: 900px) and (max-width: 1199px) {
   }
-  
-  
 
   @media only screen and (min-width: 1200px) and (max-width: 1599px) {
   
   }
-  
-  
 
   @media only screen and (min-width: 1600px) {
     .Coding{
@@ -141,9 +133,9 @@ top: -550px;
       margin: 0px 0px 5px 1600px;
     }
    .Reading-Header{
-position: relative;
-top: 0px;
-left: 10px;
+    position: relative;
+      top: 0px;
+      left: 10px;
    }
    .Reading-Text{
     position: relative;

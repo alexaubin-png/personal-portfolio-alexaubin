@@ -12,7 +12,7 @@ import SocialNavigation2 from './components/SocialNavigation';
 import Footer from './components/footer';
 import RecentProject from './components/RecentProject';
 import Hobbies from './components/Hobbies'
-import Auth from './components/Auth.jsx'
+import Auth from './components/auth.jsx'
 import Blogs from './components/Blogs.jsx'
 import Why from './components/Why.jsx'
 function App() {
@@ -47,10 +47,10 @@ function App() {
      <Route path="/Resume" element={<Resume />} />
      <Route path='/ImageGallery' element={<ImageGallery />}/>
      <Route path='/SocialNavigation' element={<SocialNavigation2/>}/>
-     <Route path='/Why' element={<Why />}></Route>
+     <Route path='/Why' element={<Why />}/>
      <Route path='/Hobbies' element={<Hobbies />}/>
-     <Route path='/Auth' element={<Auth />}></Route>
-     <Route path='/Blogs' element={<Blogs />}>Blog</Route>
+     <Route path='/Auth' element={<Auth />}/>
+     <Route path='/Blogs' element={<Blogs />}/>
    </Routes>
    <Footer />
  </Router>

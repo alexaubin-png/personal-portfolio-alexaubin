@@ -202,5 +202,27 @@ body{
 }
 
 }
+@media only screen and (max-width: 2000px){
+  .Coding{
+    position: relative;
+    right: 200px;
+  }
+  .Coding-Text{
+  width: 70%;
+  margin: 0px 20px 30px;
+  font-size: larger;
+  }
+ 
+  .Reading{
+    position: relative;
+    right: 200px;
+  }
+  .Reading-Text{
+  width: 70%;
+  margin: 0px 20px 30px;
+  font-size: larger;
+  }
+
+}
 
 
