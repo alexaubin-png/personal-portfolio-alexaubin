@@ -4,6 +4,7 @@ import '../HomeFlexBox.css'
 export default function homeFlexBox() {
   return (
   <>
+  <div className="mobileResponsive-container">
   <div className="container-flex">
       <div className='box1'>why choose us?<Link path='/Why'></Link></div>
     <div className='box2'>Partners
@@ -15,6 +16,7 @@ export default function homeFlexBox() {
     <div className='box4'>Youtube Channel
       <a className='hyperLinkBox4' href='https://www.youtube.com/channel/UCKbH5EL_UHepYyqj4TTp1Lw'><p>Click to view all my videos</p></a>
     </div>
+  </div>
   </div>
   </> 
   )

@@ -176,7 +176,7 @@ width: 20%;
   
 }
 .second-navbar {
-  background-color: rgba(0, 0, 0, 0.411); /*asjust the transparesency with an aplha value*/
+  background-color: rgba(0, 0, 0, 0.253); /*asjust the transparesency with an aplha value*/
   width: 100%;
   height: 50px;
   display: flex;
@@ -283,8 +283,13 @@ width: 20%;
   .container2{
     padding: 20px;
   display: flex;
-   
-  }
+  flex-direction: column;
+  width: 40%;
+    }
+    .content{
+      position: relative;
+      top: 70px;
+    }
   .box1{
     width: 100%;
     position: relative;
@@ -317,6 +322,8 @@ margin-left: 110px;
 margin-left: 110px;
 
   }
+
+  
 }
 @media only screen and (min-width: 600px) and (max-width: 899px) {
   body{
@@ -324,7 +331,12 @@ margin-left: 110px;
   }
   
   .navbar{
-width: 100%;
+width: 800px;
+  }
+  .second-navbar{
+width: 70%;
+margin: 0px 0px 0px 120px;
+
   }
   .typing-animation{
     width: 100%;

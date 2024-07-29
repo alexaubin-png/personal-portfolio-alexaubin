@@ -1,12 +1,7 @@
-.Login-Title{
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 35px;
-    font-family: monospace;
-  }
-  body{
+
+  /* body{
     background-color:  #012044;
-  }
+  } */
   .container-section {
     padding: 20px;
     margin: 20px auto;
@@ -81,10 +76,10 @@ transform: translateX(-.5px);
     right: 260px;
     bottom: 25%;
   }
-  .prompt-overlay {
+  .prompt-overlay{
     font-size: small;
     display: flex;
-    color: black;
+    color: white;
     font-family: monospace;
   }
 
@@ -121,9 +116,6 @@ transform: translateX(-.5px);
     background-color: transparent;
     border: 2px solid rgb(93, 197, 231);
     border-radius: 10px;
-  }
-  .Login-Title{
-
   }
   .password-signup-label{
     color: rgb(93, 197, 231);
@@ -188,14 +180,14 @@ transform: translateX(-.5px);
   }
   
   .Login-Title{
-    color: black;
+    color: white;
     font-family: 'Times New Roman', Times, serif;
     font-size: 35px;
   }
   .container-section {
     padding: 20px;
     margin: 20px auto;
-    border-radius: 20px;
+    border-radius: 20px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -254,11 +246,7 @@ transform: translateX(-.5px);
     right: 260px;
     bottom: 25%;
   }
-  .prompt-overlay {
-    font-size: small;
-    display: flex;
-    color: black;
-  }
+
   .username-input-login {
     width: 250px;
     padding: 10px 20px;
@@ -313,7 +301,7 @@ transform: translateX(-.5px);
     .username-input-login {
       width: 100px;
        padding: 10px 20px;
-       margin: 10px 0;
+       margin: 10px 0px;
      }
      .password-input-login{
        width: 100px;

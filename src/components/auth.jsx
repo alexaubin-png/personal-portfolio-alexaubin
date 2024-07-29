@@ -9,17 +9,15 @@ export default function Auth() {
   const [isLoginMode, setIsLoginMode] = useState(false);
   const [isGuest, setIsGuest] = useState(false);
 
-  const createUser = async (req, res) => {
+  const authUser = async (url, errorMessage) => {
     // Function definition
     try{
-      const response = await fetch('http://localhost:5173/register',{
+      const response = await fetch(url, {
         method: 'POST',
-        headers: {
-        'Content-Type': 'application/json'
-      },
+        headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({ 
-          username: username,
-          password: password
+          username,
+          password
         })
     });
       if (!response.ok) throw new Error("failed to register")
@@ -28,20 +26,20 @@ export default function Auth() {
         localStorage.setItem("token", data.token)
         localStorage.setItem("username", data.username)
         alert('user created successfully')
-        navigate('/login')
+        navigate('/')
         setUsername('')
         setPassword('')
 
     }catch(error){
       console.log(error);
-      alert('user created successfully')
+      alert('invalid creds')
       setUsername('')
       setPassword('')
     }
   };
 
-  const loginUserVerification = () => createUser(`${process.env.REACT_APP_API_URL}/users/login`, "Login failed");
-  const authenticateUser = () => createUser(`${process.env.REACT_APP_API_URL}/users/register`, "Signup failed");
+  const loginUser = () => authenticateUser(`${process.env.REACT_APP_API_URL}/users/login`, "Login failed");
+  const createUser = () => authenticateUser(`${process.env.REACT_APP_API_URL}/users/register`, "Signup failed");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -125,7 +123,7 @@ export default function Auth() {
         <div className='button-container'>
           <button className='Ternary-Button' type="submit">{isLoginMode ? "Login" : "Sign Up"}</button>
           <div className="ternary-text">{isLoginMode ? "Don't have an account?" : "Already have an account?"}</div>
-          <button className="signup-or-login" type="button" onClick={toggleLoginMode}>
+          <button className="signup-or-login" type="button" onClick={setIsLoginMode}>
             {isLoginMode ? "Sign Up" : "Login"}
           </button>
           {localStorage.getItem("token") && !isGuest ?
