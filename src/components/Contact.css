@@ -2,7 +2,6 @@ body{
     background-color: black;
    margin: 0px;
    padding: 0px;
-   background: url('');
 
 }
 .center-Blog{
@@ -77,11 +76,5 @@ body{
     cursor: pointer;
     border-radius: 10px;
   }
-  .contact-container2{
-    top: 100px;
-    position: relative;
-    color: white;
-    font-weight: 900;
-  }
-  
+
   

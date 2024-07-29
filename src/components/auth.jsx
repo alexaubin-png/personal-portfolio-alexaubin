@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './auth.css';
-
+import myImage from '../../src/assets/lock.png';
 export default function Auth() {
   const navigate = useNavigate();
   const [password, setPassword] = useState('');
@@ -9,16 +9,56 @@ export default function Auth() {
   const [isLoginMode, setIsLoginMode] = useState(false);
   const [isGuest, setIsGuest] = useState(false);
 
-  const createUser = async () => {
+  const authUser = async (url, errorMessage) => {
     // Function definition
+    try{
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({ 
+          username,
+          password
+        })
+    });
+      if (!response.ok) throw new Error("failed to register")
+
+      const data =  await response.json()
+        localStorage.setItem("token", data.token)
+        localStorage.setItem("username", data.username)
+        alert('user created successfully')
+        navigate('/')
+        setUsername('')
+        setPassword('')
+
+    }catch(error){
+      console.log(error);
+      alert('invalid creds')
+      setUsername('')
+      setPassword('')
+    }
   };
 
-  const loginUser = async () => {
-    // Function definition
+  const loginUser = () => authenticateUser(`${process.env.REACT_APP_API_URL}/users/login`, "Login failed");
+  const createUser = () => authenticateUser(`${process.env.REACT_APP_API_URL}/users/register`, "Signup failed");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    isLoginMode ? loginUser() : createUser();
   };
+ 
+  const toggleLoginMode = () => {
+    setIsLoginMode(!isLoginMode);
+    IsGuest(false)
+  }
 
   const logoutUser = async () => {
     // Function definition
+    localStorage.removeItem("token")
+    localStorage.removeItem("username")
+    localStorage.removeItem("password")
+    localStorage.clear()
+    alert('sucessfully logged out!!!')
+    navigate("/")
   };
 
   const IsGuest = () => {
@@ -26,15 +66,13 @@ export default function Auth() {
     navigate('/');
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    isLoginMode ? loginUser() : createUser();
-  };
+
+
 
   return (
     <div className="container-section">
       <h1 className='Login-Title'>{isLoginMode ? "Login" : "Sign Up"}
-        <label className='prompt-overlay'>To Sponsor A Stop</label>
+        <label className='prompt-overlay'>To Create Blog Posts</label>
       </h1>
       <form onSubmit={handleSubmit}>
         {!isLoginMode ? (
@@ -49,7 +87,7 @@ export default function Auth() {
                 required
               />
             </label><br></br>
-            <label>
+            <label className='password-signup-label'>
               Password:
               <input
                 className='password-input-signup'
@@ -85,7 +123,7 @@ export default function Auth() {
         <div className='button-container'>
           <button className='Ternary-Button' type="submit">{isLoginMode ? "Login" : "Sign Up"}</button>
           <div className="ternary-text">{isLoginMode ? "Don't have an account?" : "Already have an account?"}</div>
-          <button className="signup-or-login" type="button" onClick={() => setIsLoginMode(!isLoginMode)}>
+          <button className="signup-or-login" type="button" onClick={setIsLoginMode}>
             {isLoginMode ? "Sign Up" : "Login"}
           </button>
           {localStorage.getItem("token") && !isGuest ?
@@ -94,6 +132,7 @@ export default function Auth() {
           <button className="guestButton" onClick={IsGuest}>Continue as Guest</button>
         </div>
       </form>
+     
     </div>
   );
 }

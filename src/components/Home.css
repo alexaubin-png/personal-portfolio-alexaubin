@@ -1,7 +1,4 @@
 
-body{
-    background: url('/src/assets/XGWC2016.PNG');
-}
 .text-overlay{
 padding: 100px;
 color: black;
@@ -33,7 +30,39 @@ color: black;
     position: relative;
     right: 35px;
     margin-bottom: -20px; /* Pull the div down */
+    animation: fadeIn 1s ease forwards;
   }
+  @media only screen and (max-width: 599px){
+.text-overlay{
+  padding:  0px 650px 0px 0px;
+  width: 35%;
+}
+.inspirational-paragraph{
+  padding: 0px 650px 0px 0px;
+  width: 35%;
+}
+.container-flex{
+  width: 100%;
+  position: relative;
+  top: 100px;
+  left: 0px;
+}
+  }
+  @media only screen and (min-width: 600px) and (max-width: 1122px){
+    .text-overlay{
+      padding:  0px 350px 0px 0px;
+      width: 100%;
+    }
+   .inspirational-paragraph{
+    padding: 0px 350px 0px 0px;
+      width: 100%;
+    }
+.mobileResponsive-container{
+  width: 100%;
+  position: relative;
+  top: 300px;
+  left: 0px;
+}
   
   @keyframes typing {
     0% {
@@ -52,5 +81,9 @@ color: black;
       border-color: transparent;
     }
   }
-  
-  
+  .btn-primary{
+    padding: 20px 20px;
+    margin: 20px 20px;
+    background-color: rebeccapurple;
+  } 
+}

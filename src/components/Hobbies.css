@@ -9,7 +9,8 @@ font-weight: 700;
 color: white;
 }
 .Coding {
-    
+    position: relative;
+    left: 30px;
     width: 400px;
     height: 300px;
     margin: -50px 900px 20px 0px; /* Adjust margin as needed */
@@ -29,8 +30,8 @@ color: white;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     position: relative;
-    bottom: 360px;
-    left: 240px;
+    bottom: 350px;
+    left: 220px;
   }
   .Reading{
     width: 400px;
@@ -38,14 +39,14 @@ color: white;
     float: right;
     position: relative;
     bottom: 30px;
-    right: -400px;
+    right: -50px;
   }
   .Reading-Header{
     font-size: 40px;
     font-weight: 700;
     position: relative;
-    top: -380px;
-    left: -295px;
+top: 200px;
+    left: -110px;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
  
@@ -62,8 +63,6 @@ color: white;
   width: 50%;
 }
   }
-  
-
   @media only screen and (min-width: 600px) and (max-width: 899px) {
 .Coding{
   width: 100%;
@@ -92,37 +91,31 @@ top: -550px;
 .Reading-Header{
   position: relative;
   right: 10px 0px;
-}
+  }
 .second-navbar{
   position: relative;
   right: 100px;
   font-size: larger;
   width: 100%;
-  }
+    }
   .box1 .box2 .box3 .box4{
     position: relative;
     top: 1000px;
-  }
+    }
   .typing-animation{
     position: relative;
     bottom: 650px;
     right: 500px
-
-  }
-
+   }
   }
   
 
   @media only screen and (min-width: 900px) and (max-width: 1199px) {
   }
-  
-  
 
   @media only screen and (min-width: 1200px) and (max-width: 1599px) {
   
   }
-  
-  
 
   @media only screen and (min-width: 1600px) {
     .Coding{
@@ -141,9 +134,9 @@ top: -550px;
       margin: 0px 0px 5px 1600px;
     }
    .Reading-Header{
-position: relative;
-top: 0px;
-left: 10px;
+    position: relative;
+      top: 0px;
+      left: 10px;
    }
    .Reading-Text{
     position: relative;
