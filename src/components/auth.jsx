@@ -12,7 +12,7 @@ export default function Auth() {
   const authUser = async (url, errorMessage) => {
     // Function definition
     try{
-      const response = await fetch(url, {
+      const response = await fetch(url, {//404 not found response perhaps try fet ching the endpoint directly to acsess the code directly
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({ 
@@ -32,18 +32,18 @@ export default function Auth() {
 
     }catch(error){
       console.log(error);
-      alert('invalid creds')
+      alert('invalid creds')//consider turning alerts  into user feedback rendered directly under the inputs using create element in a conditonal that also checsk the leng th and casing of the users inputs
       setUsername('')
       setPassword('')
     }
   };
 
-  const loginUser = () => authenticateUser(`${process.env.REACT_APP_API_URL}/users/login`, "Login failed");
-  const createUser = () => authenticateUser(`${process.env.REACT_APP_API_URL}/users/register`, "Signup failed");
+  // const loginUser = () => authenticateUser(`${process.env.REACT_APP_API_URL}/users/login`, "Login failed");
+  // const createUser = () => authUser(`${process.env.REACT_APP_API_URL}/users/register`, "Signup failed");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    isLoginMode ? loginUser() : createUser();
+    isLoginMode ? loginUser() : authUser();
   };
  
   const toggleLoginMode = () => {
@@ -123,7 +123,7 @@ export default function Auth() {
         <div className='button-container'>
           <button className='Ternary-Button' type="submit">{isLoginMode ? "Login" : "Sign Up"}</button>
           <div className="ternary-text">{isLoginMode ? "Don't have an account?" : "Already have an account?"}</div>
-          <button className="signup-or-login" type="button" onClick={setIsLoginMode}>
+          <button className="signup-or-login" type="button" onClick={() => setIsLoginMode(!isLoginMode)}>
             {isLoginMode ? "Sign Up" : "Login"}
           </button>
           {localStorage.getItem("token") && !isGuest ?

@@ -15,6 +15,7 @@ import Hobbies from './components/Hobbies'
 import Auth from './components/auth.jsx'
 import Blogs from './components/Blogs.jsx'
 import Why from './components/Why.jsx'
+import HomeFlexBox  from './components/HomeFlexBox.jsx';
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -52,6 +53,7 @@ function App() {
      <Route path='/Auth' element={<Auth />}/>
      <Route path='/Blogs' element={<Blogs />}/>
    </Routes>
+   <HomeFlexBox />
    <Footer />
  </Router>
   );

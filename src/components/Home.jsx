@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Home.css";
-import HomeFlexBox from "../components/HomeFlexBox";
+import Profile from "../components/Profile";
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -27,13 +27,6 @@ export default function Home() {
   // Additional styles for inspirational paragraph
 
   return (
-    <>
-      <div className="test-element">
-        <button class="btn btn-primary">
-          <span class="spinner-border spinner-border-sm"></span>
-          Loading..
-        </button>
-      </div>
-    </>
+      <Profile />
   );
 }

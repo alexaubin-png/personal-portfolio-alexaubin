@@ -161,7 +161,7 @@ transform: translateX(-.5px);
        margin: 10px 0;
      }
   }
-  @media only screen and (max-width: 952px){
+  @media only screen and (min-width: 600px) and (max-width: 1222px){
     .container-section{
       width: 200px;
       height: 450px;
@@ -309,22 +309,6 @@ transform: translateX(-.5px);
        margin: 10px 0;
      }
   }
-  @media only screen and (max-width: 952px){
-    .container-section{
-      width: 200px;
-      height: 450px;
-      position: relative;
-    }
-    .password-input-signup{
-      width: 120px;
-      padding: 10px 20px;
-      margin: 10px 5px;
-    }
-    .usernaem-input-signup{
-      width: 120px;
-     padding: 10px 20px;
-     margin: 10px 5px;
-    }
-  }
+
   
   

@@ -21,14 +21,12 @@ color: black;
   .inspirational-paragraph {
     display: flex;
     text-align: center;
-    padding: 45px;
-    padding-bottom: 65px; /* Add extra space at the bottom */
+    padding: 50px;
+     /* Add extra space at the bottom */
     width: 100%;
-    font-size: larger;
-    color: white;
-    background-color: black;
+    font-size: large;
+    color: black;
     position: relative;
-    right: 35px;
     margin-bottom: -20px; /* Pull the div down */
     animation: fadeIn 1s ease forwards;
   }
@@ -86,4 +84,42 @@ color: black;
     margin: 20px 20px;
     background-color: rebeccapurple;
   } 
+}
+.Profile-Details{
+  height: 300px;
+  position: relative; 
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ text-align: center;
+ font-size: 10px;
+}  
+.profile-picture{
+  width: 35px;
+  height: 35px;
+  position: relative;
+  left: 80px;
+  
+}
+.my-name-profile{
+  display: flex;
+  justify-content: center;
+}
+.profile-container{
+  width: 250px;
+position: relative;
+font-size: smaller;
+color: white;
+background-color: #1E1E1F;
+border-radius: 10px;
+}
+.profile-Education{
+  color: white;
+  background-color: #2b2b2c;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 50px;
+  margin: 10px 0px;
+  width: 150px;
 }

@@ -2,16 +2,8 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  position: relative;
-  right: 150px;
-  padding: 50px;
-  margin: 20px;
-}
-
-.Parent-Social-Container{
-display: flex;
-flex-direction: row;
-justify-content: center;
+  width: 95%;
+  margin: 0px 25px;
 }
 .Parent-Social-Container-box1{
 /*coming back to this*/
@@ -19,14 +11,13 @@ justify-content: center;
 
 
 .instagram{
-  width: 100%;
-  height: 399px;
+  width: 246px;
+  height: 445px;
   position: relative;
   left: -27px;
-  position: relative;
-bottom: 25px;
   border: 2px solid black;
-  
+  position: relative;
+  left: 20px;
 }
 
 .instagram:hover{
@@ -37,20 +28,11 @@ bottom: 25px;
 .linked-in{
   width: 246px;
   height: 443px;
-  position: relative;
-  left: -27px;
-  position: relative;
-bottom: 25px;
   border: 2px solid black;
-  margin: 20px;
+  position: relative;
+  left: 20px;
 }                                                   
-.linked-in-box2{
-  width: 20%;
-  height: 400px;
-  position: relative;
-  left: 100px;
-  border: 2px solid black;
-}
+
 .linked-in:hover{
  border-color: black;
  border-width: 4px;
@@ -62,11 +44,9 @@ bottom: 25px;
 .X-box3{
   width: 246px;
   height: 443px;
-  position: relative;
-  left: 200px;
-  bottom: 25px;
   border: 2px solid black;
-
+  position: relative;
+  left: 20px;                                                                                                           
 }
 .X-box3:hover{
   border-color: black;
@@ -98,14 +78,7 @@ display: flex;
 flex-direction: column;
   display: none;
 }
-.content2{
-  position: relative;
-  top: -2000px;
-  left: 200px;
-  width: 50%;
-  text-align: center;
-    color: white;
-}
+
 .pastprojects{
   position: relative;
   top: -2000px;
@@ -114,26 +87,29 @@ flex-direction: column;
   text-align: center;
     color: white;
 }
+.instagram{
+  width: 150px;
+  height: 200px;
+  margin: 0px;
+}
+.linked-in{
+  width: 150px;
+  height: 200px;
+  margin: 0px;
+}
+.X-box3{
+  width: 150px;
+  height: 200px;
+  margin: 0px;
+}
 }
 @media only screen and (min-width: 600px) and (max-width: 899px){
-  .Parent-Social-Container{
-    width: 80%;
-    margin: 0px -30px ;
-  }
+
 }
 @media only screen and (max-width: 599px){
-  .Parent-Social-Container{
-    width: 200%;
-    margin: 0px -30px ;
-    display: flex;
-    flex-direction: column;
-  }
+
 }
 @media only screen and (min-width: 1600px) and (max-width: 1699px){
-.Parent-Social-Container{
-width: 100%;
-height: 100%;
-}
 
 }
   
