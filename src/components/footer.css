@@ -20,39 +20,18 @@
 }
   
   .ul-footer li {
-    margin: 0 10px; /* Adjust the space between list items */
-    
+    margin: 0 10px; /* Adjust the space between list items */ 
 }
-  @media only screen and (max-width: 599px) {
-    .navbar{
-      width: 790px;
-    }
-    .HireMeButton{
-      position: relative;
-      right: -100px
-    }
-     .ul-footer li {
-        margin: 0 55px; /* Adjust the space between list items */
-       position: relative;
-       bottom: -55px;
-       width: 100%; 
-      }
-      .footer-background{
-        width: 790px;
-        position: relative;
-        top: 1000px
-        
-      } 
+@media only screen and (max-width: 599px) {
 }
 @media only screen and (max-width: 599px){
   .navbar{
     width:1000px
-    
   }
   .HireMeButton{
     position: relative;
     right: -100px;
-border-radius: 10px;
+    border-radius: 10px;
   }
   .footer-background{
     width: 200%;

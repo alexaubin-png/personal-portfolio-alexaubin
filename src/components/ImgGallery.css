@@ -32,7 +32,8 @@
     height: 150px;
     width: 150px;
     position: relative;
-    top: -100px;
+  position: relative;
+  top: -100px;
   }
   .AASoftware1{
     height: 150px;
@@ -72,9 +73,6 @@
     text-align: center;
     width: 90%;
     color: white;
-
-
-    
   }
   .pastprojects{
     position: relative;
@@ -98,68 +96,47 @@
     body{
       background: green;
      }
-     .container2{
-      width: 510px;
-     }
-     .mode-toggle-button{
-      width: 20%;
-      position: relative;
-      left: 280px;
-     }
-     .second-navbar{ 
-      margin: 0px 0px 0px -150px;
-       width: 100%;
-       height: 300px;
-       font-size: smaller;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-     }
+   
      .container-flex{
       position: relative;
       bottom: 200px;
      }
-     .AASoftware1{
-      position: relative;
-      
-     }
-     .AASoftware2{
-      position: relative;
-      left: 400px;
-      top: 710px;
-     }
-     .AASoftware3{
-      position: relative;
-      left: 600px;
-      top: 520px;
-     }
-     .AASoftware4{
-      position: relative;
-      left: 1100px;
-      top: 330px;
-     }
+     
   }
   
 
   @media only screen and (min-width: 600px) and (max-width: 899px) {
     body{
-      background: red;
+ 
+     }
+     .container2{
+
+     }
+     .Parent-Social-Container-box1{
+
+
+     }
+     .linked-in-box2 {
+
+
+     }
+     .X-box3{
+ 
+     }
+     .parent-container{
+
      }
   }
   
 
   @media only screen and (min-width: 900px) and (max-width: 1199px) {
-    body{
-      background: green;
-     }
+  
   }
   
   
 
   @media only screen and (min-width: 1200px) and (max-width: 1599px) {
-    body{
-      background: blue;
-     }
+ 
   }
   
   

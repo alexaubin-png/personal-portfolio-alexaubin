@@ -47,18 +47,7 @@ display: flex-end;
     justify-content: center;
     text-align: center;
   }
-.wrap{
-  position: fixed;
-  top: 0px;
-display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  position: fixed;
-  top: 0px;
-  left: 1200px;
-  box-shadow: 2px black;
-}
+
 .HireMe{
   font-family: 'Courier New', Courier, monospace;
   box-shadow: 2px black;
@@ -71,7 +60,7 @@ display: flex;
 }
 
 .HireMeButton{
-float: right;
+  float: right;
   background-color: rgb(187, 54, 54);
   border: none;
   width: 150px;
@@ -240,6 +229,13 @@ width: 20%;
   text-decoration: none;
   color: white;
 }
+.content{
+  display: flex-start;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 87%;
+}
 
 @keyframes fadeIn {
   from {
@@ -280,75 +276,94 @@ width: 20%;
   }
 }
 @media only screen and (max-width: 599px) {
-  .container2{
-    padding: 20px;
+.container2{
+  width: 100%;
+}
+.content{
   display: flex;
   flex-direction: column;
-  width: 40%;
-    }
-    .content{
-      position: relative;
-      top: 70px;
-    }
-  .box1{
-    width: 100%;
-    position: relative;
-    bottom: 1000px;
-    margin-left: 110px;
-
-  }
-  .box1:hover{
-    transform: translateY(-5px)
-  }
-  .box2{
-width: 100%;
-
-position: relative;
-bottom: 1000px;
-margin-left: 110px;
-
-  }
-  .box3{
-    width: 100%;
-    position: relative;
-    bottom: 1000px;
-    margin-left: 110px;
-
-  }
-  .box4{
-    width: 100%;
-    position: relative;
-    bottom: 1000px;
-margin-left: 110px;
-
-  }
-
-  
+  width: 20%;
+  margin: 0px -65px;
 }
-@media only screen and (min-width: 600px) and (max-width: 899px) {
-  body{
-    width: 90%;
-  }
-  
-  .navbar{
-width: 800px;
-  }
-  .second-navbar{
-width: 70%;
-margin: 0px 0px 0px 120px;
+.HireMeButton{
+  width: 35%;
+  height: 20%;
+  font-size: smaller;
+  margin: 0px 170px 0px 0px;
+}
+.MenuButton{
+  width: 40%;
+  height: 30px;
+  font-size: smaller;
+  margin: -30px 250px 20px -20px;
+}
+.profile-container{
+  display: none;
+}
+.second-navbar{
+    position: relative;
+    right: 210px;
+     height: 300px;
+     font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   }
+   .mode-toggle-button{
+    width:  
+   }
+}
 
-  }
+
+
+
+
+
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+.navbar{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.content{
+  position: relative;
+  right: 110px;
+}
+   .mode-toggle-button{
+    width: 20%;
+    position: relative;
+    left: 280px;
+   }
+   .second-navbar{ 
+     height: 300px;
+     font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+   }
   .typing-animation{
     width: 100%;
     position: relative;
     bottom: 300px;
+  }
+  .MenuButton{
+  position: relative;
+  left: 100px;
+  }
+  .HireMeButton{
+    position: relative;
+    left: 100px;
+  }
+  .relative-image{
+    position: relative;
+    left: 100px;
   
   }
-  .box1{
-    width: 100%;
-    position: relative;
-    bottom: 1000px;
-  }
+
+}
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
+
 }
 @media only screen and (max-width: 599px){
   .container2{/*this is a selctor for the navbars black background*/
@@ -374,9 +389,16 @@ margin: 0px 0px 0px 120px;
     display: flex;
     flex-direction: column;
   }
+  .container-section{
+  font-size: larger;
+  
+  }
 
 }
-@media only screen and (max-width: 2000px){
+@media only screen and (min-width: 1600px){
+  body{
+    background-color: red;
+  }
 .box1, .box2, .box3, .box4{
   width: 90%;
 }
@@ -386,8 +408,11 @@ margin: 0px 0px 0px 120px;
   top: -800px;
   color: white;
 }
-.container2{
-  width: 96%;
+.inspirational-paragraph{
+  display: none;
 }
-}     
+.second-navbar{
+  width: 1500px;
+}
+}   
 
