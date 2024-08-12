@@ -276,6 +276,9 @@ width: 20%;
   }
 }
 @media only screen and (max-width: 599px) {
+  body {
+    overflow: hidden;
+  }
 .container2{
   width: 100%;
 }
