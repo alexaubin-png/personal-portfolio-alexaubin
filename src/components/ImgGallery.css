@@ -149,5 +149,24 @@
       position: relative;
       bottom: 100px;
      }
+     .box1{
+      position: relative;
+      left: 250px;
+     }
+     .box2{
+      position: relative;
+      left: 250px;
+     }
+     .box3{
+      position: relative;
+      left: 250px;
+     }
+     .box4{
+      position: relative;
+      left: 250px;
+     }
+     .second-navbar{
+      width: 100%;
+     }
   }
  

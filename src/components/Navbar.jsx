@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import HomeFlexBox from './HomeFlexBox'
-
+import myFace from '../assets/HFWV2189.png'
 const DownloadButton= () => {
 
 const pdfURL = ''
@@ -36,7 +35,7 @@ const Navbar = () => {
         <div className="content">
           <button className='HireMeButton'><Link to='/Contact'>Hire Me</Link></button>
           <button className='MenuButton'><Link to='/ImageGallery'>Gallery</Link></button>
-          <li className='Img-label'><Link className='relative-image' to='/'><img className='image' src='HFWV2189.PNG' alt="Home"></img>Home</Link></li>
+          <li className='Img-label'><Link className='relative-image' to='/'><img className='image' src={myFace} alt="Home"></img>Home</Link></li>
         </div>
       </div>
       <div className="second-navbar">

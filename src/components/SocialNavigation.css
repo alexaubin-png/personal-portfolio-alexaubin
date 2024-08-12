@@ -54,9 +54,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-.second-navbar{
-width: 70%;
-}
 .image-gallery{
   display: flex;
   flex-direction: column;
