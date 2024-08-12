@@ -27,6 +27,11 @@ export default function Home() {
   // Additional styles for inspirational paragraph
 
   return (
+  
+    <div style={currentModeStyles}>
+      <img></img>
+      <p>Hello im Alex Aubin, and im a certified software developer</p>          
       <Profile />
+      </div>
   );
 }
