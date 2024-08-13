@@ -10,7 +10,7 @@
 }
 .Coding {
     position: relative;
-    left: 30px;
+    left: -100px;
     width: 400px;
     height: 300px;
     margin: -50px 900px 20px 0px; /* Adjust margin as needed */
@@ -19,10 +19,12 @@
   }
   .Coding-Text{
     position: relative;
+    left: 100px;
     bottom: 350px;
     display: flex;
     float: right;
     width: 40%;
+    
   }
   .Coding-Header{
     font-size: 40px;
@@ -39,14 +41,14 @@
     float: right;
     position: relative;
     bottom: 30px;
-    right: -50px;
+    left: 100px;
   }
   .Reading-Header{
     font-size: 40px;
     font-weight: 700;
     position: relative;
-    top: 200px;
-    left: -110px;
+    top: 100px;
+    left: 0px;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
  
@@ -90,7 +92,7 @@
 .Coding{
   width: 100%;
   position: relative;
-  right: 75px;;
+  right: 75px;
 }
 .Coding-Text{
   position: relative;

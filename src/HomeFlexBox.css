@@ -65,12 +65,11 @@ width: 100%;
       display: flex;
       flex-direction: column;
       width: 57%;
-      
     }
     .box1{
       width: 400px;
       height: 300px;
-      margin: 0px 0px 0px 147px;
+      margin: 300px 0px 0px 147px;
     }
     .box2{
       width: 400px;

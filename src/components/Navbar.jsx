@@ -55,9 +55,6 @@ const Navbar = () => {
         {/* <img className='backgroundImage' src='src\assets\XGWC2016.PNG'></img> */}
        
       </div>
-      <div className="inspirational-paragraph">
-        {/* I've recently finished my program, and with the skills I learned at BCA, I'm happy to announce I will be developing software as a passion. If you have an idea for a software application but aren't quite sure how to make it work, come to me and I'll be your best solution. There's an art to making full stack web applications, additionally a variety of qualifications/skills implemented to achieve a successful project. A little less than 30 days prior to obtaining my certificate in Java Script Foundations, I couldnt be more excited to start applying and eventually take up a job as a software developer. */}
-      </div>
 
       <div className='typing-animation'>
         I'm excited to work on other projects.

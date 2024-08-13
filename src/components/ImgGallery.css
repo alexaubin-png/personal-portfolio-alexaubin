@@ -65,8 +65,7 @@
    
   }
   .content2{
-    position: relative;
-    top: -100px;
+   position: relative;
     right: 0px;
     display: flex;
     flex-direction: row;
@@ -76,7 +75,7 @@
   }
   .pastprojects{
     position: relative;
-    top: -100px;
+
     left: 290px;
     display: flex;
     flex-direction: row;
