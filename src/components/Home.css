@@ -37,13 +37,16 @@ color: black;
 }
 .inspirational-paragraph{
   padding: 0px 650px 0px 0px;
-  width: 35%;
+  width: 70%;
 }
 .container-flex{
   width: 100%;
   position: relative;
   top: 100px;
   left: 0px;
+}
+.inspiration-header{
+  font-size: 15px;
 }
   }
   @media only screen and (min-width: 600px) and (max-width: 1122px){

@@ -75,7 +75,7 @@ display: flex-end;
 
 }
 .container2 {
-width: 111%;
+width: 100%;
   background-color: black;
   padding: 0px 20px; /* Remove any default padding */
   margin: 0px; /* Remove any default margin */
@@ -234,7 +234,7 @@ width: 20%;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 87%;
+  width: 96%;
 }
 
 @keyframes fadeIn {
@@ -280,16 +280,16 @@ width: 20%;
     overflow-x: hidden;
   }
 .container2{
-  width: 500px;
+  width: 599px;
+  
 }
 .content{
   display: flex;
   flex-direction: column;
   width: 20%;
-  margin: 0px -65px;
 }
 .HireMeButton{
-  width: 35%;
+  width: 40%;
   height: 20%;
   font-size: smaller;
   margin: 0px 170px 0px 0px;
@@ -306,6 +306,7 @@ width: 20%;
 .second-navbar{
     position: relative;
     right: 210px;
+    width: 599px;
      height: 300px;
      font-size: smaller;
     display: flex;
