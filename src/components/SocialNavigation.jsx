@@ -7,7 +7,7 @@ export default function SocialNavigation() {
      {/* <label className='Navigation-Socials-Label'>Follow My Socials</label> */}
      <div className="parent-container">
       <div className='Parent-Social-Container-box1'>
-      <a href='#'><img className='instagram' src='src\assets\IMG_1594.PNG' alt='my instagram' /></a> 
+      <a href='#'><img className='instagram' src={'src/assets/IMG_1594.PNG'} alt='my instagram' /></a> 
       </div>
       <div className='linked-in-box2'><a href='#'> <img className='linked-in' src='src\assets\IMG_1595.PNG' alt='my instagram' /></a></div>
       
