@@ -126,3 +126,9 @@ border-radius: 10px;
   margin: 10px 0px;
   width: 150px;
 }
+@media only screen and (min-width: 1600px) {
+  .box1 .box2 .box3 .box4{
+    position: relative;
+    right: 100px;
+  }
+}

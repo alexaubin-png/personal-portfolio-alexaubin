@@ -141,31 +141,29 @@
   
 
   @media only screen and (min-width: 1600px) {
-    body{
-      background: pink;
-     }
      .container-flex{
       position: relative;
       bottom: 100px;
      }
      .box1{
       position: relative;
-      left: 250px;
+      top: -700px;
      }
      .box2{
       position: relative;
-      left: 250px;
+      top: -700px;
      }
      .box3{
       position: relative;
-      left: 250px;
+      top: -700px;
      }
      .box4{
       position: relative;
-      left: 250px;
+      top: -700px;
+    
      }
      .second-navbar{
-      width: 100%;
+      width: 1600px;
      }
   }
  

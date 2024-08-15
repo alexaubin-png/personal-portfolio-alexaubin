@@ -15,7 +15,7 @@ export default function SocialNavigation() {
       <a href='#'><img className='X-box3' src='src\assets\IMG_1596.PNG' alt='my instagram' /></a>
       </div>
      </div>
-    
+     
   <h1>All GITHUB PROJECTS</h1>
   <ul>
     <li>Jeopardy pt1 - Jeopardy pt2</li>

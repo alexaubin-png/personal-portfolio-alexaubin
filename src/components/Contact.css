@@ -84,7 +84,9 @@ bottom: 8px;
         margin: 0px -10px;
     }
     .contact-UL{
-      padding: 10px;
+   position: relative;
+   top: 420px;
+   margin: 0px -50px;
     }
     .contact-container{
       width: 100%;
