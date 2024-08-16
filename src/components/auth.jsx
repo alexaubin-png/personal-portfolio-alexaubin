@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./auth.css";
-import myImage from "../../src/assets/lock.png";
+
 export default function Auth() {
   const navigate = useNavigate();
   const [password, setPassword] = useState("");
@@ -21,7 +21,7 @@ export default function Auth() {
           password,
         }),
       });
-      if (!response.ok) throw new Error("failed to register");
+      // if (!response.ok) throw new Error("failed to register");
 
       const data = await response.json();
       localStorage.setItem("token", data.token);
@@ -31,10 +31,8 @@ export default function Auth() {
       setUsername("");
       setPassword("");
     } catch (error) {
-      console.log(error);
+      console.log("failed to register", error);
       alert("invalid creds"); //consider turning alerts  into user feedback rendered directly under the inputs using create element in a conditonal that also checsk the leng th and casing of the users inputs
-      setUsername("");
-      setPassword("");
     }
   };
 

@@ -7,7 +7,9 @@ export default function Profile() {
     <img className='profile-picture'></img>
     <h1 ClassName='name'></h1>
     <h1 className='my-name-profile'>Alex Aubin</h1>
-    <label className='profile-Education'>Certificate</label>
+    {/* <label href='' className='profile-Education'>Certificate</label> */}
+    <a className='profile-badges' href='https://gyazo.com/4118a7b8c93a4b3173ccd6549e8802ba'>badges</a><br></br>
+    <a className='profile-certificate' href='https://gyazo.com/fba38f035969bc4cb8049b775c7da68f'>Certificate</a>
     <div className='Profile-Details'>
       <label className='email-label'>EMAIL</label>
       <p>alexjames4674@gmail.com</p>
@@ -18,8 +20,6 @@ export default function Profile() {
       <label>LOCATION</label>
       <p>05452 Vermont</p>
     </div>
-    
-
    </div>
 
     </div>
