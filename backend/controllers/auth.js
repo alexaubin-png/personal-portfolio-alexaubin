@@ -1,10 +1,7 @@
 //import user schema from models directory, or else our request/response object will not be available.
-
-const express = require('express');
-const mongoose = require('mongoose');
-const cors = require('cors');
-const dotenv = require('dotenv');
+ require('dotenv').config();
 const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
 const SALT = process.env.SALT
 const User = require('../models/User');
 
