@@ -12,7 +12,7 @@ export default function Auth() {
   const authUser = async (url, errorMessage) => {
     // Function definition
     try {
-      const response = await fetch(url, {
+      const response = await fetch('http://localhost:8080/users/register', {
         //404 not found response perhaps try fet ching the endpoint directly to acsess the code directly
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -21,7 +21,7 @@ export default function Auth() {
           password,
         }),
       });
-      // if (!response.ok) throw new Error("failed to register");
+      if (!response.ok) throw new Error("failed to register");
 
       const data = await response.json();
       localStorage.setItem("token", data.token);

@@ -7,5 +7,5 @@ const app = express();
 router.post('/login', userControllers.loginUser)
 
 
-router.get('/register', userControllers.registerNewUser)
+router.post('/register', userControllers.registerNewUser)
 module.exports = router

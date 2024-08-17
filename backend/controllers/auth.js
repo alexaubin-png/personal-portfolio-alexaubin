@@ -22,7 +22,7 @@ const newUser = await user.save();//saving our new user because user is already 
 res.status(201).json(newUser);//201 for successful registration/creation
 
 }catch(error){
-console.log(error)
+console.log( "registration error", error)
 res.status(500).json({message:"internal error"})
 }
 }

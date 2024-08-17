@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Home.css";
 import Profile from "../components/Profile";
+import BadgeContainer from "./badgeContainer";
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -29,11 +30,14 @@ export default function Home() {
   return (
   
     <div style={currentModeStyles}>
-      <h1 className='inspiration-header'>Hello im Alex Aubin, and im a certified software developer</h1>       
+      <BadgeContainer/>
+      {/* <h1 className='inspiration-header'>Hello im Alex Aubin, and im a certified software developer</h1>        */}
       <div className="inspirational-paragraph">
         I've recently finished my program, and with the skills I learned at BCA, I'm happy to announce I will be developing software as a passion. If you have an idea for a software application but aren't quite sure how to make it work, come to me and I'll be your best solution. There's an art to making full stack web applications, additionally a variety of qualifications/skills implemented to achieve a successful project.
-      </div>   
+      </div>
+         
       <Profile />
+      
       </div>
   );
 }

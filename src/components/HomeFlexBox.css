@@ -250,15 +250,24 @@ body{
   background-color: blue;
 }
 }
-@media only screen and (min-width: 1600px) {
 
+@media only screen and (min-width: 1600px) {
+  .footer-background{
+    width: 1800px;
+    height: 100vh;
+    font-size: 40px;
+  } 
+  .ul-footer{
+    position: relative;
+    right: 100px;
+  } 
+.box1-p{
+  position: relative;
+  top: 200px;
 }
-
-
-@media only screen and (min-width: 1600px) {
-
-.box1, .box2, .box3, .box4{
-
+.box4-p{
+  position: relative;
+  top: 200px;
 }
 .text-overlay{
   position: absolute;
@@ -274,19 +283,19 @@ body{
 .Hobbies-Container{
   width: 70%;
   margin: 20px 20p 0px 0px;
-  
 }
 .Reading{
   position: relative;
-  top: 100px;
+  top: -20px;
 }
 .Reading-Header {
   position: relative;
   top: 100px;
+  left: 100px;
 }
 
 }
-@media only screen and (max-width: 2000px){
+@media only screen and (min-width: 2000px){
   .Coding{
     position: relative;
     right: 200px;
@@ -302,10 +311,16 @@ body{
     right: 200px;
   }
   .Reading-Text{
-  width: 70%;
-  margin: 0px 20px 30px;
+  position: relative;
+  top: 100px;
+  left: 200px;
   font-size: larger;
   }
+  .Reading-Header{
+    position: relative;
+    top: 100px;
+    left: 340px;  }
+
 
 }
 
