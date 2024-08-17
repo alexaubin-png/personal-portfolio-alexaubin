@@ -39,3 +39,27 @@
 
   }
 }
+.badge-container{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin: 0px 250px;
+  bottom: 40px;
+ 
+}
+.badge1{
+  width: 90%;
+  height: 100%;
+}
+.react-badge{
+  width: 90%;
+  height: 100%;
+}
+.Fullstack{
+  width: 90%;
+  height: 100%;
+}
+.Javascript{
+  width: 90%;
+  height: 100%;
+}

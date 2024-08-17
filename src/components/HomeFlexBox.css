@@ -252,7 +252,15 @@ body{
 }
 
 @media only screen and (min-width: 1600px) {
-
+  .footer-background{
+    width: 1800px;
+    height: 100vh;
+    font-size: 40px;
+  } 
+  .ul-footer{
+    position: relative;
+    right: 100px;
+  } 
 .box1-p{
   position: relative;
   top: 200px;

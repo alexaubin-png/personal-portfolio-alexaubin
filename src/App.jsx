@@ -16,6 +16,11 @@ import Auth from './components/auth.jsx'
 import Blogs from './components/Blogs.jsx'
 import Why from './components/Why.jsx'
 import HomeFlexBox  from './components/HomeFlexBox.jsx';
+import ExpressP from './components/paragrpahExpress.jsx'
+import FullstackP from './components/FullstackParagraph.jsx'
+import JSDev from './components/JavaScriptDevP.jsx';
+import ReactP from './components/ReactP.jsx'
+
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -52,6 +57,11 @@ function App() {
      <Route path='/Hobbies' element={<Hobbies />}/>
      <Route path='/Auth' element={<Auth />}/>
      <Route path='/Blogs' element={<Blogs />}/>
+     <Route path='/ExpressP' element={<ExpressP/>}></Route>
+     <Route path='/FullstackP' element={<FullstackP/>}></Route>
+     <Route path='/JavaScriptFoundations' element={<JSDev/>}></Route>
+     <Route path='/ReactParagraph' element={<ReactP/>}></Route>
+     
    </Routes>
    <HomeFlexBox />
    <Footer />
