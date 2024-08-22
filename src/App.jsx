@@ -20,6 +20,7 @@ import ExpressP from './components/paragrpahExpress.jsx'
 import FullstackP from './components/FullstackParagraph.jsx'
 import JSDev from './components/JavaScriptDevP.jsx';
 import ReactP from './components/ReactP.jsx'
+import Websites from './components/Websites.jsx'
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -61,6 +62,7 @@ function App() {
      <Route path='/FullstackP' element={<FullstackP/>}></Route>
      <Route path='/JavaScriptFoundations' element={<JSDev/>}></Route>
      <Route path='/ReactParagraph' element={<ReactP/>}></Route>
+     <Route path='/Websites' element={<Websites />}></Route>
      
    </Routes>
    <HomeFlexBox />

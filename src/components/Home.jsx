@@ -1,43 +1,46 @@
 import React, { useState } from "react";
+import {Link} from 'react-router-dom'
 import "./Home.css";
 import Profile from "../components/Profile";
 import BadgeContainer from "./badgeContainer";
+import Navbar from './Navbar.jsx'
 
 export default function Home() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  // const [isDarkMode, setIsDarkMode] = useState(false);
 
-  // Define styles for light and dark modes
-  const lightModeStyle = {
-    backgroundColor: "#FFFFFF",
-    color: "#000000",
-  };
+  // // Define styles for light and dark modes
+  // const lightModeStyle = {
+  //   backgroundColor: "#FFFFFF",
+  //   color: "#000000",
+  // };
 
-  const darkModeStyle = {
-    backgroundColor: "#000000",
-    color: "#FFFFFF",
-  };
+  // const darkModeStyle = {
+  //   backgroundColor: "#000000",
+  //   color: "#FFFFFF",
+  // };
 
-  // Function to toggle between light and dark mode
-  const toggleMode = () => {
-    setIsDarkMode(!isDarkMode);
-  };
+  // // Function to toggle between light and dark mode
+  // const toggleMode = () => {
+  //   setIsDarkMode(!isDarkMode);
+  // };
 
-  // Determine current mode styles
-  const currentModeStyles = isDarkMode ? darkModeStyle : lightModeStyle;
+  // // Determine current mode styles
+  // const currentModeStyles = isDarkMode ? darkModeStyle : lightModeStyle;
 
   // Additional styles for inspirational paragraph
 
   return (
-  
-    <div style={currentModeStyles}>
-      <BadgeContainer/>
-      {/* <h1 className='inspiration-header'>Hello im Alex Aubin, and im a certified software developer</h1>        */}
-      <div className="inspirational-paragraph">
-        I've recently finished my program, and with the skills I learned at BCA, I'm happy to announce I will be developing software as a passion. If you have an idea for a software application but aren't quite sure how to make it work, come to me and I'll be your best solution. There's an art to making full stack web applications, additionally a variety of qualifications/skills implemented to achieve a successful project.
+    <div>
+   
+      <div className="homePage">
+      <h1 className="Name-Header">Alex J. Aubin</h1>
+      <div className="Button-Container">
+      <Link to="/Websites"><button className="Button-VideoGames">Websites</button></Link>
+      <button className="Websites">Video Games</button>
       </div>
-         
-      <Profile />
-      
+      <h1 className="Personal-Header">Personal Portfolio</h1>
+      <p>Ive created from scratch, A MERN stack APP to hold my portfolio. On This website you can find all all my porjects and view them, view my resume/badges/certificates. Or print physical copies of my reume, effectivley to contact me and hopefully hire me, Or use my contact form.</p>
+        </div>
       </div>
   );
 }

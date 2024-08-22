@@ -19,7 +19,7 @@
   }
   .Coding-Text{
     position: relative;
-    left: 100px;
+    left: 0px;
     bottom: 350px;
     display: flex;
     float: right;
@@ -41,14 +41,14 @@
     float: right;
     position: relative;
     bottom: 30px;
-    left: 100px;
+    left: 400px;
   }
   .Reading-Header{
     font-size: 40px;
     font-weight: 700;
     position: relative;
-    top: 100px;
-    left: 0px;
+    top: -350px;
+    left: -310px;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
  
@@ -59,6 +59,9 @@
     right: 100px;
     display: flex;
     width: 50%;
+  }
+  .Fitness{
+    width: 400px;
   }
   @media only screen and (max-width: 599px) {
 .Coding{

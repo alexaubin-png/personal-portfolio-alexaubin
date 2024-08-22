@@ -44,7 +44,7 @@
   flex-direction: row;
   position: relative;
   margin: 0px 250px;
-  bottom: 40px;
+  bottom: 25px;
  
 }
 .badge1{
@@ -62,4 +62,32 @@
 .Javascript{
   width: 90%;
   height: 100%;
+}
+.JS-text-style{
+  color: white;
+  padding: 10px;
+  margin: 20px;
+}
+.Fullstack-Paragraph{
+  color: white;
+  padding: 10px;
+  margin:20px;
+}
+.express-element-route{
+  color: white;
+  padding: 10px;
+  margin: 20px;
+}
+.react-paragraph-text-style{
+  color: white;
+  padding: 10px;
+  margin: 20px;
+}
+.resume-page-1{
+  width: 90%;
+  height: 100%;
+}
+.resume-page-2{
+  width: 90%;
+  height: 90%;
 }
