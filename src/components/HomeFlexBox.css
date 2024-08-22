@@ -142,22 +142,22 @@
       width: 57%;
     }
     .box1{
-      width: 400px;
+      width: 600px;
       height: 300px;
       margin: 300px 0px 0px 147px;
     }
     .box2{
-      width: 400px;
+      width: 600px;
       height: 300px;
       margin: 0px 0px 0px 147px;
     }
     .box3{
-      width: 400px;
+      width: 600px;
       height: 300px;
       margin: 0px 0px 0px 147px;
     }
    .box4{
-    width: 400px;
+    width: 600px;
     height: 300px;
     margin: 0px 0px 0px 147px;
    }
@@ -284,14 +284,23 @@ body{
   width: 70%;
   margin: 20px 20p 0px 0px;
 }
+.Coding-Text{
+  position: relative;
+  left: -200px;
+}
+.Coding-Header{
+  position: relative;
+  left: 65px;
+}
 .Reading{
   position: relative;
   top: -20px;
+  left: 255px;
 }
 .Reading-Header {
   position: relative;
-  top: 100px;
-  left: 100px;
+  top: -350px;
+  left: -350px;
 }
 
 }

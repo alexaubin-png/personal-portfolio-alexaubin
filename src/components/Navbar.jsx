@@ -50,17 +50,8 @@ const Navbar = () => {
           Dark Mode
         </button>
       </div>
-   
-      <div >
-        {/* <img className='backgroundImage' src='src\assets\XGWC2016.PNG'></img> */}
-       
       </div>
 
-      <div className='typing-animation'>
-        I'm excited to work on other projects.
-      </div>
-    
-        </div>
 
     
     

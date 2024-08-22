@@ -1,55 +1,61 @@
 body{
-    background-color: black;
+
    margin: 0px;
    padding: 0px;
 
 }
 .center-Blog{
     text-align: center;
-    border: 2px solid black;
     position: relative; 
-    bottom: 50px;
     margin: 25px;
+    color: white;
   }
   .contact-tag{
-    position: relative; 
-bottom: 8px;
-    padding: 10px;
-    margin: 20px;
+    width: 250%;
+    margin: 0px 20px;
+    color: white;
   }
   .contact-UL{
     position: relative;
     left: 20px;
-
-    list-style-type: none;
+    color: white;
+display: none;
+list-style-type: none;
   }
-  .contact-container{
+  .contact-container2{
     display: flex;
     flex-direction: column;
     padding: 15px;
     width: 366px;
-    height: 400px;
+    height: 550px;
     border-radius: 20px;
-    background-color:rgba(0, 0, 0, 0.100);
+    background-color:rgba(0, 0, 0, 0.1);
     align-items: center;
     color: white;
     font-weight: 900;
-  margin: -100px 680px;
+  margin: 0px 680px 0px;
   position: relative;
-  bottom: 100px;
+  bottom: 0px;
   right: 380px;
   }
   .email-label{
     position: relative;
     right: 10px;
-    font-weight: 900;
     font-size: 18px;
+    color: white;
   }
   .email-input{
-    padding: 5px;
-    margin: 15px;
+    width: 200px;
+    padding: 2px;
     position: relative;
     right: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border: 2px solid #FFD700;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    resize: none; /* Disable resizing */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
   }
 
   .name-label{
@@ -57,17 +63,40 @@ bottom: 8px;
     position: relative;
     right: 20px;
     font-size: 18px;
+    color: white;
+  }
+  .name-input{
+    width: 200px;
+    padding: 2px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border: 2px solid #FFD700;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    resize: none; /* Disable resizing */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+  }
+  .name-input:focus{
+    border-color: #DAA520;
+    
   }
   .message-input{
-    padding: 0px 0px 100px 200px;
-    margin: 15px;
-    position: relative;
-    right: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 5px;
+    width: 300px; /* Set a width for better visibility */
+    height: 140px; /* Set a height for better visibility */
+    padding: 10px; /* Adjust padding inside the textarea */
+    font-size: 16px; /* Set a more readable font size */
+    font-family: Arial, sans-serif; /* Use a common, readable font */
+    border: 2px solid #FFD700; /* Border color and thickness */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    resize: none; /* Disable resizing */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
   }
+  .message-input:focus {
+    border-color: #DAA520; /* Change border color on focus */
+    box-shadow: 0 0 15px rgba(255, 196, 4, 0.5); /* Enhanced shadow on focus */
+    outline: none; /* Remove default outline */
+}
   .message-button{
     padding: 10px;
     margin: 15px;
@@ -76,6 +105,16 @@ bottom: 8px;
     font-weight: 900;
     cursor: pointer;
     border-radius: 10px;
+  }
+  .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Message-Label{
+    color: white;
+    display: flex;  
   }
   @media only screen and (max-width: 599px) {
    .center-Blog{

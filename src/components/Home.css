@@ -1,4 +1,6 @@
-
+body{
+  background-color: black;
+}
 .text-overlay{
 padding: 100px;
 color: black;
@@ -147,6 +149,60 @@ border-radius: 10px;
   width: 150px;
   position: relative;
   left: 50px;
+}
+.homePage{
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content: center;
+align-items: center;
+
+}
+.Button-Container{
+display: flex;
+margin: 20px;
+}
+.Button-VideoGames{
+  padding: 10px 20px;
+  margin: 0px 20px;
+    font-size: 16px;
+    width: 190px;
+    color: white;
+    border: 4px solid #FFD700;
+    background-color: black;
+    color: #FFD700 ;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out, transform 0.2s ease;
+  
+}
+.Button-VideoGames:hover{
+  box-shadow: 0 0 15px #DAA520; /* Pinkish glow */
+  transform: scale(1.05); /* Optional: Slightly enlarge button on hover */
+}
+.Websites{
+  padding: 10px 20px;
+  margin: 0px 20px;
+    font-size: 16px;
+    color: white;
+    width: 190px;
+    border: 4px solid #FFD700;
+    background-color: black;
+    color: #FFD700 ;
+    border: 4px solid #FFD700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out, transform 0.2s ease;
+}
+.Websites:hover{
+  box-shadow: 0 0 15px #DAA520; /* Pinkish glow */
+  transform: scale(1.05); /* Optional: Slightly enlarge button on hover */
+}
+.Personal-Header{
+  color: white;
+}
+.Name-Header{
+  color: white;
 }
 @media only screen and (min-width: 1600px) {
   .box1 .box2 .box3 .box4{

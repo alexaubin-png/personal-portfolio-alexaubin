@@ -8,22 +8,6 @@ import ExpressP from './paragrpahExpress.jsx'
 
 export default function badgeContainer() {
   return (
-    <div>
-    <div className="badge-container">
-        <Link to='/ExpressP'>
-        <img className='badge1' src={badge1}></img>
-        </Link>
-        <Link to='/FullstackP'>
-        <img className='Fullstack'src={badge2}></img>
-        </Link>
-        <Link to='/JavaScriptFoundations'>
-        <img className='Javascript' src={badge3}></img>  
-        </Link>
-      <Link to='/ReactParagraph'>
-      <img className='react-badge' src={badge4}></img>
-      </Link>
-      </div>
-
-    </div>
+<></>
   )
 }
