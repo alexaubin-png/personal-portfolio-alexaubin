@@ -91,3 +91,14 @@
   width: 90%;
   height: 90%;
 }
+@media only screen and (min-width: 1600px){
+  .footer-background{
+    position: relative;
+    bottom: -500px;
+    overflow: hidden;
+  }
+  .ul-footer{
+    padding: 20px;
+    margin: 10px 20px;
+  }
+}
