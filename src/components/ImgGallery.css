@@ -215,8 +215,13 @@
       top: -700px;
     
      }
-     .second-navbar{
-      width: 1600px;
+     .content2{
+      margin: 0px 150px;
+      padding: 10px;
+     }
+     .pastprojects{
+      margin: 0px 450px;
+      padding: 10px;
      }
   }
   

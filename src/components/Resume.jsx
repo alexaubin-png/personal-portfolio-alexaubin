@@ -1,5 +1,6 @@
 //paste my resume
 import React from 'react'
+import './Resume.css'
 import { Link } from 'react-router-dom'
 import badge1 from '../assets/badge 1png.png'
 import badge2 from '../assets/Fullstack JS badge4.png'

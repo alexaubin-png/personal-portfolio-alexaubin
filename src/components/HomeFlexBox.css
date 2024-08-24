@@ -139,27 +139,37 @@
     .mobileResponsive-container{
       display: flex;
       flex-direction: column;
-      width: 57%;
+      width: 100%;
+      position: relative;
+      top: 300px;
     }
     .box1{
-      width: 600px;
+      position: relative;
+      left: 280px;
+      width: 1300px;
       height: 300px;
-      margin: 300px 0px 0px 147px;
+      margin: 0px 0px 0px 0px;
     }
     .box2{
-      width: 600px;
+      position: relative;
+      left: 280px;
+      width: 1300px;
       height: 300px;
-      margin: 0px 0px 0px 147px;
+      margin: 0px 0px 0px 0px;
     }
     .box3{
-      width: 600px;
+      position: relative;
+      left: 280px;
+      width: 1300px;
       height: 300px;
-      margin: 0px 0px 0px 147px;
+      margin: 0px 0px 0px 0px;
     }
    .box4{
-    width: 600px;
+    position: relative;
+    left: 280px;
+    width: 1300px;
     height: 300px;
-    margin: 0px 0px 0px 147px;
+    margin: 0px 0px 0px 0px;
    }
 .container-flex{
  width: 100%;
@@ -268,6 +278,22 @@ body{
 .box4-p{
   position: relative;
   top: 200px;
+}
+.box1{
+position: relative;
+left: 100px;
+}
+.box2{
+  position: relative;
+  left: 100px;
+}
+.box3{
+  position: relative;
+  left: 150px;
+}
+.box4{
+  position: relative;
+  left: 150px;
 }
 .text-overlay{
   position: absolute;
