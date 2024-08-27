@@ -185,7 +185,6 @@ margin: 20px;
 .Button-VideoGames:hover{
   box-shadow: 0 0 15px #DAA520; /* Pinkish glow */
   transform: scale(1.05); /* Optional: Slightly enlarge button on hover */
-  margin: 30px;
 }
 .Websites{
   padding: 10px 20px;
@@ -202,20 +201,27 @@ margin: 20px;
     transition: box-shadow 0.3s ease-in-out, transform 0.2s ease;
 }
 .Websites:hover{
-  box-shadow: 0 0 15px #DAA520; /* Pinkish glow */
+  box-shadow: 0 0 5px #DAA520; /* Pinkish glow */
   transform: scale(1.05); /* Optional: Slightly enlarge button on hover */
 }
 .Personal-Header{
   color: white;
 }
-.Name-Header{
-  color: white;
+@import url('https://fonts.googleapis.com/css2?family=Lobster:wght@400&display=swap'); /* Importing a cool font */
+
+.Name-Header {
+  font-family: 'Lobster', cursive; /* Applying the imported font */
+  color: white; /* Text color */
+  font-size: 3em; /* Font size */
+  text-shadow: 
+    1px 1px 0 #000, 
+    2px 2px 0 #333,
+    3px 3px 0 #666, 
+    4px 4px 0 #999; /* Creating a 3D effect with text-shadow */
+  /* Optionally add more shadows for a deeper effect */
 }
 @media only screen and (min-width: 1600px) and (max-width: 2000px){
-  .homePage{
-    width: 60%;
-    margin: 0px 85px;
-  }
+
 }
 @media only screen and(max-width: 599px){
   body{

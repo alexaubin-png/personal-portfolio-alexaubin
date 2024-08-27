@@ -1,5 +1,13 @@
 body{
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Lobster', cursive; /* Applying the imported font */
+  color: white; /* Text color */ /* Font size */
+  text-shadow: 
+    1px 1px 0 #000, 
+    2px 2px 0 #333,
+    1px 1px 0 #333, 
+    1px 1px 0 #333; /* Creating a 3D effect with text-shadow */
+  /* Optionally add more shadows for a deeper effect */
+
  background-size: 100%  90%;
  background-position: center top;
  background-color: grey;
@@ -123,11 +131,21 @@ width: 20%;
   height: 70px;
   position: relative;
   left: 20px;
-
+  font-family: 'Lobster', cursive; /* Applying the imported font */
+  color: white; /* Text color */
+  font-size: 2em; /* Font size */
+  text-shadow: 
+    1px 1px 0 #000, 
+    2px 2px 0 #333,
+    3px 3px 0 #333, 
+    4px 4px 0 #333; /* Creating a 3D effect with text-shadow */
+  /* Optionally add more shadows for a deeper effect */
+  font-size: 1.9em;
 }
 .MenuButton a{
   text-decoration: none;
   color: white;
+  
 }
 .MenuButton:hover {
   background-color: rgba(255, 255, 255, 0.8); 
@@ -146,6 +164,16 @@ width: 20%;
 .HireMeButton{
   position: relative;
   left: 20px;
+  font-family: 'Lobster', cursive; /* Applying the imported font */
+  color: white; /* Text color */
+  font-size: 1.9em; /* Font size */
+  text-shadow: 
+    1px 1px 0 #000, 
+    2px 2px 0 #333,
+    3px 3px 0 #333, 
+    4px 4px 0 #333; /* Creating a 3D effect with text-shadow */
+  /* Optionally add more shadows for a deeper effect */
+
 }
 .backgroundImage{
   height: 766px;
@@ -411,18 +439,18 @@ color: white;
   }
 
 }
-@media only screen and (min-width: 1700px) and (max-width:2000px){
+/* @media only screen and (min-width: 1700px) and (max-width:2000px){
 .container2{
-  width: 140%;
+  width: 84%;
 }
 .second-navbar{
   width: 150%;
-  margin: 0px 150px;
+  margin: 0px -50px;
 }
-}
-@media only screen and(min-width: 1700px) and (max-width: 2500px){
+} */
+/* @media only screen and(min-width: 1700px) and (max-width: 2500px){
 
-}
+} */
 @media only screen and (min-width: 1600px) and (max-width: 2000px){
   .content{
  width: 64%;
@@ -432,11 +460,11 @@ color: white;
 }
 .HireMeButton{
   position: relative;
-  left: 35px;
+  left: 600px;
   }
   .MenuButton{
-    position: relative;
-    left: 34px;
+  position: relative;
+  left: 600px;
   }
 
 
@@ -446,21 +474,24 @@ color: white;
 }
 .second-navbar {
   position: relative;
-  width: 70%;
+width: 110%;
 }
 .Profile-Details{
  right: 680px;
+}
+.container2{
+  width: 110%;
 }
 
 }   
 @media only screen and (min-width: 2000px){
 .container2{
-  margin: 0px 100px;
-  width: 90%;
+  margin: 0px 7px;
+  width: 106%;
 }
-.second-navbar{
+.second-navbar{     
   position: relative;
-  left: 190px;
+  width: 100%;
 }
 } 
 

@@ -96,7 +96,7 @@ const ContactForm = ({ onSubmit }) => {
           />
         </label><br />
         
-        <button type="submit">Send Message</button>
+        <button className='message-submit'type="submit">Send Message</button>
       </form>
       {status && <p>{status}</p>} {/* Display feedback message */}
     </div>

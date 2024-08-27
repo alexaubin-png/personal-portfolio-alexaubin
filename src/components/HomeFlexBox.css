@@ -252,13 +252,19 @@
 
 
 @media only screen and (min-width: 900px) and (max-width: 1199px) {
-
+                                                                      
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
 body{
   background-color: blue;
 }
+.container-flex{
+  width: 1200px;
+  position: relative;
+  top: 1200px;
+}
+
 }
 
 @media only screen and (min-width: 1600px) {
@@ -281,19 +287,16 @@ body{
 }
 .box1{
 position: relative;
-left: 100px;
 }
 .box2{
   position: relative;
-  left: 100px;
 }
 .box3{
   position: relative;
-  left: 150px;
 }
 .box4{
   position: relative;
-  left: 150px;
+  
 }
 .text-overlay{
   position: absolute;
@@ -331,32 +334,18 @@ left: 100px;
 
 }
 @media only screen and (min-width: 2000px){
-  .Coding{
-    position: relative;
-    right: 200px;
-  }
-  .Coding-Text{
-  width: 70%;
-  margin: 0px 20px 30px;
-  font-size: larger;
-  }
- 
-  .Reading{
-    position: relative;
-    right: 200px;
-  }
-  .Reading-Text{
-  position: relative;
-  top: 100px;
-  left: 200px;
-  font-size: larger;
-  }
-  .Reading-Header{
-    position: relative;
-    top: 100px;
-    left: 340px;  }
-
-
+ .box1{
+  width: 30%;
+ }
+ .box2{
+  width: 30%;
+ }
+ .box3{
+  width: 30%;
+ }
+ .box4{
+  width: 30%;
+ }
 }
 
 

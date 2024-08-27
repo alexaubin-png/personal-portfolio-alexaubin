@@ -148,6 +148,35 @@
   .DevzoneTag:hover{
     border: 2px solid black;
   }
+  .description-current-project{
+    position: relative;
+    left: 70px;
+  }
+  .current-project-text{
+    position: relative;
+    left: 70px;
+  }
+  .current-project{
+    position: relative;
+    left: 0px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  width: 70%;
+  display: flex;
+  
+  }
+  .PineappleTag{
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #f0efeb;
+    width: 90px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    margin: 3px;
+  }
   @media only screen and (max-width: 599px) {
      .container-flex{
       position: relative;

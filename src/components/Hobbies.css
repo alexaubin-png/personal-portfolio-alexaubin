@@ -160,4 +160,27 @@
    }
  
   }
+  @media only screen and (min-width: 2000px){
+    .Coding{
+     
+    }
+    .Coding-Text{
+  font-size: 25px;
+    }
+    .Coding-Header{
+      position: relative;
+      left: 10px;
+    }
+   
+    .Reading{
+     
+    }
+    .Reading-Text{
+   font-size: 25px;
+    }
+    .Reading-Header{
+      }
+  
+                                                  
+  }
 

@@ -136,7 +136,7 @@ export default function Auth() {
           >
             {isLoginMode ? "Sign Up" : "Login"}
           </button>
-          {localStorage.getItem("token") && !isGuest ? (
+          {localStorage.getItem("token") && !isGuest ? (                                          
             <button className='Logout-Button' onClick={logoutUser}> Logout </button>
           ) : null}
           <button className="guestButton" onClick={IsGuest}>
