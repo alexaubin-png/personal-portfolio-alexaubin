@@ -9,7 +9,7 @@ const Profile = ({ token }) => {
       {isLoggedIn && (
         <div className="double-container">
           <div className='profile-container'>
-            <img className='profile-picture' alt='Profile' />
+            <img src='' className='profile-picture' alt='Profile' />
             <h1 className='name'>Alex Aubin</h1>
             <h1 className='my-name-profile'>Alex Aubin</h1>
             {/* <label href='' className='profile-Education'>Certificate</label> */}
@@ -24,6 +24,18 @@ const Profile = ({ token }) => {
               <p>01/26/2002</p> 
               <label>LOCATION</label>
               <p>05452 Vermont</p>
+            </div>
+          </div>
+          <div className="container">
+            <div className="img-container">
+              <img src='#'></img>
+            </div>
+            <div className="img-section">
+              <img src='#' alt=''></img>
+              <img src='#' alt=''></img>
+              <img src='#' alt=''></img>
+              <img src='#' alt=''></img>
+              <img src='#' alt=''></img>
             </div>
           </div>
         </div>

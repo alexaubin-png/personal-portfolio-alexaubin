@@ -14,9 +14,7 @@ export default function resume() {
   return (
     <div>
       <div>
-        <img className='resume-page-1' src={resumepage1} alt='my resume page 1'></img>
-        <img className='resume-page-2' src={resumepage2} alt='my resume page 2'></img>
-    <div className="badge-container">
+      <div className="badge-container">
         <Link to='/ExpressP'>
         <img className='badge1' src={badge1}></img>
         </Link>
@@ -31,6 +29,8 @@ export default function resume() {
       </Link>
       </div>
     </div>
+        <img className='resume-page-1' src={resumepage1} alt='my resume page 1'></img>
+        <img className='resume-page-2' src={resumepage2} alt='my resume page 2'></img>
     </div>
   )
 }
