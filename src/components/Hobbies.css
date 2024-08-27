@@ -36,12 +36,14 @@
     left: 220px;
   }
   .Reading{
-    width: 400px;
+    width: 50%;
     display: flex;
     float: right;
     position: relative;
     bottom: 30px;
     left: 400px;
+    transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
   }
   .Reading-Header{
     font-size: 40px;

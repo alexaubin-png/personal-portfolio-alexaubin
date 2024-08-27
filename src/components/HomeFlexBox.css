@@ -335,16 +335,16 @@ position: relative;
 }
 @media only screen and (min-width: 2000px){
  .box1{
-  width: 30%;
+  width: 20%;
  }
  .box2{
-  width: 30%;
+  width: 20%;
  }
  .box3{
-  width: 30%;
+ width: 20%;
  }
  .box4{
-  width: 30%;
+  width: 20%;
  }
 }
 
