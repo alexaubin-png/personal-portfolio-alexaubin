@@ -26,18 +26,4 @@ console.log(error)
 res.status(500).json({message: `${error}`})
  } 
 })
-router.post('/post', (req, res) => {
-    try{
-const result = read(dbPath)
-let newEntry = {post_id: result.length + 1, ...req.body}
-result.push(newEntry)
-save(result, dbPath)
-res.status(200).json({
-    message: 'Post added successfully',
-    newEntry
-})
-    }catch(error){
-        res.status(500).json({message: error.message})
-    }
-
-})
+                                                                         

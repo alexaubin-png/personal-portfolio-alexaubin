@@ -5,10 +5,20 @@ export default function imageGallery() {
 
   return ( 
     <div>
-<h1></h1>
-<p></p>
+      <h1 className='current-project-text'>Current Project</h1>
+      <p className='description-current-project'>Im developing a website to teach developers to code</p>
+      <iframe className='current-project'></iframe>
+
       <h1 className='pastprojects'>Past Projects</h1>
-      <div class='content2'>These projects  are very uniqe to me, because they have my name and my passion on them, Ive created a vast amount of projects,  a few memorable mentions being a website that allows users to make blog posts when signed into an account, menu orders for restraunts by using data structues to enable online ordering, also a map that allows users to select any bus stops in indianappolis to sponsor. I feel its important to share my intrests to really understand why these projects ended being the way they are.   Ive been intensivley pursing my certificate in software engineering. This hense explains why these picutres are detailed with my name and code in the background, well because I love to code. Very similar to the saying "the cherry on top" is how I feel about adding logos to my projects, with that certain logos are more enjoyable, and people can interact with them.</div>
+    <div class='content2'>These projects  are very uniqe to me, because they have my name and my passion on them, Ive created a vast amount of projects, click a tag below to check them out</div>
+      <div className='CapstoneTag'>Indygo</div><br></br>
+      <div className='JeopardyTag'>Jeopardy</div>
+      <div className='React-ChatTag'>React-Chat</div>
+      <div className='DevzoneTag'>DevZone</div>
+      <div className='PineappleTag'>Server-Blog</div>
+ {/*deploy jeopardy, capstone, react-chat, make frontend for server-blog  and devzone*/}
+
   </div>
+
   )
 }

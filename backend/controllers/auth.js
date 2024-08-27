@@ -1,14 +1,14 @@
 //import user schema from models directory, or else our request/response object will not be available.
-
-const express = require('express');
-const mongoose = require('mongoose');
-const cors = require('cors');
-const dotenv = require('dotenv');
+ require('dotenv').config();
 const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
 const SALT = process.env.SALT
 const User = require('../models/User');
-
+const nodemailer = require('nodemailer');
+const { EMAIL, PASSWORD } = require('../env.js')
+const Mailgen = require('mailgen');
 exports.registerNewUser = async (req,res) => {
+    
 try{
 const hashedPassword = await bcrypt.hash(req.body.password, 10);
 
@@ -22,12 +22,117 @@ if (!req.body.username || !req.body.password) {
 throw new Error("Please provide username and password.");
 }
 const newUser = await user.save();//saving our new user because user is already in our database/schema
-res.status(201).json(newUser);//201 for successful registration/creation
+// res.status(201).json(newUser);//201 for successful registration/creation
 
+
+let testAccount = await nodemailer.createTestAccount()
+
+const transporter = nodemailer.createTransport({
+    host: "smtp.ethereal.email",
+    port: 587,
+    secure: false, // Use `true` for port 465, `false` for all other ports
+    auth: {
+      user: "maddison53@ethereal.email",
+      pass: "jn7jnAPss4f63QBp6D",
+    },
+  });
+  const message = {
+    from: '"Maddison Foo Koch 👻" <maddison53@ethereal.email>', // sender address
+    to: "alexaubin4674@gmail.com", // list of receivers
+    subject: "Hello ✔", // Subject line
+    text: "Successfully Registerd With Us", // plain text body
+    html: "<b>Successfully Registerd With Us</b>", // html body
+  }
+  transporter.sendMail(message).then((info)=>{
+    return res.status(201)
+    .json({
+        msg: "you should have gotten an email",
+        info: info.messageId,
+        preview: nodemailer.getTestMessageUrl(info)
+    })
+     
+  })
 }catch(error){
-console.log(error)
+console.log( "registration error", error)
 res.status(500).json({message:"internal error"})
 }
+}
+exports.getBill = async (req, res) => {
+    try{
+        const { userEmail, userName, messageContent } = req.body
+
+        const transporter = nodemailer.createTransport({
+            service: 'gmail', // Use Gmail service
+            auth: {
+                user: 'alexjames4674@gmail.com', // Replace with your Gmail address
+                pass: 'pqoo lxjg hklo xopb', // Replace with your app password
+            },
+        });
+        // const config = {
+        //     service: 'gmail',
+        //     auth: {
+        //         user: EMAIL,
+        //         pass: PASSWORD,
+        //     }
+        // }
+        // let transporter = nodemailer.createTransport(config)
+
+        let MailGenerator = new Mailgen({
+            theme: 'default',
+            product: {
+                name: 'Alex-Aubin-Personal-Portfolio',
+                link: 'https://mailgen.js',
+            },
+        })
+        let response = {
+            body: {
+                name:  userName || 'Customer',
+                intro: 'You have received a new message from the contact form.',
+                table: {
+                data : [
+                    {
+                        item: 'Message Content',
+                        description: messageContent || 'thanks reaching out',
+                    }
+                ]
+                },
+                outro: "thanks for reaching out to us"
+            }
+        }
+        const mail = MailGenerator.generate(response)
+const message = {
+    from: EMAIL,
+    to: userEmail || 'alexjames4674@gmail.com',
+    subject: "New Contact Form Message",
+    html: mail
+}
+
+transporter.sendMail(message, (error, info) => {
+    if (error) {
+        console.error('Error sending email:', error);
+        return res.status(500).json({ message: 'Internal server error' });
+    }
+    console.log('Mail sent: %s', info.messageId);
+    return res.status(200).json({
+        msg: 'Email sent successfully',
+        info: info.messageId,
+        preview: nodemailer.getTestMessageUrl(info),
+    });
+});
+    // you can also handle the error here by returning a response with the error message
+    // for now, we'll just return a success message
+    // console.log('message send: %s', info, transporter)
+    }catch(error){
+        console.log("error sending bill")
+        res.status(500).json(error.message)
+    }
+    // send the bill to the user's email
+    // here you would put your logic to send the bill
+    // for now, we'll just return a success message
+
+  
+// console.log('message send: %s', info, transporter)
+  
 }
 
 exports.loginUser = async (req, res) => {

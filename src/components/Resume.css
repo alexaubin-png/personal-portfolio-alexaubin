@@ -1,0 +1,41 @@
+@media only screen and(max-width: 599px){
+    body{
+      background-color: #333;
+    }
+  .Name-Header{
+    position: relative;
+    right: 100px;
+  }
+  
+
+  }
+  @media only screen and (min-height: 1600px){
+   .resume-page-1{
+    position: relative;
+    left: 80px;
+   }.resume-page-2{
+    position: relative;
+    left: 80px;
+   }
+   .badge-container{
+    position: relative;
+    width: 1200px;
+    border-radius: 40px;
+   }
+   .Fullstack{
+    border-radius: 40px;
+   }
+   .Javascript{
+    border-radius: 40px;
+   }
+  
+  .badge1{
+    border-radius: 40px;
+  
+  }
+  .react-badge{
+    border-radius: 40px;
+  }
+}
+
+  

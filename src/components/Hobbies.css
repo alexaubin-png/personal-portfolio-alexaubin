@@ -19,7 +19,7 @@
   }
   .Coding-Text{
     position: relative;
-    left: 100px;
+    left: 0px;
     bottom: 350px;
     display: flex;
     float: right;
@@ -41,14 +41,14 @@
     float: right;
     position: relative;
     bottom: 30px;
-    left: 100px;
+    left: 400px;
   }
   .Reading-Header{
     font-size: 40px;
     font-weight: 700;
     position: relative;
-    top: 100px;
-    left: 0px;
+    top: -350px;
+    left: -310px;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
  
@@ -60,32 +60,39 @@
     display: flex;
     width: 50%;
   }
+  .Fitness{
+    width: 400px;
+  }
   @media only screen and (max-width: 599px) {
 .Coding{
   width: 100%;
-  margin: 20px 0px 0px -250px;
+  margin: 0px 0px 0px 0px;
 }
 .Coding-Text{
   position: relative;
-  left: 90px;
+  left: 300px;
   font-size: smaller;
-  width: 80%;
+  width: 100%;
 }
 .Coding-Header{
-  width: 20%;
-  margin: 0px -110px;
+  width: 160%;
+  margin: 0px 0px;
+  overflow: hidden;
 }
 .Reading{
   width: 100%;
-  margin: -40px -40px  0px 0px;
+  margin: -40px 0px  0px 0px;
 }
 .Reading-Text{
-  width: 80%;
+  width: 100%;
   font-size: smaller;
 }
 .Reading-Header{
   position: relative;
-  top: -350px;
+  top: -380px;
+  right: 100px;
+  width: 60%;
+  margin: 0px -60px;
 }
   }
   @media only screen and (min-width: 600px) and (max-width: 899px) {
@@ -143,35 +150,49 @@
   }
 
   @media only screen and (min-width: 1600px) {
+
+   .Reading {
+    width: 400px;
+    position: relative;
+    bottom: 30px;
+    left: 100px;
+
+   }
+ 
+  }
+  @media only screen and (min-width: 2000px){
     .Coding{
-      position: relative;
-      left: 1500px;
-      top: 250px;
+     width: 85%;
+     height: 85%;
     }
     .Coding-Text{
-      position: relative;
-      top: 200px;
-      right: -500px;
+  font-size: 30px;
+  width: 70%;
+  margin: 0px -750px;
+
     }
     .Coding-Header{
+      width: 100%;
+      margin: 20px 650px;
       position: relative;
-      top: -160px;
-      margin: 0px 0px 5px 1600px;
     }
-   .Reading-Header{
-      position: relative;
-      top: 0px;
-      left: 10px;
-   }
-   .Reading-Text{
-    position: relative;
-    top: 100px;
-   }
-   .Reading{
-      position: relative;
-      top: 50px;
-      right: 500px;
+   
+    .Reading{
+      width: 60%;
+      margin: 0px -100px;    
+      transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
+      box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */  
     }
- 
+    .Reading-Text{
+   font-size: 30px;
+   width: 70%;
+   margin: 25px ;
+    }
+    .Reading-Header{
+      width: 100%;
+      margin: 260px 450px 0px;
+      }
+  
+                                                  
   }
 
