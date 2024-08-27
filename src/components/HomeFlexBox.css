@@ -28,13 +28,15 @@
   bottom: 1050px;
 }
 .box1-p{
-  padding: 0px 5px;
+
   color: white;
   font-size: 15px;
   position: relative;
   top: 165px;
   background-color: #1E1E1F;
     height: 100px;
+    margin: 0px -3px;
+    width: 102%;
 }
 .box1-btn{
   padding: 5px 15px;
@@ -61,13 +63,14 @@
     bottom: 1050px;
   }
   .box2-p{
-    padding: 0px 5px;
     color: white;
     font-size: 15px;
     position: relative;
-    top: 200px;
+    top: 210px;
     background-color: #1E1E1F;
       height: 100px;
+      margin: 0px -3px;
+      width: 102%;
   }
   .box2-btn{
     padding: 5px 15px;
@@ -87,13 +90,14 @@
     bottom: 1050px;
   }
 .box3-p{
-  padding: 0px 5px;
   color: white;
   font-size: 15px;
   position: relative;
   top: 165px;
   background-color: #1E1E1F;
-  height: 100px;
+    height: 100px;
+    margin: 0px -3px;
+    width: 102%;
   
 }
 .box3-btn{
@@ -119,13 +123,14 @@
     bottom: 1050px;
   }
   .box4-p{
-    padding: 0px 5px;
     color: white;
     font-size: 15px;
     position: relative;
     top: 165px;
     background-color: #1E1E1F;
-  height: 100px;
+      height: 100px;
+      margin: 0px -3px;
+      width: 102%;
   }
   .box4-btn{
     padding: 5px 15px;
@@ -211,43 +216,10 @@
   position: relative;
 
 }
-.box1{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+.container-flex{
   width: 100%;
-  bottom: 1000px;
+  margin: 0px 50px;
 }
-.box2{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  bottom: 1000px;
-  width: 100%;
-}
-.box3{
-  display: flex;
- flex-direction: column;
-  align-items: center;  
-  text-align: center;
-  position: relative;
-  width: 100%;
-  bottom: 1000px;
-}
-.box4{
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  width: 100%;
-  bottom: 1000PX;
-} 
 }
 
 

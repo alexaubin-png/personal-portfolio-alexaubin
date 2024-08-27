@@ -23,17 +23,19 @@
     bottom: 350px;
     display: flex;
     float: right;
-    width: 40%;
+    width: 60%;
     
   }
   .Coding-Header{
+    position: relative;
+ 
     font-size: 40px;
     font-weight: 700;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     position: relative;
-    bottom: 350px;
-    left: 220px;
+    bottom: 365px;
+    left: 160px;
   }
   .Reading{
     width: 50%;
@@ -41,7 +43,7 @@
     float: right;
     position: relative;
     bottom: 30px;
-    left: 400px;
+    left: 100px;
     transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
   }
@@ -49,8 +51,8 @@
     font-size: 40px;
     font-weight: 700;
     position: relative;
-    top: -350px;
-    left: -310px;
+    top: 25px;
+    left: -50px;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
  
@@ -60,10 +62,38 @@
     bottom: 350px;
     right: 100px;
     display: flex;
-    width: 50%;
+    width: 60%;
   }
   .Fitness{
     width: 400px;
+  }
+  .Cooking{
+    position: relative;
+    bottom: 100px;
+    left: -100px;
+    width: 400px;
+    height: 300px;
+    margin: -50px 900px 20px 0px; /* Adjust margin as needed */
+    transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
+  }
+  .cooking-text{
+    position: relative;
+    bottom: 350px;
+    left: 100px;
+    float: right;
+    display: flex;
+    width:70%;
+  }
+  .cooking-header{
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+    top: -430px;
+    left: 450px;
+  
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   @media only screen and (max-width: 599px) {
 .Coding{
@@ -99,32 +129,34 @@
   }
   @media only screen and (min-width: 600px) and (max-width: 899px) {
 .Coding{
-  width: 100%;
+  width: 90%;
   position: relative;
   right: 75px;
 }
 .Coding-Text{
   position: relative;
-  left: 100px;
+  left: 220px;
 }
 .Coding-Header{
   width: 20%;
-  margin: 0px 130px;
+  margin: 0px 435px;
 }
 .Reading{
   position: relative;
-  bottom: 200px;
+  left: 250px;
+  bottom: 150px;
   right: -125px;
+width: 90%;
 }
 .Reading-Text{
   position: relative;
   right: 115px;
-  top: -550px;
 
 }
 .Reading-Header{
   position: relative;
-  right: 10px 0px;
+  right: 0px 0px;
+  top: 60px;
   }
 .second-navbar{
   position: relative;
@@ -164,18 +196,17 @@
   }
   @media only screen and (min-width: 2000px){
     .Coding{
-     width: 85%;
+     width: 60%;
      height: 85%;
     }
     .Coding-Text{
   font-size: 30px;
-  width: 70%;
-  margin: 0px -750px;
-
+  width: 60%;
+  margin: 0px -600px;
     }
     .Coding-Header{
       width: 100%;
-      margin: 20px 650px;
+      margin: 20px 500px;
       position: relative;
     }
    
@@ -192,7 +223,7 @@
     }
     .Reading-Header{
       width: 100%;
-      margin: 260px 450px 0px;
+      margin: 260px 500px 0px;
       }
   
                                                   

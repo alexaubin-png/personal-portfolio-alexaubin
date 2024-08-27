@@ -1,3 +1,81 @@
+
+.resume-page-1{
+  width: 70%;
+  height: 100%;
+  position: relative;
+  bottom: 740px;
+}
+.resume-page-2{
+  width: 70%;
+  height: 90%;
+  position: relative;
+  bottom: 740px;
+}
+.badge1{
+  width: 30%;
+  height: 100%;
+  border: 2px solid #FFD700; 
+  border-radius: 8px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  resize: none; 
+  transition: border-color 0.3s, box-shadow 0.3s; 
+  position: relative;
+  right: 20px;
+}
+.badge1:focus{
+  border-color: #FFD700; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+.Fullstack{
+  width: 30%;
+  height: 100%;
+  border: 2px solid #FFD700; 
+  border-radius: 8px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  resize: none;
+  transition: border-color 0.3s, box-shadow 0.3s; 
+  position: relative;
+  right: 20px;
+}
+.Fullstack:focus{
+  border-color: #FFD700; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+.Javascript{
+  width: 30%;
+  height: 100%;
+  border: 2px solid #FFD700; 
+  border-radius: 8px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  resize: none; 
+  transition: border-color 0.3s, box-shadow 0.3s; 
+  position: relative;
+  right: 20px;
+}
+.Javascript:focus{
+  border-color: #FFD700; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+ 
+}
+
+.react-badge{
+  width: 30%;
+  height: 100%;
+  border: 2px solid #FFD700; 
+  border-radius: 8px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  resize: none; 
+  transition: border-color 0.3s, box-shadow 0.3s; 
+  position: relative;
+  right: 20px;
+}
+.react-badge:focus{
+  border-color: #FFD700; /* Change border color on focus */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Increase shadow on focus */
+}
+.badge-container{
+
+}
 @media only screen and(max-width: 599px){
     body{
       background-color: #333;
@@ -6,9 +84,13 @@
     position: relative;
     right: 100px;
   }
+  @media only screen and (min-width: 600px) and (max-width: 899px){
+
+}
+  }
   
 
-  }
+  
   @media only screen and (min-height: 1600px){
    .resume-page-1{
     position: relative;
