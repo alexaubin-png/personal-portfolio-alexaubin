@@ -22,51 +22,32 @@ body{
     display: inline-block;
   }
   li a{
-  text-decoration: none;  
-  color: white;
+    text-decoration: none;  
+    color: white;
  
   }
   .Img{
-height: 45px;
-float: right;
-
+    height: 45px;
+    float: right;
   }
   Img{
     width: 30px;
     height: 300px;
     margin: 25px;
-  
   }
   .image-gallery{
-float: right;
-display: flex;
-flex-direction: row ;
-
+  float: right;
+  display: flex;
+  flex-direction: row ;
   }
   .AASoftware4{
     height: 150px;
     width: 150px;
   }
   .image {
-height: auto;
-display: flex-end;
+    height: auto;
+    display: flex-end;
   }
-  .header {
-    justify-content: center;
-    text-align: center;
-  }
-
-.HireMe{
-  font-family: 'Courier New', Courier, monospace;
-  box-shadow: 2px black;
-}
-.AnOrSimble{
-  font-family: 'Courier New', Courier, monospace;
-  box-shadow: 2px black;
-  font-size: x-large;
-  color: grey;
-}
-
 .HireMeButton{
   float: right;
   background-color: rgb(187, 54, 54);
@@ -83,7 +64,7 @@ display: flex-end;
 
 }
 .container2 {
-width: 100%;
+  width: 100%;
   background-color: black;
   padding: 0px 20px; /* Remove any default padding */
   margin: 0px; /* Remove any default margin */
@@ -91,19 +72,18 @@ width: 100%;
 }
 
 .Img-label a {
-display: flex;
-flex-direction: row;
-align-items: center;
-border: none;
-color: white;
-font-size: larger;
-text-shadow: rgba(0, 0, 0, 0.25) 0px 2px 0px;
-letter-spacing: 0.15rem;
-font-weight: 900;
-font-size: 1.75rem;
-height: 70px;
-width: 20%;
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: none;
+  color: white;
+  font-size: larger;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 2px 0px;
+  letter-spacing: 0.15rem;
+  font-weight: 900;
+  font-size: 1.75rem;
+  height: 70px;
+  width: 20%;
 }
 .Img-label a:hover {
   display: flex;
@@ -173,7 +153,6 @@ width: 20%;
     3px 3px 0 #333, 
     4px 4px 0 #333; /* Creating a 3D effect with text-shadow */
   /* Optionally add more shadows for a deeper effect */
-
 }
 .backgroundImage{
   height: 766px;
@@ -199,14 +178,11 @@ width: 20%;
   display: flex;
   justify-content: center;
 }
-
 .second-navbar li {
   display: inline-block; /*tigthens the second navbar, and eliminate the list styles*/
   margin: 0 10px; 
   padding: 10px; 
-  
 }
-
 .second-navbar a {
   color: white;
   text-decoration: none; /* Remove underline from links */
@@ -228,8 +204,6 @@ width: 20%;
   transition:  0.3s ease, box-shadow 0.3s ease; 
   font-weight: 900;
 }
-
-
 .container {
   display: flex;
   flex-direction: row;
@@ -238,9 +212,7 @@ width: 20%;
   bottom: 350px;
   text-align: center;
 }
-
 .hyperLinkBox1{
-
   text-decoration: none;
   color: white;
 }
@@ -374,8 +346,8 @@ color: white;
     bottom: 300px;
   }
   .MenuButton{
-  position: relative;
-  left: 100px;
+    position: relative;
+    left: 100px;
   }
   .HireMeButton{
     position: relative;
@@ -434,7 +406,7 @@ color: white;
     flex-direction: column;
   }
   .container-section{
-  font-size: larger;
+   font-size: larger;
   
   }
 
@@ -453,18 +425,18 @@ color: white;
 } */
 @media only screen and (min-width: 1600px) and (max-width: 2000px){
   .content{
- width: 64%;
+    width: 64%;
   }
 .box1, .box2, .box3, .box4{
   width: 90%;
 }
 .HireMeButton{
-  position: relative;
-  left: 600px;
+    position: relative;
+    left: 600px;
   }
   .MenuButton{
-  position: relative;
-  left: 600px;
+    position: relative;
+    left: 600px;
   }
 
 
@@ -474,10 +446,10 @@ color: white;
 }
 .second-navbar {
   position: relative;
-width: 110%;
+  width: 110%;
 }
 .Profile-Details{
- right: 680px;
+  right: 680px;
 }
 .container2{
   width: 100%;
@@ -487,7 +459,7 @@ width: 110%;
 @media only screen and (min-width: 2000px){
 .container2{
   margin: 0px 0px;
-  width: 97%;
+  width: 88%;
 }
 .second-navbar{     
   position: relative;
