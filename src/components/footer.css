@@ -75,6 +75,14 @@
   color: white;
   padding: 10px;
   margin:20px;
+  width: 90%;
+}
+.back-button{
+  color: #FFD700;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.445);
 }
 .express-element-route{
   color: white;
@@ -96,9 +104,9 @@
   .badge1{
     width: 30%;
     height: 100%;
-    margin: 0px 460px;
+    margin: 0px 360px;
     position: relative;
-    bottom: 999px;
+    top: 300px;
     border: 2px solid #FFD700; /* Border color and thickness */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
@@ -113,9 +121,9 @@
   .Fullstack{
     width: 30%;
     height: 100%;
-    margin: 0px 460px;
+    margin: 0px 360px;
     position: relative;
-    bottom: 999px;
+    top: 300px;
     border: 2px solid #FFD700; /* Border color and thickness */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
@@ -130,9 +138,9 @@
   .Javascript{
     width: 30%;
     height: 100%;
-    margin: 0px 460px;
+    top: 300px;
+    margin: 0px 360px;
     position: relative;
-    bottom: 999px;
     border: 2px solid #FFD700; 
     border-radius: 8px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
@@ -147,9 +155,9 @@
   .react-badge{
     width: 30%;
     height: 100%;
-    margin: 0px 460px;
+    margin: 0px 360px;
     position: relative;
-    bottom: 999px;
+    top: 300px;
     border: 2px solid #FFD700; /* Border color and thickness */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */

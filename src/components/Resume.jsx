@@ -14,6 +14,7 @@ export default function resume() {
   return (
     <div>
       <div>
+        <h1 className='Resume-Header'>Resume</h1>
       <div className="badge-container">
         <Link to='/ExpressP'>
         <img className='badge1' src={badge1}></img>

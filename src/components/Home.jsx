@@ -41,6 +41,7 @@ export default function Home() {
       <h1 className="Personal-Header">Personal Portfolio</h1>
       <p>Ive created from scratch, A MERN stack APP to hold my portfolio. On This website you can find all all my porjects and view them, view my resume/badges/certificates. Or print physical copies of my reume, effectivley to contact me and hopefully hire me, Or use my contact form.</p>
         </div>
+        <img className="background" src='/src\assets\homepage.PNG'></img>
         <Profile />
       </div>
   );

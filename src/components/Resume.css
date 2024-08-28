@@ -3,7 +3,7 @@
   width: 70%;
   height: 100%;
   position: relative;
-  bottom: 740px;
+  bottom: 750px;
 }
 .resume-page-2{
   width: 70%;
@@ -12,6 +12,7 @@
   bottom: 740px;
 }
 .badge1{
+
   width: 30%;
   height: 100%;
   border: 2px solid #FFD700; 
@@ -76,6 +77,18 @@
 .badge-container{
 
 }
+.Resume-Header{
+  font-family: 'Lobster', cursive; /* Applying the imported font */
+  color: white; /* Text color */ /* Font size */
+  text-shadow: 
+    1px 1px 0 #000, 
+    2px 2px 0 #333,
+    1px 1px 0 #333, 
+    1px 1px 0 #333; /* Creating a 3D effect with text-shadow */
+  /* Optionally add more shadows for a deeper effect */
+  display: flex;
+  justify-content: center;
+}
 @media only screen and(max-width: 599px){
     body{
       background-color: #333;
@@ -92,18 +105,20 @@
 
   
   @media only screen and (min-height: 1600px){
+    .badge-container{
+      position: relative;
+      width: 100%;
+      top: -160px;
+    }
    .resume-page-1{
     position: relative;
-    left: 80px;
+    width: 60%;
    }.resume-page-2{
     position: relative;
-    left: 80px;
+    top: -400px;
+    width: 60%;
    }
-   .badge-container{
-    position: relative;
-    width: 1200px;
-    border-radius: 40px;
-   }
+ 
    .Fullstack{
     border-radius: 40px;
    }
