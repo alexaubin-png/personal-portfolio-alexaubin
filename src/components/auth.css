@@ -1,7 +1,4 @@
 
-  /* body{
-    background-color:  #012044;
-  } */
   .container-section {
     padding: 20px;
     margin: 20px auto;
@@ -135,6 +132,17 @@ transform: translateX(-.5px);
     display: flex;
     color: black;
     position: relative;
+  }
+  .background-image-wilderness{
+    background-image: url('https://images.unsplash.com/photo-1542419645-810657747880?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
   }
   
   @media only screen and (min-width: 1600px) {

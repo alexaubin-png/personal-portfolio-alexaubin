@@ -65,7 +65,9 @@ export default function Auth() {
   };
 
   return (
+  
     <div className="container-section">
+  
       <h1 className="Login-Title">
         {isLoginMode ? "Login" : "Sign Up"}
         <label className="prompt-overlay">To Create Blog Posts</label>
@@ -124,11 +126,11 @@ export default function Auth() {
           <button className="Ternary-Button" type="submit">
             {isLoginMode ? "Login" : "Sign Up"}
           </button>
-          <div className="ternary-text">
+          {/* <div className="ternary-text">
             {isLoginMode
               ? "Don't have an account?"
               : "Already have an account?"}
-          </div>
+          </div> */}
           <button
             className="signup-or-login"
             type="button"
@@ -144,6 +146,7 @@ export default function Auth() {
           </button>
         </div>
       </form>
+      <img className="background-image-wilderness" src='/src\assets\Login page.PNG' alt='background-image-wilderness'></img>
     </div>
   );
 }

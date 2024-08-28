@@ -50,6 +50,7 @@ const Navbar = () => {
           Dark Mode
         </button>
       </div>
+      <img className='hireme-background' src='/src\assets\LIQL6416.PNG' alt='background image for hire me section'></img>
       </div>
 
 

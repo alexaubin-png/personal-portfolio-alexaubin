@@ -1,6 +1,7 @@
-body{
-  background-color: black;
-}
+/* body{
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover; /* Ensures the background image covers the entire element */
+
 .text-overlay{
 padding: 100px;
 color: black;
@@ -32,6 +33,18 @@ color: black;
     margin-bottom: -20px; /* Pull the div down */
     animation: fadeIn 1s ease forwards;
   }
+  .background{
+    background-image: url('/src\assets\homepage.PNG');
+    background-size: cover; /* Ensures the background image covers the entire element */
+    background-position: center;
+    height: 100vh;
+    width: 120%;
+    position: fixed;
+    top: 0;
+    left: -20px;
+    z-index: -1;
+  }
+
   @media only screen and (max-width: 599px){
 .text-overlay{
   padding:  0px 650px 0px 0px;
