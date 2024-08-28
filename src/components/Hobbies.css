@@ -19,7 +19,6 @@
   }
   .Coding-Text{
     position: relative;
-    left: 0px;
     bottom: 350px;
     display: flex;
     float: right;
@@ -180,16 +179,13 @@ width: 90%;
   }
 
   @media only screen and (min-width: 1200px) and (max-width: 1599px) {
-  
+ 
   }
 
   @media only screen and (min-width: 1600px) {
 
    .Reading {
-    width: 400px;
-    position: relative;
-    bottom: 30px;
-    left: 100px;
+  
 
    }
  
