@@ -146,7 +146,7 @@ export default function Auth() {
           </button>
         </div>
       </form>
-      <img className="background-image-wilderness" src='/src\assets\Login page.PNG' alt='background-image-wilderness'></img>
+      <img className="background-image-wilderness" src={''} alt='background-image-wilderness'></img>
     </div>
   );
 }

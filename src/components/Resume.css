@@ -90,22 +90,32 @@
   display: flex;
   justify-content: center;
 }
-@media only screen and(max-width: 599px){
-    body{
-      background-color: #333;
-    }
+@media only screen and(max-width: 598px){
+.resume-page-1{
+  position: relative;
+  top: 100px;
+}
   .Name-Header{
     position: relative;
     right: 100px;
   }
+  .badge1{
+    
+  }
+}
+@media only screen and (min-width: 599px){
+.resume-page1{
+  width: 80%;
+}
+}
   @media only screen and (min-width: 600px) and (max-width: 899px){
 
 }
-  }
+  
   
 
   
-  @media only screen and (min-height: 1600px){
+  @media only screen and (min-width: 1600px){
     .badge-container{
       position: relative;
       width: 100%;
@@ -114,9 +124,10 @@
    .resume-page-1{
     position: relative;
     width: 60%;
+    top: -500px;
    }.resume-page-2{
     position: relative;
-    top: -400px;
+    top: -500px;
     width: 60%;
    }
  
@@ -134,6 +145,34 @@
   .react-badge{
     border-radius: 40px;
   }
+}
+@media only screen and (min-width: 2000px){
+  .resume-page-1{
+    position: relative;
+    width: 50%;
+top: -600px;
+   }.resume-page-2{
+    position: relative;
+    top: -600px;
+    width: 50%;
+   }
+   .badge-container{
+    position: relative;
+    width: 100%;
+    margin: 0px 80px;
+   }
+   .badge1{
+ 
+     }
+   .Fullstack{
+ 
+   }
+   .react-badge{
+    width: 100%;
+   }
+   .Javascript{
+   
+   }
 }
 
   

@@ -138,10 +138,10 @@ transform: translateX(-.5px);
     background-size: cover;
     background-position: center;
     height: 100%;
-    width: 100%;
+    width: 110%;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -20;
     z-index: -1;
   }
   
