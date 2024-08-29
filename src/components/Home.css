@@ -1,26 +1,7 @@
-/* body{
-  background: url('background.jpg') no-repeat center center fixed;
-  background-size: cover; /* Ensures the background image covers the entire element */
-
-.text-overlay{
-padding: 100px;
-color: black;
+body{
+  background: url('/src\assets\homepage.PNG') no-repeat center center fixed;
+  background-size: cover; 
 }
-.typing-animation {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.2em;
-    color: #555; /* Adjust color to your preference */
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: .15em solid #000; /* The cursor */
-    width: 0; /* Start with zero width */
-    animation: typing 2.5s steps(30, end) infinite, blink .75s step-end infinite;
-    position: relative;
-    bottom: 750px;
-    left: 280px;
-    color: #3cd070;
-    font-weight: 900;
-  }
   .inspirational-paragraph {
     display: flex;
     text-align: center;
@@ -245,7 +226,7 @@ margin: 20px;
   right: 100px;
 }
 .homePage{
-  padding: 10px;
+  width: 80%;
 }
 }
  @media only screen  and(min-width: 600px) {
@@ -258,4 +239,10 @@ margin: 20px;
   .box1 .box2 .box3 .box4{
   
   }
+}
+
+@media only screen and (min-width:2000px){
+.homePage{
+width: 85%;
+}
 }

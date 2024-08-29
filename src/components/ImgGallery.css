@@ -65,23 +65,23 @@
    
   }
   .content2{
-   position: relative;
-    right: 0px;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    width: 90%;
+    width: 100%;
     color: white;
   }
   .pastprojects{
-    position: relative;
-
-    left: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     display: flex;
     flex-direction: row;
     text-align: center;
-    width: 80%;
-    color: black;
+    width: 100%;
+    color: color;
     padding: 10px;
     margin:  20px;
 
@@ -149,22 +149,27 @@
     border: 2px solid black;
   }
   .description-current-project{
-    position: relative;
-    left: 70px;
+ font-size: larger;
   }
   .current-project-text{
-    position: relative;
-    left: 70px;
+
   }
   .current-project{
     position: relative;
     left: 0px;
     font-size: 24px;
+    height: 200px;
     font-weight: bold;
     color: white;
   width: 70%;
   display: flex;
   
+  }
+  .current-project-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
   .PineappleTag{
     position: relative;

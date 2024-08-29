@@ -98,13 +98,17 @@
   @media only screen and (max-width: 599px) {
 .Coding{
   width: 100%;
-  margin: 0px 0px 0px 0px;
+  margin: -50px 900px 20px 0px; /* Adjust margin as needed */
+    transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
+    
 }
 .Coding-Text{
   position: relative;
   left: 300px;
   font-size: smaller;
   width: 100%;
+  font-size: large;
 }
 .Coding-Header{
   width: 160%;
@@ -113,18 +117,37 @@
 }
 .Reading{
   width: 100%;
-  margin: -40px 0px  0px 0px;
+  position: relative;
+  left: 350px;
+  margin: -50px 20px 20px 0px; /* Adjust margin as needed */
+  transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
 }
 .Reading-Text{
   width: 100%;
   font-size: smaller;
+  font-size: large;
 }
 .Reading-Header{
   position: relative;
   top: -380px;
   right: 100px;
   width: 60%;
-  margin: 0px -60px;
+
+}
+.Cooking{
+  margin: -50px 20px 20px 0px; /* Adjust margin as needed */
+ transform: perspective(1110px) rotateY(10deg);
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
+}
+.cooking-text{
+  position: relative;
+  width: 100%;
+  left: 355px;
+  font-size: large;
+}
+.cooking-header{
+display: flex;
 }
   }
   @media only screen and (min-width: 600px) and (max-width: 899px) {

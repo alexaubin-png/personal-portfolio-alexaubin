@@ -151,28 +151,36 @@
     .box1{
       position: relative;
       left: 280px;
-      width: 1300px;
+      width: 260%;
       height: 600px;
       margin: 0px 0px 0px 0px;
+    }
+    .box1-p{
+      position: relative;
+      left: 50px;
+      top: 460px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
     }
     .box2{
       position: relative;
       left: 280px;
-      width: 1300px;
+      width: 260%;
       height: 300px;
       margin: 0px 0px 0px 0px;
     }
     .box3{
       position: relative;
       left: 280px;
-      width: 1300px;
+      width: 260%;
       height: 300px;
       margin: 0px 0px 0px 0px;
     }
    .box4{
     position: relative;
     left: 280px;
-    width: 1300px;
+    width: 260%;
     height: 300px;
     margin: 0px 0px 0px 0px;
    }
@@ -309,6 +317,10 @@ position: relative;
  .box1{
   width: 20%;
  }
+ .box1-p{
+  position: relative;
+  top: 210px;
+ }
  .box2{
   width: 20%;
  }
@@ -317,6 +329,10 @@ position: relative;
  }
  .box4{
   width: 20%;
+ }
+ .box4-p{
+  position: relative;
+  top: 200px;
  }
 }
 
