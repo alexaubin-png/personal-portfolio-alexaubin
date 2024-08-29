@@ -40,8 +40,8 @@
 }
 .box1-btn{
   padding: 5px 15px;
-  color: white;
-  background-color: #00539F;
+  color: #FFD700;
+  background-color: rgba(0, 0, 0, 0.275);
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -74,8 +74,8 @@
   }
   .box2-btn{
     padding: 5px 15px;
-    color: white;
-    background-color: #00539F;
+    color:  #FFD700;
+    background-color: rgba(0, 0, 0, 0.275);
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -102,8 +102,8 @@
 }
 .box3-btn{
   padding: 5px 15px;
-  color: white;
-  background-color: #00539F;
+  color:  #FFD700;
+  background-color: rgba(0, 0, 0, 0.275);
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -134,8 +134,8 @@
   }
   .box4-btn{
     padding: 5px 15px;
-    color: white;
-    background-color: #00539F;
+    color:  #FFD700;
+    background-color: rgba(0, 0, 0, 0.275);
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -293,24 +293,7 @@ position: relative;
   width: 70%;
   margin: 20px 20p 0px 0px;
 }
-.Coding-Text{
-  position: relative;
-  left: -200px;
-}
-.Coding-Header{
-  position: relative;
-  left: 65px;
-}
-.Reading{
-  position: relative;
-  top: -20px;
-  left: 255px;
-}
-.Reading-Header {
-  position: relative;
-  top: -350px;
-  left: -350px;
-}
+
 
 }
 @media only screen and (min-width: 2000px){
