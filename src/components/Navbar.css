@@ -378,32 +378,38 @@ color: white;
 @media only screen and (max-width: 599px){
   .container2{/*this is a selctor for the navbars black background*/
     height: 55px;
-    width: 115%;
+    width: 60%;
   }
   
   .second-navbar{
-    width: 120%;
-    margin: 0px 0px;
+    width: 70%;
+    margin: 0px -150px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    font-size: smaller;
   }
+
+
 
   .HireMeButton{
     position: relative;
-    left: 850px;
-    width: 100%;
-    height: 2.8rem;
+    left: 250px;
+    width: 85%;
+    height: 2.0rem;
     margin: 0px 70px;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: 900;
     
   }
   .MenuButton{
     position: relative;
-    bottom: 45px;
-    left: 600px;
-    width: 100%;
-    height: 2.8rem;
-    font-size: 25px;
+    bottom: 35px;
+    left: 150px;
+    width: 85%;
+    height: 2.0rem;
+    font-size: 15px;
     font-weight: 900;
     margin: 0px 70px -30px;
     
@@ -411,7 +417,7 @@ color: white;
   }
   .relative-image{/*this is a selctor for my fac next the home hyper link*/
     position: relative;
-    bottom: 70px;
+    bottom: 50px;
   }
   .navbar{
     display: flex;
