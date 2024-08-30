@@ -149,40 +149,56 @@
       top: 300px;
     }
     .box1{
-      position: relative;
-      left: 280px;
-      width: 260%;
+      
+      width: 110%;
       height: 600px;
       margin: 0px 0px 0px 0px;
     }
     .box1-p{
       position: relative;
-      left: 50px;
-      top: 460px;
+      top: 500px;
       display: flex;
       text-align: center;
       justify-content: center;
     }
     .box2{
-      position: relative;
-      left: 280px;
-      width: 260%;
-      height: 300px;
+   
+      width: 110%;
+      height: 600px;
       margin: 0px 0px 0px 0px;
+    }
+    .box2-p{
+      position: relative;
+      top: 500px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
     }
     .box3{
+width: 110%;
+height: 600px;
+margin: 0px 0px 0px 0px;
+    }
+    .box3-p{
       position: relative;
-      left: 280px;
-      width: 260%;
-      height: 300px;
-      margin: 0px 0px 0px 0px;
+      top: 450px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
     }
    .box4{
-    position: relative;
-    left: 280px;
-    width: 260%;
-    height: 300px;
+    
+    width: 110%;
+    height: 600px;
     margin: 0px 0px 0px 0px;
+   }
+   .box4-p{
+    position: relative;
+      top: 460px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+ 
    }
 .container-flex{
  width: 100%;

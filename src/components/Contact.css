@@ -139,7 +139,7 @@ list-style-type: none;
     }
     .contact-container2{
       width: 100%;
-      margin: 0px 250px;
+      margin: 0px 0px;
       
     }
     .message-submit{
@@ -148,7 +148,7 @@ list-style-type: none;
       background-color: rgba(0, 0, 0, 0.43);
       border-color: #FFD700;
       color: #FFD700;
-      width: 400px;
+      width: 350px;
       height: 60px;
     }
 }
