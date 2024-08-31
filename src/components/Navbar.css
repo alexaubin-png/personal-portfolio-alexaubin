@@ -264,9 +264,6 @@ body{
   top: 750px;
 }
 
-
-
-
 .text-overlay {
   opacity: 0; 
   animation: fadeIn 1s ease forwards; 
@@ -299,12 +296,14 @@ color: white;
   }
 .container2{
   width: 599px;
+  overflow-x: hidden;
 }
 .content{
   display: flex;
   flex-direction: column;
   width: 20%;
 }
+
 .HireMeButton{
   width: 40%;
   height: 20%;
