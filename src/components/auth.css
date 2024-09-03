@@ -166,19 +166,7 @@ transform: translateX(-.5px);
       position: relative;right: 340px;
       bottom: 30%;
     }}
-  @media only screen and (max-width: 599px) {
-    .username-input-login {
-      width: 100px;
-       padding: 10px 20px;
-       margin: 10px 0;
-     }
-     .password-input-login{
-       width: 100px;
-       padding: 10px 20px;
-       margin: 10px 0;
-     }
-
-  }
+  
   @media only screen and (min-width: 600px) and (max-width: 1222px){
     .container-section{
       width: 200px;
@@ -282,9 +270,7 @@ transform: translateX(-.5px);
     color: black;
     position: relative;
   }
-  @media only screen and(min-width:630px){
-
-  }
+ 
  
   @media only screen and (min-width: 1600px) {
     .container-section {
@@ -310,15 +296,23 @@ transform: translateX(-.5px);
     }}
   @media only screen and (max-width: 599px) {
     .username-input-login {
-      width: 100px;
+      width: 200px;
        padding: 10px 20px;
        margin: 10px 0px;
+       border-radius: 10px;
      }
      .password-input-login{
-       width: 100px;
+       width: 200px;
        padding: 10px 20px;
-       margin: 10px
-     
+       margin: 10px;
+       border-radius: 10px;
+     }
+     .username-input-signup{
+      width: 200px;
+     }
+     .password-input-signup{
+      border-radius: 10px;
+      width: 200px;
      }
      .container-section {
       padding: 20px;

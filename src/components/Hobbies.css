@@ -38,6 +38,7 @@
   }
   .Reading{
     width: 50%;
+    height: 250px;
     display: flex;
     float: right;
     position: relative;
@@ -50,7 +51,7 @@
     font-size: 40px;
     font-weight: 700;
     position: relative;
-    top: 25px;
+top: 50+px;
     left: -50px;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -58,8 +59,8 @@
   }
   .Reading-Text{
     position: relative;
-    bottom: 350px;
-    right: 100px;
+    bottom: 240px;
+    right: 70px;
     display: flex;
     width: 60%;
   }
@@ -89,74 +90,76 @@
     font-weight: 700;
     position: relative;
     top: -430px;
-    left: 450px;
+  left: 450px;
   
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   @media only screen and (max-width: 599px) {
 .Coding{
-    transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
- width: 245%;
+transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
+ box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
+width: 250%;
+position: relative;
+margin: 0px 20px;
 
- 
- 
- 
- 
-    box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
 }
 .Coding-Text{
+width: 150%;
+font-size: 15px;
 position: relative;
-top: 0px;
-left: 100px;
-  width: 245%;
-  font-size: medium;
+top: 50px;
+left: 50px;
 }
 .Coding-Header{
-  width: 100%;
-  margin: 0px -160px;
-  position: relative;
-  top: -5px;
-  overflow: hidden;
+width: 100%;
+position: relative;
+left: 0px;
+top: 20px;
+
 }
 .Reading{
-  width: 245%;
- position: relative;
- left: 120px;
- top: 40px;
   transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
+ width: 250%;
+ position: relative;
+ top: 80px;
+ left: 140px;
 }
 .Reading-Text{
-  width: 250%;
+  width: 150%;
+  font-size: 15px;
   position: relative;
-  top: 25px;
-  font-size: smaller;
-  font-size: large;
+  top: 100px;
+  left: -25px;
 }
 .Reading-Header{
   position: relative;
-  left: 10px;
-  width: 60%;
+  top: 80px;
+  left: 0px;
+  width: 100%;
 
 }
 .Cooking{
-  margin: -50px 20px 20px 0px; /* Adjust margin as needed */
  transform: perspective(1110px) rotateY(10deg);
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
   position: relative;
-  top: 100px;
+  top: 160px;
 }
 .cooking-text{
   position: relative;
-  width: 250%;
-top: 80px;
-  font-size: large;
+  width: 150%;
+top: 170px;
+left: 30px;
+  font-size: 15px;
 }
 .cooking-header{
+display: flex;
+justify-content: center;
 position: relative;
-left: 15px;
-top: 80px;
+top: 150px;
+left: 0px;
+
 }
   }
   @media only screen and (min-width: 600px) and (max-width: 899px) {
@@ -190,6 +193,7 @@ width: 90%;
   right: 0px 0px;
   top: 60px;
   }
+
 .second-navbar{
   position: relative;
   right: 100px;
@@ -200,11 +204,6 @@ width: 90%;
     position: relative;
     top: 1000px;
     }
-  .typing-animation{
-    position: relative;
-    bottom: 650px;
-    right: 500px
-   }
   }
   
 
@@ -212,7 +211,32 @@ width: 90%;
   }
 
   @media only screen and (min-width: 1200px) and (max-width: 1599px) {
- 
+    .Coding-Text{
+      font-size: 25px
+    }
+    .Reading{
+      position: relative;
+      left: 150px;
+
+      right: -120px;
+    }
+    .Reading-Text{
+      font-size: 25px;
+    }
+    .Reading-Header{
+      position: relative;
+      right: 0px 0px;
+      top: 140px;
+    }
+    .cooking-header{
+      display: flex-end;
+      justify-content: center;
+    }
+ .cooking-text{
+font-size: 25px;
+margin: 0px 90px;
+  
+ }
   }
 
   @media only screen and (min-width: 1600px) {
@@ -227,21 +251,23 @@ width: 90%;
     .Coding{
      width: 60%;
      height: 85%;
+     height: 450px;
     }
     .Coding-Text{
   font-size: 30px;
   width: 60%;
-  margin: 0px -600px;
+  margin: 0px -300px;
     }
     .Coding-Header{
       width: 100%;
-      margin: 20px 500px;
+      margin: 20px 350px;
       position: relative;
     }
    
     .Reading{
       width: 60%;
-      margin: 0px -100px;    
+      height: 450px;
+      margin: 0px -600px;    
       transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
       box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */  
     }
@@ -254,7 +280,21 @@ width: 90%;
       width: 100%;
       margin: 260px 500px 0px;
       }
-  
-                                                  
+.cooking-text{
+  font-size: 30px;
+  font-size: 30px;
+  width: 60%;
+  margin: 0px -300px;
+}
+.cooking-header{
+  width: 100%;
+  margin: 0px 650px;
+}  
+.Cooking{
+  width: 60%;
+  height: 450px;    
+  transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
+}                             
   }
 
