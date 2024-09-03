@@ -8,8 +8,7 @@ body{
     1px 1px 0 #333; /* Creating a 3D effect with text-shadow */
   /* Optionally add more shadows for a deeper effect */
 
- background-size: 200%  100%;
- background-position: center top;
+
 }
 .navbar ul {
     list-style-type: none;
@@ -20,15 +19,7 @@ body{
     text-decoration: none;
     display: inline-block;
   }
-  li a{
-    text-decoration: none;  
-    color: white;
- 
-  }
-  .Img{
-    height: 45px;
-    float: right;
-  }
+  li a
   Img{
     width: 30px;
     height: 300px;
@@ -74,6 +65,7 @@ body{
   display: flex;
   flex-direction: row;
   align-items: center;
+  text-decoration: none;
   border: none;
   color: white;
   font-size: larger;
@@ -238,16 +230,16 @@ body{
   align-items: center;
   width: 96%;
 }
-.hireme-background{
+/* .hireme-background{
   background: url('/src\assets\LIQL6416.PNG');
   background-size: cover;
-  width: 100%;
+  width: 110%;
   height: 100vh;
   position: fixed;
   top: 0;
   left: -25px;
   z-index: -1;
-}
+} */
 
 @keyframes fadeIn {
   from {
@@ -276,12 +268,6 @@ body{
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 } 
-.rando1{
-color: white;
-}
-.rando2{
-  color: white;
-}
 @keyframes fadeIn {
   from {
     opacity: 0; 
@@ -295,48 +281,60 @@ color: white;
     overflow-x: hidden;
   }
 .container2{
-  width: 599px;
+  width: 36%;
   overflow-x: hidden;
-}
-.content{
-  display: flex;
-  flex-direction: column;
-  width: 20%;
-}
-
-.HireMeButton{
-  width: 40%;
-  height: 20%;
-  font-size: smaller;
-  margin: 0px 170px 0px 0px;
-}
-.MenuButton{
-  width: 40%;
-  height: 30px;
-  font-size: smaller;
-  margin: -30px 280px 20px -20px;
 }
 .profile-container{
   display: none;
 }
+.content{
+width: 70%;
+}
+.HireMeButton{
+font-size: 10px;
+width: 15%;
+margin: 0px -80px;
+}
+.MenuButton{
+  width: 15%;
+font-size: 10px;
+margin: 0px 0px;
+}
+.second-navbar{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 40%;
+}
+
+
 
    /* .mode-toggle-button{
     width:  
    } */
 }
-
-
-
-
-
-@media only screen and(min-width: 1600px) and (max-width: 2000px){
-
-}
 @media only screen and (min-width: 600px) and (max-width: 899px) {
+  .container2{
+      width: 100%;
+  }
+  .second-navbar{
+    width: 100%;
+  }
+  }
 
+/* @media only screen and (min-width: 600px) and (max-width: 899px) {
+.container2{
+  width: 100%;
+}
 .content{
+width: 100%;
+}
+.Img-label{
   position: relative;
-  right: 110px;
+  right: 100px;
 }
    .mode-toggle-button{
     width: 20%;
@@ -344,6 +342,7 @@ color: white;
     left: 280px;
    }
    .second-navbar{ 
+    width: 100%;
      height: 300px;
      font-size: smaller;
     display: flex;
@@ -370,64 +369,8 @@ color: white;
   
   }
 
-}
-@media only screen and (min-width: 900px) and (max-width: 1199px) {
+} */
 
-}
-@media only screen and (max-width: 599px){
-  .container2{/*this is a selctor for the navbars black background*/
-    height: 55px;
-    width: 60%;
-  }
-  
-  .second-navbar{
-    width: 70%;
-    margin: 0px -150px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    height: 300px;
-    font-size: smaller;
-  }
-
-
-
-  .HireMeButton{
-    position: relative;
-    left: 250px;
-    width: 85%;
-    height: 2.0rem;
-    margin: 0px 70px;
-    font-size: 15px;
-    font-weight: 900;
-    
-  }
-  .MenuButton{
-    position: relative;
-    bottom: 35px;
-    left: 150px;
-    width: 85%;
-    height: 2.0rem;
-    font-size: 15px;
-    font-weight: 900;
-    margin: 0px 70px -30px;
-    
-    
-  }
-  .relative-image{/*this is a selctor for my fac next the home hyper link*/
-    position: relative;
-    bottom: 50px;
-  }
-  .navbar{
-    display: flex;
-    flex-direction: column;
-  }
-  .container-section{
-   font-size: larger;
-  
-  }
-
-}
 /* @media only screen and (min-width: 1700px) and (max-width:2000px){
 .container2{
   width: 84%;
@@ -441,41 +384,23 @@ color: white;
 
 } */
 @media only screen and (min-width: 1600px) and (max-width: 2000px){
-  .content{
-    width: 64%;
+  .container2{
+    width: 100%;
   }
 .box1, .box2, .box3, .box4{
   width: 90%;
 }
-.HireMeButton{
-    position: relative;
-    left: 600px;
-  }
-  .MenuButton{
-    position: relative;
-    left: 600px;
-  }
-
-
-.relative-image{
-  position: relative;
-  left: 110px;
-}
 .second-navbar {
   position: relative;
-  width: 110%;
+  width: 100%;
 }
 .Profile-Details{
   right: 680px;
 }
-.container2{
-  width: 100%;
-}
-
 }   
 @media only screen and (min-width: 2000px){
 .container2{
-  width: 89%;
+  width: 88%;
 }
 .second-navbar{     
   position: relative;

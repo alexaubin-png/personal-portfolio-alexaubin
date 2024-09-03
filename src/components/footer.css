@@ -42,27 +42,26 @@
 }
 .badge-container{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   position: relative;
- width: 50%;
-  left: 740px;
-
- 
+ width: 90%;
+  left: 600px;
+  top: -20px;
 }
 .badge1{
-  width: 50%;
+  width: 100%;
   height: 100%;
 }
 .react-badge{
-  width: 50%;
+  width: 100%;
   height: 100%;
 }
 .Fullstack{
-  width: 50%;
+  width: 100%;
   height: 100%;
 }
 .Javascript{
-  width: 50%;
+  width: 100%;
   height: 100%;
 }
 .JS-text-style{

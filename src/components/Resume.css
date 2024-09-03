@@ -1,19 +1,23 @@
-
+.Resume-Container{
+  display: flex-start;
+  justify-content: flex-end;
+}
 .resume-page-1{
   width: 70%;
   height: 100%;
   position: relative;
-  bottom: 700px;
+display: flex;
+justify-content: center;
+align-items: center;
   z-index: -1;  
 }
 .resume-page-2{
   width: 70%;
   height: 90%;
   position: relative;
-  bottom: 740px;
+
 }
 .badge1{
-
   width: 30%;
   height: 100%;
   border: 2px solid #FFD700; 
@@ -22,8 +26,7 @@
   resize: none; 
   transition: border-color 0.3s, box-shadow 0.3s; 
   position: relative;
-  right: -150px;
-}
+} 
 .badge1:focus{
   border-color: #FFD700; 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
@@ -37,7 +40,6 @@
   resize: none;
   transition: border-color 0.3s, box-shadow 0.3s; 
   position: relative;
-  right: -150px;
 }
 .Fullstack:focus{
   border-color: #FFD700; 
@@ -52,7 +54,6 @@
   resize: none; 
   transition: border-color 0.3s, box-shadow 0.3s; 
   position: relative;
-  right: -150px;
 }
 .Javascript:focus{
   border-color: #FFD700; 
@@ -69,14 +70,16 @@
   resize: none; 
   transition: border-color 0.3s, box-shadow 0.3s; 
   position: relative;
-  right: -150px;
+ 
 }
 .react-badge:focus{
   border-color: #FFD700; /* Change border color on focus */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Increase shadow on focus */
 }
 .badge-container{
-
+display: flex;
+justify-content: center;
+flex-direction: row;
 }
 .Resume-Header{
   font-family: 'Lobster', cursive; /* Applying the imported font */
@@ -90,22 +93,36 @@
   display: flex;
   justify-content: center;
 }
-@media only screen and(max-width: 598px){
+@media only screen and (max-width: 599px){
 .resume-page-1{
+  
+}
+.resume-page-2{
   position: relative;
-  top: 100px;
+  top: 25px;
+  display: flex;
+
 }
-  .Name-Header{
-    position: relative;
-    right: 100px;
-  }
-  .badge1{
-    
-  }
+.badge-container{
+  position: relative;
+  width: 100%;
+  top: -100px;
 }
-@media only screen and (min-width: 599px){
-.resume-page1{
-  width: 80%;
+.badge1{
+  position: relative;
+  right: 600px;
+}
+.Fullstack{
+  position: relative;
+  right: 600px;
+}
+.Javascript{
+  position: relative;
+  right: 600px;
+}
+.react-badge{
+  position: relative;
+  right: 600px;
 }
 }
   @media only screen and (min-width: 600px) and (max-width: 899px){
@@ -157,12 +174,11 @@ top: -600px;
     width: 50%;
    }
    .badge-container{
-    position: relative;
     width: 100%;
     margin: 0px 80px;
    }
    .badge1{
- 
+ width: 100px;
      }
    .Fullstack{
  

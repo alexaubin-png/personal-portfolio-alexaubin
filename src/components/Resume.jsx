@@ -13,7 +13,7 @@ export default function resume() {
   
   return (
     <div>
-      <div>
+      <div className='Resume-Container'>
         <h1 className='Resume-Header'>Resume</h1>
       <div className="badge-container">
         <Link to='/ExpressP'>
