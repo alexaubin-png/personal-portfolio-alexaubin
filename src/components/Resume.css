@@ -1,3 +1,6 @@
+body{
+  color: black;
+}
 .Resume-Container{
   display: flex-start;
   justify-content: flex-end;
@@ -80,6 +83,7 @@ align-items: center;
 display: flex;
 justify-content: center;
 flex-direction: row;
+margin: 0px -550px;
 }
 .Resume-Header{
   font-family: 'Lobster', cursive; /* Applying the imported font */
@@ -135,21 +139,23 @@ flex-direction: row;
   @media only screen and (min-width: 1600px){
     .badge-container{
       position: relative;
-      width: 100%;
-      top: -160px;
+      top: 0px;
+      margin: 0px -60px;
+      display: flex;
+      justify-content: center;
     }
    .resume-page-1{
     position: relative;
     width: 60%;
-    top: -500px;
+   
    }.resume-page-2{
     position: relative;
-    top: -500px;
+
     width: 60%;
    }
  
    .Fullstack{
-    border-radius: 40px;
+ 
    }
    .Javascript{
     border-radius: 40px;
@@ -165,20 +171,20 @@ flex-direction: row;
 }
 @media only screen and (min-width: 2000px){
   .resume-page-1{
-    position: relative;
-    width: 50%;
-top: -600px;
+ position: relative;
+ top: 100px;
    }.resume-page-2{
-    position: relative;
-    top: -600px;
-    width: 50%;
+
    }
    .badge-container{
-    width: 100%;
-    margin: 0px 80px;
+    width: 80%;
+    position: relative;
+    bottom: 200px;
+    right: 100px;
    }
    .badge1{
- width: 100px;
+   width: 100%;
+  
      }
    .Fullstack{
  

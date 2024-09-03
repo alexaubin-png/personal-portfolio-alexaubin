@@ -385,14 +385,14 @@ width: 100%;
 } */
 @media only screen and (min-width: 1600px) and (max-width: 2000px){
   .container2{
-    width: 100%;
+    width: 113%;
   }
 .box1, .box2, .box3, .box4{
   width: 90%;
 }
 .second-navbar {
   position: relative;
-  width: 100%;
+  width: 112%;
 }
 .Profile-Details{
   right: 680px;
@@ -400,7 +400,7 @@ width: 100%;
 }   
 @media only screen and (min-width: 2000px){
 .container2{
-  width: 88%;
+  width: 98%;
 }
 .second-navbar{     
   position: relative;
