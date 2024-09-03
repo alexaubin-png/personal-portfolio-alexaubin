@@ -258,15 +258,19 @@ body{
 }
 .box1{
 position: relative;
+left: 100px;
 }
 .box2{
   position: relative;
+  left: 100px;
 }
 .box3{
   position: relative;
+  left: 100px;
 }
 .box4{
   position: relative;
+  left: 100px;
   
 }
 .text-overlay{

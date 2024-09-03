@@ -1,4 +1,6 @@
-
+body{
+  color: black;
+}
 .Hobbies-UL{
   list-style-type: none;
   text-align: center;
@@ -6,7 +8,7 @@
   padding: 100px;
   margin: 15px;
   font-weight: 700;
-  color: white;
+  color: black;
 }
 .Coding {
     position: relative;
@@ -30,7 +32,7 @@
  
     font-size: 40px;
     font-weight: 700;
-    color: white;
+    color: black;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     position: relative;
     bottom: 365px;
@@ -51,9 +53,9 @@
     font-size: 40px;
     font-weight: 700;
     position: relative;
-top: 50+px;
-    left: -50px;
-    color: white;
+top: -230px;
+    left: -400px;
+    color: black;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
  
   }
@@ -90,9 +92,8 @@ top: 50+px;
     font-weight: 700;
     position: relative;
     top: -430px;
-  left: 450px;
-  
-    color: white;
+    left: 450px;
+    color: black;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   @media only screen and (max-width: 599px) {
@@ -241,11 +242,7 @@ margin: 0px 90px;
 
   @media only screen and (min-width: 1600px) {
 
-   .Reading {
   
-
-   }
- 
   }
   @media only screen and (min-width: 2000px){
     .Coding{
