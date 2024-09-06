@@ -104,34 +104,41 @@ flex-direction: row;
 }
 @media only screen and (max-width: 599px){
 .resume-page-1{
-  
+  position: relative;
+width: 100%;
+  display: flex;
 }
 .resume-page-2{
   position: relative;
   top: 25px;
   display: flex;
-
+  width: 100%;
 }
 .badge-container{
   position: relative;
-  width: 100%;
-  top: -100px;
+  width:100%;
+  margin: 0px 30px;
+  top: -10px;
 }
 .badge1{
   position: relative;
-  right: 600px;
+ 
 }
 .Fullstack{
   position: relative;
-  right: 600px;
+ 
 }
 .Javascript{
   position: relative;
-  right: 600px;
+
 }
 .react-badge{
   position: relative;
-  right: 600px;
+
+}
+.Resume-Header{
+width: 100%;
+margin: 20px 150px;
 }
 }
   @media only screen and (min-width: 600px) and (max-width: 899px){

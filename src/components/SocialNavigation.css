@@ -106,19 +106,26 @@ flex-direction: column;
 @media only screen and (max-width: 599px){
   .parent-container{
     flex-direction: column;
-    width: 70%;
+    width: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
+    top: 10px;
 
   }
 .linked-in{
-  width: 90%;
+  width: 140%;
+  height: 100vh;
 
 }
 .X-box3{
-  width: 90%;
+  width: 140%;
+  height: 100vh;
 }
 .instagram{
-width: 90%;
+  width: 140%;
+  height: 100vh;
 }
 }
 @media only screen and (min-width: 1600px) and (max-width: 1699px){

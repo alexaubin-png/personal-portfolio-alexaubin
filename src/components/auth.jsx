@@ -9,7 +9,7 @@ export default function Auth() {
   const [isLoginMode, setIsLoginMode] = useState(false);
   const [isGuest, setIsGuest] = useState(false);
 
-  const authUser = async (url, errorMessage) => {
+   window.authUser = async (url, errorMessage, username, password) => {
     // Function definition
     try {
       const response = await fetch('http://localhost:8080/users/register', {
@@ -21,7 +21,7 @@ export default function Auth() {
           password,
         }),
       });
-      if (!response.ok) throw new Error("failed to register");
+    if (!response.ok) throw new Error("failed to register");
 
       const data = await response.json();
       localStorage.setItem("token", data.token);
@@ -30,12 +30,30 @@ export default function Auth() {
       navigate("/");
       setUsername("");
       setPassword("");
-    } catch (error) {
+  } catch (error) {
       console.log("failed to register", error);
       alert("invalid creds"); //consider turning alerts  into user feedback rendered directly under the inputs using create element in a conditonal that also checsk the leng th and casing of the users inputs
     }
   };
-
+  const loginUser = async () => {
+    try{
+const repsonse = await fetch('https://localhost:8008/users/login',{
+  method: "POST",
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    username,
+    password
+  })
+})
+if(!response.ok) throw new Error('login failed')
+ 
+} catch(error){
+      console.log(error)
+res.status(500).json({message: "internal error"});
+    }
+  }
   // const loginUser = () => authenticateUser(`${process.env.REACT_APP_API_URL}/users/login`, "Login failed");
   // const createUser = () => authUser(`${process.env.REACT_APP_API_URL}/users/register`, "Signup failed");
 
