@@ -171,6 +171,8 @@ body{
   align-items: center; /* Center content vertically */
   color: white; /* Optional: to ensure text stands out */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Optional: adds shadow for better visibility */
+  background-image: url('/src\assets\homepage.PNG');
+  background-size: cover;
 }
 .second-navbar li {
   display: inline-block; /*tigthens the second navbar, and eliminate the list styles*/
@@ -370,7 +372,7 @@ width: 100%;
 }   
 @media only screen and (min-width: 2000px){
 .container2{
-  width: 103%;
+  width: 119.5%;
 }
 .second-navbar{     
   position: relative;
