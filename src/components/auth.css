@@ -202,6 +202,7 @@ transform: translateX(-.5px);
     height: 400px;
     position: relative;
   }
+
   .Ternary-Button{
     background-color: hwb(0 0% 100% / 0.437);
     border: 2px solid   #FFD700;

@@ -45,7 +45,7 @@ export default function Home() {
     <div className="container-home">
       <img src='https://i.gyazo.com/ff2955592fa0d4590447ed55983521cc.png' className='homeImage-1' alt='#'></img>
       <a href='#'></a>
-      <img src='https://i.gyazo.com/b76ca267ea50de2a190ab84331cfce99.jpg' className='homeImage2' alt='#'></img>
+      <img src='https://i.gyazo.com/b7b0c06553c5c8c72adce98271b1de9d.png' className='homeImage2' alt='#'></img>
       <a href='#'></a>
       <img src='https://i.gyazo.com/b76ca267ea50de2a190ab84331cfce99.jpg' className='homeImage3' alt='#'></img>
       <a href='#'></a>
