@@ -9,6 +9,7 @@ body{
   width: 70%;
   height: 100%;
   position: relative;
+  left: 150px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -18,6 +19,7 @@ align-items: center;
   width: 70%;
   height: 90%;
   position: relative;
+  left: 150px;
 
 }
 .badge1{
@@ -83,11 +85,12 @@ align-items: center;
 display: flex;
 justify-content: center;
 flex-direction: row;
-margin: 0px -550px;
+
+
 }
 .Resume-Header{
   font-family: 'Lobster', cursive; /* Applying the imported font */
-  color: white; /* Text color */ /* Font size */
+  color: black; /* Text color */ /* Font size */
   text-shadow: 
     1px 1px 0 #000, 
     2px 2px 0 #333,
@@ -96,37 +99,46 @@ margin: 0px -550px;
   /* Optionally add more shadows for a deeper effect */
   display: flex;
   justify-content: center;
+  position: relative;
+  bottom: 20px;
 }
 @media only screen and (max-width: 599px){
 .resume-page-1{
-  
+  position: relative;
+width: 100%;
+  display: flex;
 }
 .resume-page-2{
   position: relative;
   top: 25px;
   display: flex;
-
+  width: 100%;
 }
 .badge-container{
   position: relative;
-  width: 100%;
-  top: -100px;
+  width:100%;
+  margin: 0px 30px;
+  top: -10px;
 }
 .badge1{
   position: relative;
-  right: 600px;
+ 
 }
 .Fullstack{
   position: relative;
-  right: 600px;
+ 
 }
 .Javascript{
   position: relative;
-  right: 600px;
+
 }
 .react-badge{
   position: relative;
-  right: 600px;
+
+}
+.Resume-Header{
+width: 100%;
+margin: 20px 150px;
 }
 }
   @media only screen and (min-width: 600px) and (max-width: 899px){
@@ -139,7 +151,6 @@ margin: 0px -550px;
   @media only screen and (min-width: 1600px){
     .badge-container{
       position: relative;
-      top: 0px;
       margin: 0px -60px;
       display: flex;
       justify-content: center;
@@ -179,7 +190,6 @@ margin: 0px -550px;
    .badge-container{
     width: 80%;
     position: relative;
-    bottom: 200px;
     right: 100px;
    }
    .badge1{
