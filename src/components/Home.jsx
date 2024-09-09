@@ -43,12 +43,12 @@ export default function Home() {
      <h1 className='article-header'>Schedule a appointment with me</h1>
    <Link to='/Contact'><img src='https://i.gyazo.com/b1fd172fcc2ff613949dac8a388e9202.png' alt='email-link' className='main-image-home' /></Link> 
     <div className="container-home">
-      <img src='https://i.gyazo.com/ff2955592fa0d4590447ed55983521cc.png' className='homeImage-1' alt='#'></img>
-      <a href='#'></a>
+      <img src='https://i.gyazo.com/250f47e97cc602665e226ed2b18b8f2f.png' className='homeImage-1' alt='#'></img>
+      <a className="DevZone" href='#'>Checkout my coding course</a>
       <img src='https://i.gyazo.com/b7b0c06553c5c8c72adce98271b1de9d.png' className='homeImage2' alt='#'></img>
-      <a href='#'></a>
-      <img src='https://i.gyazo.com/b76ca267ea50de2a190ab84331cfce99.jpg' className='homeImage3' alt='#'></img>
-      <a href='#'></a>
+      <a className="DevZone" href='#'>Purchase a custom website</a>
+      <img src='https://i.gyazo.com/dda60d409d5f24e6560d7637103bb73c.png' className='homeImage3' alt='#'></img>
+      <a className='DevZone' href='#'>GitHub</a>
     </div>
     <div className="content-home">
       <h2 className='content-header'>Who I am + my skiils</h2>
