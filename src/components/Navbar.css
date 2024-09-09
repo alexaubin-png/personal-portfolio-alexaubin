@@ -357,7 +357,7 @@ width: 100%;
 } */
 @media only screen and (min-width: 1600px) and (max-width: 2000px){
   .container2{
-    width: 113%;
+    width: 100%;
   }
 .box1, .box2, .box3, .box4{
   width: 90%;
@@ -372,7 +372,7 @@ width: 100%;
 }   
 @media only screen and (min-width: 2000px){
 .container2{
-  width: 119.5%;
+  width: 100%;
 }
 .second-navbar{     
   position: relative;
