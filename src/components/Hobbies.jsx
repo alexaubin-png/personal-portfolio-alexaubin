@@ -16,7 +16,8 @@ export default function Hobbies() {
           <label className='cooking-header'>Cooking</label>
           <li className='cooking-text'>Cooking is a hobby that grew on me and I realized how important of a skill it is to take care my loved ones. Also once I started working out daily, I prepped meals that I cooked, along with proper workout plans and consistency I acomplished alot. primarly my family taught me how to cook, and or showed me someone to watch to learn cooking skills from.</li>
           <img src={fitnessDumbellImage} className='Fitness'></img>
-          <li>At a point in my life I took fitness seriously enough to start purchasing equipment, and I acomplished alot with desire, dedication, and dicipline.</li>
+          <label className='Fitness-Label'>Fitness</label>
+          <li className='Fitness-Text'>At a point in my life I took fitness seriously enough to start purchasing equipment, and I acomplished alot with desire, dedication, and dicipline.</li>
         </ul>
     </div>
   )

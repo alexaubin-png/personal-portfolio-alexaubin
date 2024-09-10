@@ -98,6 +98,9 @@ transform: translateX(-.5px);
     color: white;
     font-family: monospace;
   }
+  .password-signup-label{
+    color: white;
+  }
 
   .username-input-login {
     width: 250px;

@@ -63,7 +63,6 @@ function App() {
      <Route path='/JavaScriptFoundations' element={<JSDev/>}></Route>
      <Route path='/ReactParagraph' element={<ReactP/>}></Route>
      <Route path='/Websites' element={<Websites />}></Route>
-     
    </Routes>
    <HomeFlexBox />
    <Footer />

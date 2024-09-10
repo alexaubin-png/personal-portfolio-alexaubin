@@ -50,14 +50,8 @@ body{
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
   }
   .Reading-Header{
-    font-size: 40px;
-    font-weight: 700;
-    position: relative;
-top: -230px;
-    left: -400px;
-    color: black;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
- 
+font-size: 35px;
+ margin-top: 45px;
   }
   .Reading-Text{
     position: relative;
@@ -95,6 +89,32 @@ top: -230px;
     left: 450px;
     color: black;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .Fitness{
+    position: relative;
+    bottom: 100px;
+    left: -100px;
+    width: 400px;
+    height: 300px;
+    margin: -50px 900px 20px 0px; /* Adjust margin as needed */
+    transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
+  }
+  .Fitness-Label{
+    font-size: 30px;
+    position: relative;
+    top: -400px;
+    left: 500px;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .Fitness-Text{
+    position: relative;
+    bottom: 350px;
+    left: 100px;
+    float: right;
+    display: flex;
+    width: 60%;
   }
   @media only screen and (max-width: 599px) {
 .Coding{
@@ -257,14 +277,14 @@ margin: 0px 90px;
     }
     .Coding-Header{
       width: 100%;
-      margin: 20px 350px;
+      margin: 20px 400px;
       position: relative;
     }
    
     .Reading{
       width: 60%;
       height: 450px;
-      margin: 0px -1500px;    
+      margin: 0px -510px;    
       transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
       box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */  
     }
@@ -275,23 +295,41 @@ margin: 0px 90px;
     }
     .Reading-Header{
       width: 100%;
-      margin: 260px 0px 0px;
+      position: relative;
+      bottom: 220px;
+      right: 250px;
+      margin: 230px 200px 0px;
+  
       }
 .cooking-text{
   font-size: 30px;
   font-size: 30px;
   width: 60%;
-  margin: 0px -300px;
+  margin: -70px -300px;
+  
 }
 .cooking-header{
   width: 100%;
-  margin: 0px 850px;
+  margin: 0px 710px;
 }  
 .Cooking{
   width: 60%;
   height: 450px;    
   transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
-}                             
+}  
+.Fitness{
+  width: 60%;
+  height: 450px;    
+  transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
+}    
+.Fitness-Label{
+  width: 100%;
+  font-size:35px;
+}
+.Fitness-Text{
+  width: 50%;
+}                       
   }
 
