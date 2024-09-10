@@ -57,6 +57,7 @@ body{
   width: 100%;
   background-color: black;
   padding: 0px 20px; /* Remove any default padding */
+
   margin: 0px; /* Remove any default margin */
   list-style-type: none; /* Remove list style */
 }
@@ -171,8 +172,7 @@ body{
   align-items: center; /* Center content vertically */
   color: white; /* Optional: to ensure text stands out */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Optional: adds shadow for better visibility */
-  background-image: url('/src\assets\homepage.PNG');
-  background-size: cover;
+
 }
 .second-navbar li {
   display: inline-block; /*tigthens the second navbar, and eliminate the list styles*/
@@ -230,7 +230,7 @@ body{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 96%;
+  width: 97%;
 }
 /* .hireme-background{
   background: url('/src\assets\LIQL6416.PNG');
@@ -372,7 +372,7 @@ width: 100%;
 }   
 @media only screen and (min-width: 2000px){
 .container2{
-  width: 100%;
+  width: 89.5%;
 }
 .second-navbar{     
   position: relative;

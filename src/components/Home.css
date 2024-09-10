@@ -3,17 +3,7 @@ overflow-x: hidden;
 color: black;
 background-color: #a9a9a967 ;
 }
-.background-home{
-  background-image: url('/src\assets\homepage.PNG');
-  background-size: cover; /* Ensures the background image covers the entire element */
-  background-position: center;
-  height: 220vh;
-  width: 120%;
-  position: absolute;
-  top: 0;
-  left: -20px;
-  z-index: -1;
-}
+
 .DevZone{
   display: flex;
   flex-direction: column;
@@ -400,5 +390,11 @@ font-size: 50px;
   padding: 40px;
   font-size: 30px;
   width: 300px;
+}
+.main-image-home{
+  width: 800px;
+}
+.content-home-text{
+font-size: 35px;
 }
 }
