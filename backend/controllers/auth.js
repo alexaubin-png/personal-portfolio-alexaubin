@@ -2,56 +2,27 @@
  require('dotenv').config();
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const SALT = process.env.SALT
+const SALT = 10
 const User = require('../models/User');
 const nodemailer = require('nodemailer');
 const { EMAIL, PASSWORD } = require('../env.js')
 const Mailgen = require('mailgen');
-exports.registerNewUser = async (req,res) => {
-    
-try{
-const hashedPassword = await bcrypt.hash(req.body.password, 10);
 
+exports.registerNewUser = async (req,res) => {
+try{
+const hashedPassword = await bcrypt.hash(req.body.password, SALT);
 const user = new User({
 username: req.body.username,
 password: hashedPassword,
 });
-
 // Validate input data
+
 if (!req.body.username || !req.body.password) {
 throw new Error("Please provide username and password.");
 }
 const newUser = await user.save();//saving our new user because user is already in our database/schema
-// res.status(201).json(newUser);//201 for successful registration/creation
+res.status(201).json(newUser);//201 for successful registration/creation
 
-
-let testAccount = await nodemailer.createTestAccount()
-
-const transporter = nodemailer.createTransport({
-    host: "smtp.ethereal.email",
-    port: 587,
-    secure: false, // Use `true` for port 465, `false` for all other ports
-    auth: {
-      user: "maddison53@ethereal.email",
-      pass: "jn7jnAPss4f63QBp6D",
-    },
-  });
-  const message = {
-    from: '"Maddison Foo Koch 👻" <maddison53@ethereal.email>', // sender address
-    to: "alexaubin4674@gmail.com", // list of receivers
-    subject: "Hello ✔", // Subject line
-    text: "Successfully Registerd With Us", // plain text body
-    html: "<b>Successfully Registerd With Us</b>", // html body
-  }
-  transporter.sendMail(message).then((info)=>{
-    return res.status(201)
-    .json({
-        msg: "you should have gotten an email",
-        info: info.messageId,
-        preview: nodemailer.getTestMessageUrl(info)
-    })
-     
-  })
 }catch(error){
 console.log( "registration error", error)
 res.status(500).json({message:"internal error"})

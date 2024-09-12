@@ -261,7 +261,39 @@ margin: 0px 90px;
   }
 
   @media only screen and (min-width: 1600px) {
-
+    .Coding{
+      width: 50%;
+    }
+    .Coding-Text{
+  font-size: 25px;
+}
+.Reading{
+  position: relative;
+  left: 750px;
+  width: 50%;
+}
+.Reading-Header{
+  position: relative;
+  left: 700px;
+  top: 55px;
+}
+.Reading-Text{
+  font-size: 25px;
+  position: relative;
+  left: 600px;
+}
+.Cooking{
+width: 50%;
+}
+.cooking-text{
+  font-size: 25px;
+position: relative;
+left: 150px;
+}
+.cooking-header{
+position: relative;
+left: 730px;
+}
   
   }
   @media only screen and (min-width: 2000px){
