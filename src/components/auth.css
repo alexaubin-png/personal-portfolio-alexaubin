@@ -83,6 +83,12 @@ transform: translateX(-.5px);
   background-color: rgb(19, 19, 19);
   transition: all 0.2s ease-in-out;
   }
+  .username-label-login{
+    color: white;
+  }
+  .password-label-login{
+    color: white;
+  }
   
   .signup-header{
     font-size: 40px;

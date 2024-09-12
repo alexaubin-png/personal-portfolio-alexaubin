@@ -11,7 +11,7 @@ const Mailgen = require('mailgen');
 
 exports.registerNewUser = async (req,res) => {
 try{
-const hashedPassword = await bcrypt.hash(req.body.password, SALT);
+const hashedPassword = await bcrypt.hash(req.body.password, 10);
 const user = new User({
 username: req.body.username,
 password: hashedPassword,
@@ -29,7 +29,7 @@ console.log( "registration error", error)
 res.status(500).json({message:"internal error"})
 }
 }
-exports.getBill = async (req, res) => {
+exports.contactEmail = async (req, res) => {
     try{
         const { userEmail, userName, messageContent } = req.body
 
@@ -37,7 +37,7 @@ exports.getBill = async (req, res) => {
             service: 'gmail', // Use Gmail service
             auth: {
                 user: 'alexjames4674@gmail.com', // Replace with your Gmail address
-                pass: 'pqoo lxjg hklo xopb', // Replace with your app password
+                pass: 'jbsh nfsf zzka plnp', // Replace with your app password
             },
         });
         // const config = {
@@ -126,7 +126,7 @@ exports.loginUser = async (req, res) => {
             throw new Error('JWT_SECRET is not defined');
         }
 
-        const token = jwt.sign({ id: user_id }, process.env.JWT_SECRET, { expiresIn: '1h' });
+        const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: '1h' });
 
         res.status(200).json({ token });
     } catch (error) {
