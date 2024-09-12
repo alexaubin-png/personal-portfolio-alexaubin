@@ -9,32 +9,32 @@ export default function Auth() {
   const [isLoginMode, setIsLoginMode] = useState(false);
   const [isGuest, setIsGuest] = useState(false);
 
-  const authUser = async (url, errorMessage, username, password) => {
+  const authUser = async (username, password) => {
     // Function definition
     try {
       const response = await fetch("http://localhost:8080/users/register", {
         //404 not found response perhaps try fet ching the endpoint directly to acsess the code directly
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          username,
-          password,
-        }),
+        body: JSON.stringify({username, password}),
       });
-      if (!response.ok) throw new Error("failed to register");
+      // if (!response.ok) throw new Error("failed to register");
 
       const data = await response.json();
       localStorage.setItem("token", data.token);
       localStorage.setItem("username", data.username);
-      alert("user created successfully");
+      alert("Authentication successful.");
       navigate("/");
       setUsername("");
       setPassword("");
     } catch (error) {
       console.log("failed to register", error);
-      alert("invalid creds"); //consider turning alerts  into user feedback rendered directly under the inputs using create element in a conditonal that also checsk the leng th and casing of the users inputs
+      alert("invalid creds");
+      setUsername("");
+      setPassword("");//consider turning alerts  into user feedback rendered directly under the inputs using create element in a conditonal that also checsk the leng th and casing of the users inputs
     }
   };
+
   const loginUser = async () => {
     try {
       const repsonse = await fetch("https://localhost:8008/users/login", {
