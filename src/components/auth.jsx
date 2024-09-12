@@ -186,7 +186,7 @@ export default function Auth() {
               />
             </label>
             <br />
-            <label className="password-label-signup">
+            <label className="password-label-login">
               Password:
               <input
                 className="password-input-login"

@@ -29,7 +29,7 @@ console.log( "registration error", error)
 res.status(500).json({message:"internal error"})
 }
 }
-exports.getBill = async (req, res) => {
+exports.contactEmail = async (req, res) => {
     try{
         const { userEmail, userName, messageContent } = req.body
 
@@ -37,7 +37,7 @@ exports.getBill = async (req, res) => {
             service: 'gmail', // Use Gmail service
             auth: {
                 user: 'alexjames4674@gmail.com', // Replace with your Gmail address
-                pass: 'pqoo lxjg hklo xopb', // Replace with your app password
+                pass: 'jbsh nfsf zzka plnp', // Replace with your app password
             },
         });
         // const config = {
