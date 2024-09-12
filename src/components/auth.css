@@ -40,7 +40,7 @@ transform: translateX(-.5px);
     cursor: pointer;
   }
   .Ternary-Button:hover{
-    background-color:rgb(48, 48, 48);
+    background-color:rgb(20, 20, 20);
   }
   .signup-or-login {
     background-color: hwb(0 0% 100% / 0.437);
@@ -80,7 +80,7 @@ transform: translateX(-.5px);
     cursor: pointer;
   }
   .guestButton:hover{
-  background-color: rgb(48, 48, 48);
+  background-color: rgb(19, 19, 19);
   transition: all 0.2s ease-in-out;
   }
   
@@ -133,7 +133,7 @@ transform: translateX(-.5px);
   .ternary-text{
     font-size: small;
     display: flex;
-    color: black;
+    color: white;
     position: relative;
   }
   .background-image-wilderness{
@@ -217,9 +217,7 @@ transform: translateX(-.5px);
     margin: 10px 0;
     cursor: pointer;
   }
-  .Ternary-Button:hover{
-    background-color: lightblue;
-  }
+
 
   
   .guestButton {

@@ -1,6 +1,7 @@
 //import user schema from models directory, or else our request/response object will not be available.
  require('dotenv').config();
 const bcrypt = require('bcrypt');
+const JWT_SECRET = process.env.JWT_SECRET;
 const jwt = require('jsonwebtoken');
 const SALT = 10
 const User = require('../models/User');
@@ -108,29 +109,36 @@ transporter.sendMail(message, (error, info) => {
 
 exports.loginUser = async (req, res) => {
     try {
-        const user = await User.findOne({username: req.body.username});//will allow other code to wait from executing until the user is found 
-        console.log(user)
-        if (!user) //data validation  if the user is not a user throw an erorr
-        throw new Error('invalid credentials')
-         
-        
-       
-        const validPassword = await bcrypt.compare(req.body.password, user.password);//comapres the entered password to the users password 
-        if (!validPassword) 
-        throw new Error('invalid credentials')
-        
-        const token = jwt.sign({ id: user._id }, SALT);//declaring a token variable to be used elsewhere and assigning the users token to their automatically assinged ID
-        res.status(200).json({ token });
-      } catch (error) {
-        console.log(error);
-        res.status(400).json({ message: error.message });
-      }
+        const user = await User.findOne({ username: req.body.username });
 
-}
+        if (!user) {
+            return res.status(401).json({ message: 'Invalid credentials' });
+        }
+
+        const validPassword = await bcrypt.compare(req.body.password, user.password);
+
+        if (!validPassword) {
+            return res.status(401).json({ message: 'Invalid credentials' });
+        }
+
+        // Ensure process.env.JWT_SECRET is defined and not empty
+        if (!process.env.JWT_SECRET) {
+            throw new Error('JWT_SECRET is not defined');
+        }
+
+        const token = jwt.sign({ id: user_id }, process.env.JWT_SECRET, { expiresIn: '1h' });
+
+        res.status(200).json({ token });
+    } catch (error) {
+        console.error('Login error:', error);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+};
 exports.updateUser = async (req, res) => {
     try {
         const updatedUser = await User.findByIdAndUpdate(req.params.id, req.body, { new: true });
-        if (!updatedUser) {
+        const user = await User.findById(req.params.id);
+        if (!user) {
             return res.status(404).json({ message: "User not found" });
         }
         res.status(200).json({ message: "User updated successfully", user: updatedUser });
