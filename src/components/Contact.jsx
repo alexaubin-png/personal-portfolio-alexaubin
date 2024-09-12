@@ -46,6 +46,7 @@ const ContactForm = ({ onSubmit }) => {
         messageContent: "",
       }); // Reset form
     } catch (error) {
+      console.error("Error:", error); // Log the error for debugging purposes
       setStatus("There was a problem sending your message. Please try again.");
     }
   };

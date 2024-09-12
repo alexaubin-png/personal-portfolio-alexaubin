@@ -11,7 +11,7 @@ const Mailgen = require('mailgen');
 
 exports.registerNewUser = async (req,res) => {
 try{
-const hashedPassword = await bcrypt.hash(req.body.password, SALT);
+const hashedPassword = await bcrypt.hash(req.body.password, 10);
 const user = new User({
 username: req.body.username,
 password: hashedPassword,
@@ -126,7 +126,7 @@ exports.loginUser = async (req, res) => {
             throw new Error('JWT_SECRET is not defined');
         }
 
-        const token = jwt.sign({ id: user_id }, process.env.JWT_SECRET, { expiresIn: '1h' });
+        const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: '1h' });
 
         res.status(200).json({ token });
     } catch (error) {
