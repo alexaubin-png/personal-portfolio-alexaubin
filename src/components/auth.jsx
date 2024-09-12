@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./auth.css";
 
@@ -8,76 +8,81 @@ export default function Auth() {
   const [username, setUsername] = useState("");
   const [isLoginMode, setIsLoginMode] = useState(false);
   const [isGuest, setIsGuest] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // Track login status
+
+  // Check if the user is logged in when the component mounts
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    setIsLoggedIn(!!token); // Convert token to boolean
+  }, []);
 
   const authUser = async (username, password) => {
-    // Function definition
     try {
       const response = await fetch("http://localhost:8080/users/register", {
-        //404 not found response perhaps try fet ching the endpoint directly to acsess the code directly
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({username, password}),
+        body: JSON.stringify({ username, password }),
       });
-      // if (!response.ok) throw new Error("failed to register");
+
+      if (!response.ok) throw new Error("Failed to register");
 
       const data = await response.json();
       localStorage.setItem("token", data.token);
       localStorage.setItem("username", data.username);
-      alert("Authentication successful.");
+      setIsLoggedIn(true); // Update login status
+      alert("Registration successful.");
       navigate("/");
       setUsername("");
       setPassword("");
     } catch (error) {
-      console.log("failed to register", error);
-      alert("invalid creds");
-      setUsername("");
-      setPassword("");//consider turning alerts  into user feedback rendered directly under the inputs using create element in a conditonal that also checsk the leng th and casing of the users inputs
+      console.error("Registration error:", error);
+      alert("Registration failed. Please try again.");
     }
   };
 
-  const loginUser = async () => {
+  const loginUser = async (username, password) => {
     try {
-      const repsonse = await fetch("https://localhost:8008/users/login", {
+      const response = await fetch("http://localhost:8008/users/login", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          username,
-          password,
-        }),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ username, password }),
       });
-      if (!response.ok) throw new Error("login failed");
+
+      if (!response.ok) throw new Error("Login failed");
+
+      const data = await response.json();
+      localStorage.setItem("token", data.token);
+      localStorage.setItem("username", data.username);
+      setIsLoggedIn(true); // Update login status
+      alert("Login successful.");
+      navigate("/");
     } catch (error) {
-      console.log(error);
-      res.status(500).json({ message: "internal error" });
+      console.error("Login error:", error);
+      alert("Login failed. Please check your credentials.");
     }
   };
-  // const loginUser = () => authenticateUser(`${process.env.REACT_APP_API_URL}/users/login`, "Login failed");
-  // const createUser = () => authUser(`${process.env.REACT_APP_API_URL}/users/register`, "Signup failed");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    isLoginMode ? loginUser() : authUser();
+    isLoginMode ? loginUser(username, password) : authUser(username, password);
   };
 
   const toggleLoginMode = () => {
     setIsLoginMode(!isLoginMode);
-    IsGuest(false);
+    setIsGuest(false);
   };
 
-  const logoutUser = async () => {
-    // Function definition
-    localStorage.removeItem("token");
-    localStorage.removeItem("username");
-    localStorage.removeItem("password");
-    localStorage.clear();
-    alert("sucessfully logged out!!!");
+  const handleGuestLogin = () => {
+    setIsGuest(true);
     navigate("/");
   };
 
-  const IsGuest = () => {
-    setIsGuest(true);
+  const logoutUser = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("username");
+    localStorage.clear();
+    setIsLoggedIn(false); // Update login status
+    alert("Successfully logged out!");
     navigate("/");
   };
 
@@ -100,7 +105,7 @@ export default function Auth() {
                 required
               />
             </label>
-            <br></br>
+            <br />
             <label className="password-signup-label">
               Password:
               <input
@@ -118,14 +123,14 @@ export default function Auth() {
               Username:
               <input
                 className="username-input-login"
-                type="username"
+                type="text"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 required
               />
             </label>
-            <br></br>
-            <label className='password-label-signup'>
+            <br />
+            <label className="password-label-signup">
               Password:
               <input
                 className="password-input-login"
@@ -138,28 +143,26 @@ export default function Auth() {
           </div>
         )}
         <div className="button-container">
-          <button className="Ternary-Button" type="submit">
+          <button
+            className="Ternary-Button"
+            type="submit"
+            disabled={isLoggedIn} // Disable button if logged in
+          >
             {isLoginMode ? "Login" : "Sign Up"}
           </button>
-          {/* <div className="ternary-text">
-            {isLoginMode
-              ? "Don't have an account?"
-              : "Already have an account?"}
-          </div> */}
           <button
             className="signup-or-login"
             type="button"
-            onClick={() => setIsLoginMode(!isLoginMode)}
+            onClick={toggleLoginMode}
           >
             {isLoginMode ? "Sign Up" : "Login"}
           </button>
-          {localStorage.getItem("token") && !isGuest ? (
+          {localStorage.getItem("token") && !isGuest && (
             <button className="Logout-Button" onClick={logoutUser}>
-              {" "}
-              Logout{" "}
+              Logout
             </button>
-          ) : null}
-          <button className="guestButton" onClick={IsGuest}>
+          )}
+          <button className="guestButton" onClick={handleGuestLogin}>
             Continue as Guest
           </button>
         </div>
@@ -167,7 +170,7 @@ export default function Auth() {
       <img
         className="background-image-wilderness"
         alt="background-image-wilderness"
-      ></img>
+      />
     </div>
   );
 }
