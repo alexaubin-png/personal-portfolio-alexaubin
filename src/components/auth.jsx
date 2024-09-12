@@ -9,6 +9,8 @@ export default function Auth() {
   const [isLoginMode, setIsLoginMode] = useState(false);
   const [isGuest, setIsGuest] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false); // Track login status
+  // const [newPassword, setNewPassword] = useState('')
+  // const [newUsername, setNewUsername] = useState('')
 
   // Check if the user is logged in when the component mounts
   useEffect(() => {
@@ -42,18 +44,16 @@ export default function Auth() {
 
   const loginUser = async (username, password) => {
     try {
-      const response = await fetch("http://localhost:8008/users/login", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ username, password }),
-      });
-
-      if (!response.ok) throw new Error("Login failed");
-
+    const response = await fetch("http://localhost:8080/users/login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ username, password }),
+    });
+  
       const data = await response.json();
       localStorage.setItem("token", data.token);
       localStorage.setItem("username", data.username);
-      setIsLoggedIn(true); // Update login status
+      setIsLoggedIn(true);
       alert("Login successful.");
       navigate("/");
     } catch (error) {
@@ -61,6 +61,35 @@ export default function Auth() {
       alert("Login failed. Please check your credentials.");
     }
   };
+  
+
+  // const updateUser = async (username, password) => {
+  //   try {
+  //     const response = await fetch(
+  //       `http://localhost:8080/users/${localStorage.getItem("username")}`,
+  //       {
+  //         method: "PUT",
+  //         headers: { "Content-Type": "application/json" },
+  //         body: JSON.stringify({ username, password }),
+  //       }
+  //     );
+  //     if (!response.ok) throw new Error("Failed to update user");
+  //     const data = await response.json();
+  //     localStorage.setItem("username", data.username);
+  //     alert("User updated successfully.");
+  //   } catch (error) {
+  //     console.error("Update user error:", error);
+  //     alert("Failed to update user. Please try again.");
+  //   }
+  // }
+  // const handleUpdate = async (e) => {
+  //   e.preventDefault();
+  //   if (newUsername || newPassword) {
+  //     await updateUser(newUsername || username, newPassword || password);
+  //   } else {
+  //     alert("Please provide at least one field to update.");
+  //   }
+  // };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -117,9 +146,32 @@ export default function Auth() {
               />
             </label>
           </>
+          
         ) : (
           <div>
-            <label>
+               {/* <h2>Update Your Information</h2>
+              <form onSubmit={handleUpdate}>
+                <label>
+                  New Username:
+                  <input
+                    type="text"
+                    value={newUsername}
+                    onChange={(e) => setNewUsername(e.target.value)}
+                  />
+                </label>
+                <br />
+                <label>
+                  New Password:
+                  <input
+                    type="password"
+                    value={newPassword}
+                    onChange={(e) => setNewPassword(e.target.value)}
+                  />
+                </label>
+                <br />
+                <button type="submit">Update</button>
+              </form> */}
+            <label className='username-label-login'>
               Username:
               <input
                 className="username-input-login"
@@ -153,7 +205,7 @@ export default function Auth() {
           <button
             className="signup-or-login"
             type="button"
-            onClick={toggleLoginMode}
+            onClick={() => toggleLoginMode(!isLoginMode)}
           >
             {isLoginMode ? "Sign Up" : "Login"}
           </button>
