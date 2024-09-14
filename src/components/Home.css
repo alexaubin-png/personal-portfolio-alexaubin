@@ -61,7 +61,7 @@ text-align: center;
 font-size: 18px;
 width: 50%;
 border-radius: 10px;
-color: white;
+color: black;
 position: relative;
 left: 10px;
   }
@@ -115,7 +115,7 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Increase shadow on focus */
   }
   .article-header{
     font-size: 20px;
-    color: white;
+    color: black;
     font-weight: bold;
     text-align: center;
     width: 98.5%;
@@ -270,12 +270,12 @@ left: 10px;
     transform: scale(1.05); /* Optional: Slightly enlarge button on hover */
   }
   .Personal-Header{
-    color: white;
+    color: black;
   }
   @import url('https://fonts.googleapis.com/css2?family=Lobster:wght@400&display=swap'); /* Importing a cool font */
   
   .Name-Header {
-    font-family: 'Lobster', cursive; /* Applying the imported font */
+    font-family: 'Lobster'; /* Applying the imported font */
     color: black; /* Text color */
     font-size: 3em; /* Font size */
     text-shadow: 
@@ -284,6 +284,10 @@ left: 10px;
       3px 3px 0 #666, 
       4px 4px 0 #999; /* Creating a 3D effect with text-shadow */
     /* Optionally add more shadows for a deeper effect */
+  }
+  @media only screen and (max-width: 400px){
+    
+   
   }
 
   @media only screen and (max-width: 599px){
@@ -301,13 +305,16 @@ left: 10px;
   top: 100px;
   left: 0px;
 }
-.inspiration-header{
- 
-  font-size: 15px;
+.DevZone{
+width: 95%;
+font-size: 10px;  
 }
-.Websites{
-  
+.content-header{
+  font-size: 25px;
+  height: 50%;
 }
+
+
   }
   @media only screen and (min-width: 600px) and (max-width: 1122px){
     .text-overlay{
@@ -352,18 +359,7 @@ left: 10px;
 @media only screen and (min-width: 1600px) and (max-width: 2000px){
 
 }
-@media only screen and(max-width: 599px){
-  body{
-    background-color: #333;
-  }
-.Name-Header{
-  position: relative;
-  right: 100px;
-}
-.homePage{
-  width: 80%;
-}
-}
+
  @media only screen  and(min-width: 600px) {
   .Name-Header{
     position: relative;

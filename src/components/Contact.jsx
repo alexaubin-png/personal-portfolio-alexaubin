@@ -35,7 +35,8 @@ const ContactForm = ({ onSubmit }) => {
       );
 
       if (!response.ok) {
-        throw new Error("Network response was not ok");
+        const errorText = await response.text(); // Get response text for debugging
+        throw new Error(`Network response was not ok: ${errorText}`);
       }
 
       const result = await response.json();
