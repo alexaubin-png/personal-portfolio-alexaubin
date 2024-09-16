@@ -125,6 +125,78 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Increase shadow on focus */
 left: 10px;
     
   }
+  @media only screen and (max-width: 599px){
+    .homePage{
+      width: 80%;
+      overflow-x: hidden;
+    }
+    .container-home{
+      height: auto;
+      overflow-x: hidden;
+    }
+    .content-home{
+      height: auto;
+      overflow-x: hidden;
+    }
+    .article-header{
+      font-size: 20px;
+      color: black;
+      font-weight: bold;
+      text-align: center;
+      width: 98.5%;
+      border-radius: 10px;
+      border: 2px solid black;
+      position: relative;
+      left: 10px;
+  
+      
+    }
+    .main-image-home{
+      width:50vw;
+      height: 200px;
+  margin: 10px;
+  border: 4px solid black;
+    }
+    .homeImage-1{
+      width: 30vw;
+      height: 25vh;
+      margin: 10px -10px;
+  border-radius: 0px;
+  filter: brightness(.5);
+  color: white;
+    }
+    .homeImage2{
+      width: 30vw;
+      height: 25vh;
+      margin: 10px;
+  border-radius: 0px;
+  filter: brightness(.5);
+  color: white;
+    }
+    .homeImage3{
+      width: 30vw;
+      height: 25vh;
+      margin: 10px;
+  border-radius: 0px;
+  filter: brightness(.5);
+  color: white;
+    }
+    .content-home-text{
+      width: 100%;
+      font-size: larger;
+      font-weight: 600;
+    }
+.DevZone{
+width: 100%;
+font-size: 10px;  
+}
+.content-header{
+  font-size: 25px;
+  height: 50%;
+}
+
+
+  }
   .parent-image{
     display: flex;
     float: right;
@@ -290,32 +362,7 @@ left: 10px;
    
   }
 
-  @media only screen and (max-width: 599px){
-.text-overlay{
-  padding:  0px 650px 0px 0px;
-  width: 35%;
-}
-.inspirational-paragraph{
-  padding: 0px 650px 0px 0px;
-  width: 70%;
-}
-.container-flex{
-  width: 100%;
-  position: relative;
-  top: 100px;
-  left: 0px;
-}
-.DevZone{
-width: 95%;
-font-size: 10px;  
-}
-.content-header{
-  font-size: 25px;
-  height: 50%;
-}
-
-
-  }
+ 
   @media only screen and (min-width: 600px) and (max-width: 1122px){
     .text-overlay{
       padding:  0px 350px 0px 0px;

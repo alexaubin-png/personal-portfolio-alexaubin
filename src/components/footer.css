@@ -26,14 +26,6 @@
 @media only screen and (max-width: 599px) {
 }
 @media only screen and (max-width: 599px){
-  .navbar{
-    width:1000px
-  }
-  .HireMeButton{
-    position: relative;
-    right: -100px;
-    border-radius: 10px;
-  }
   .footer-background{
     width: 100%;
     margin: 1200px 200px 0px 0px;  
