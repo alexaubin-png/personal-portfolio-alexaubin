@@ -31,13 +31,13 @@ const Navbar = () => {
   
   return (
     <div style={currentModeStyles} className="navbar">
-      <div className="container2">
+      {/* <div className="container2"> */}
         <div className="content">
           <button className='HireMeButton'><Link to='/Contact'>Hire Me</Link></button>
           <button className='MenuButton'><Link to='/ImageGallery'>Gallery</Link></button>
           <li className='Img-label'><Link className='relative-image' to='/'><img className='image' src={myFace} alt="Home"></img>Home</Link></li>
         </div>
-      </div>
+      {/* </div> */}
       <div className="second-navbar">
         <li><Link to='/Resume'>Resume</Link></li>
         <li><Link to='/About'>About</Link></li>

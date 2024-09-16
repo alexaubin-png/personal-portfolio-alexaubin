@@ -12,7 +12,7 @@ body{
 }
 .Coding {
     position: relative;
-    left: -100px;
+  
     width: 400px;
     height: 300px;
     margin: -50px 900px 20px 0px; /* Adjust margin as needed */
@@ -22,6 +22,7 @@ body{
   .Coding-Text{
     position: relative;
     bottom: 350px;
+    left: 100px;
     display: flex;
     float: right;
     width: 60%;
@@ -36,7 +37,7 @@ body{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     position: relative;
     bottom: 365px;
-    left: 160px;
+    left: 250px;
   }
   .Reading{
     width: 50%;
@@ -44,19 +45,21 @@ body{
     display: flex;
     float: right;
     position: relative;
-    bottom: 30px;
-    left: 100px;
+    bottom: 150px;
+    left: 200px;
     transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
   }
   .Reading-Header{
 font-size: 35px;
- margin-top: 45px;
+ margin: 85px;
+ position: relative;
+ bottom: 100px;
   }
   .Reading-Text{
     position: relative;
-    bottom: 240px;
-    right: 70px;
+    bottom: 340px;
+    right: 0px;
     display: flex;
     width: 60%;
   }
@@ -269,18 +272,13 @@ margin: 0px 90px;
 }
 .Reading{
   position: relative;
-  left: 750px;
   width: 50%;
 }
-.Reading-Header{
-  position: relative;
-  left: 700px;
-  top: 55px;
-}
+
 .Reading-Text{
   font-size: 25px;
   position: relative;
-  left: 600px;
+  left: 0px;
 }
 .Cooking{
 width: 50%;
@@ -296,72 +294,9 @@ left: 730px;
 }
   
   }
-  @media only screen and (min-width: 2000px){
-    .Coding{
-     width: 60%;
-     height: 85%;
-     height: 450px;
-    }
-    .Coding-Text{
-  font-size: 30px;
-  width: 60%;
-  margin: 0px -300px;
-    }
-    .Coding-Header{
-      width: 100%;
-      margin: 20px 400px;
-      position: relative;
-    }
-   
-    .Reading{
-      width: 60%;
-      height: 450px;
-      margin: 0px -510px;    
-      transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
-      box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */  
-    }
-    .Reading-Text{
-   font-size: 30px;
-   width: 70%;
-   margin: 25px ;
-    }
+  @media only screen and(max-width: 2000px){
     .Reading-Header{
-      width: 100%;
-      position: relative;
-      bottom: 220px;
-      right: 250px;
-      margin: 230px 200px 0px;
-  
-      }
-.cooking-text{
-  font-size: 30px;
-  font-size: 30px;
-  width: 60%;
-  margin: -70px -300px;
-  
-}
-.cooking-header{
-  width: 100%;
-  margin: 0px 710px;
-}  
-.Cooking{
-  width: 60%;
-  height: 450px;    
-  transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
-  box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
-}  
-.Fitness{
-  width: 60%;
-  height: 450px;    
-  transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
-  box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
-}    
-.Fitness-Label{
-  width: 100%;
-  font-size:35px;
-}
-.Fitness-Text{
-  width: 50%;
-}                       
-  }
 
+    }
+  }
+  
