@@ -4,6 +4,7 @@ body{
 }
 .navbar{
   background-color: black;
+width: 100%;
 }
   Img{
     width: 30px;
@@ -260,21 +261,21 @@ body{
    .content{
     width: 100%;
     background-color: black;
+    
    }
-   .HireMeButton{
-    width: 20%;
-   }
+   
+
    
   
 }
 @media only screen and (max-width: 300px){
-  .container2{
-    width: 100%;
-    font-size: smaller;
-   }
-   .HireMeButton{
-    width: 20%;
-   }
+
+ 
+}
+@media only screen and (max-width: 599px){
+.navbar{
+  width: 200px;
+}
 }
 
 @media only screen and (min-width: 600px) and (max-width: 899px) {

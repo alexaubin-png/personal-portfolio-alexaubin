@@ -12,7 +12,7 @@ body{
 }
 .Coding {
     position: relative;
-  
+    right: 100px;
     width: 400px;
     height: 300px;
     margin: -50px 900px 20px 0px; /* Adjust margin as needed */
@@ -22,7 +22,7 @@ body{
   .Coding-Text{
     position: relative;
     bottom: 350px;
-    left: 100px;
+    left: 45px;
     display: flex;
     float: right;
     width: 60%;
@@ -30,14 +30,13 @@ body{
   }
   .Coding-Header{
     position: relative;
- 
     font-size: 40px;
     font-weight: 700;
     color: black;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     position: relative;
     bottom: 365px;
-    left: 250px;
+    left: 180px;
   }
   .Reading{
     width: 50%;
@@ -46,7 +45,7 @@ body{
     float: right;
     position: relative;
     bottom: 150px;
-    left: 200px;
+    left: 130px;
     transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
   }
@@ -123,7 +122,7 @@ font-size: 35px;
 .Coding{
 transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
  box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
-width: 250%;
+width: 100%;
 position: relative;
 margin: 0px 20px;
 
@@ -145,45 +144,65 @@ top: 20px;
 .Reading{
   transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
- width: 250%;
+ width: 100%;
  position: relative;
  top: 80px;
- left: 140px;
+left: 50px;
 }
 .Reading-Text{
   width: 150%;
   font-size: 15px;
   position: relative;
-  top: 100px;
-  left: -25px;
+  top: 10px;
+  left: -80px;
 }
 .Reading-Header{
   position: relative;
   top: 80px;
-  left: 0px;
+  left: -80px;
   width: 100%;
 
 }
 .Cooking{
- transform: perspective(1110px) rotateY(10deg);
+  transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
-  position: relative;
-  top: 160px;
+ width: 100%;
+ position: relative;
+ top: 80px;
+left: 50px;
 }
 .cooking-text{
   position: relative;
   width: 150%;
-top: 170px;
-left: 30px;
+top: 60px;
+left: 100px;
   font-size: 15px;
 }
 .cooking-header{
 display: flex;
 justify-content: center;
 position: relative;
-top: 150px;
+top: 50px;
 left: 0px;
 
+}
+.Fitness{
+  transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
+ width: 100%;
+ position: relative;
+ top: 150px;
+left: 50px;
+}
+.Fitness-Text{
+  position: relative;
+  top: 190px;
+  left: -20px;
+}
+.Fitness-Label{
+  position: relative;
+  top: 140px;
+left: 150px;
 }
   }
   @media only screen and (min-width: 600px) and (max-width: 899px) {
