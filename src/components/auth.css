@@ -14,10 +14,11 @@
     
   }
   .username-input-signup:hover{
-border: 2px solid #00bfff;
+border: 2px solid #FFD700;
 transform: translateY(-.5px);
 transform: translateX(-.5px);
   }
+
   .password-input-signup:hover{
     border: 2px solid  #FFD700;
     transform: translateY(-.5px);
@@ -142,16 +143,7 @@ transform: translateX(-.5px);
     color: white;
     position: relative;
   }
-  .background-image-wilderness{
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 110%;
-    position: fixed;
-    top: 0;
-    left: -20;
-    z-index: -1;
-  }
+
   
   @media only screen and (min-width: 1600px) {
     .container-section {
@@ -255,11 +247,19 @@ transform: translateX(-.5px);
     width: 250px;
     padding: 10px 20px;
     margin: 10px 0;
+    border-radius: 10px;
+  }
+  .username-input-login:hover{
+border:#FFD700 2px solid
   }
   .password-input-login {
     width: 250px;
     padding: 10px 20px;
     margin: 10px 0;
+    border-radius: 10px;
+  }
+  .password-input-login:hover{
+    border:#FFD700 2px solid
   }
   .username-input-signup{
     width: 250px;
@@ -270,6 +270,8 @@ transform: translateX(-.5px);
     width: 250px;
     padding: 10px 20px;
     margin: 10px 0;
+    border-radius: 10px;
+    
   }
   
   .ternary-text{
