@@ -46,9 +46,9 @@ const Navbar = () => {
         <li><Link to='/SocialNavigation'>Socials</Link></li>
         <li><Link to='/Auth'>Login</Link></li>
         {/* Toggle mode button */}
-        <button  className="mode-toggle-button" onClick={toggleMode}>
+        {/* <button  className="mode-toggle-button" onClick={toggleMode}>
           Dark Mode
-        </button>
+        </button> */}
       </div>
       
       {/* <img className='hireme-background' src='/src\assets\LIQL6416.PNG' alt='background image for hire me section'></img> */}

@@ -124,7 +124,7 @@ transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
  box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
 width: 100%;
 position: relative;
-margin: 0px 20px;
+margin: 0px 130px;
 
 }
 .Coding-Text{
@@ -196,13 +196,14 @@ left: 50px;
 }
 .Fitness-Text{
   position: relative;
-  top: 190px;
-  left: -20px;
+  width: 110%;
+  top: 170px;
+  left: 40px;
 }
 .Fitness-Label{
   position: relative;
   top: 140px;
-left: 150px;
+  left: 50px;
 }
   }
   @media only screen and (min-width: 600px) and (max-width: 899px) {
@@ -237,12 +238,7 @@ width: 90%;
   top: 60px;
   }
 
-.second-navbar{
-  position: relative;
-  
-  font-size: samll;
-  width: 110%;
-    }
+
   .box1 .box2 .box3 .box4{
     position: relative;
     top: 1000px;

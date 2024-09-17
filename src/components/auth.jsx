@@ -223,10 +223,7 @@ export default function Auth() {
           </button>
         </div>
       </form>
-      <img
-        className="background-image-wilderness"
-        alt="background-image-wilderness"
-      />
+      
     </div>
   );
 }

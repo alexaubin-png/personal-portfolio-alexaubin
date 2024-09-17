@@ -191,6 +191,7 @@ justify-content: center;
     height: 60px;
   }
 }
+
 @media only screen and (min-width: 2000px){
   .message-submit{
     font-size: 20px;

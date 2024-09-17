@@ -222,13 +222,14 @@ top: 400px;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
-body{
-  background-color: blue;
-}
 .container-flex{
   width: 1200px;
   position: relative;
   top: 1200px;
+}
+.box4-p{
+  position: relative;
+  top: 220px;
 }
 
 }
