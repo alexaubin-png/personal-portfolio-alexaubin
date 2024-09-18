@@ -207,42 +207,7 @@ left: 50px;
 }
   }
   @media only screen and (min-width: 600px) and (max-width: 899px) {
-.Coding{
-  width: 90%;
-  position: relative;
-  right: 75px;
-}
-.Coding-Text{
-  position: relative;
-  left: 220px;
-}
-.Coding-Header{
-  width: 20%;
-  margin: 0px 435px;
-}
-.Reading{
-  position: relative;
-  left: 250px;
-  bottom: 150px;
-  right: -125px;
-width: 90%;
-}
-.Reading-Text{
-  position: relative;
-  right: 115px;
 
-}
-.Reading-Header{
-  position: relative;
-  right: 0px 0px;
-  top: 60px;
-  }
-
-
-  .box1 .box2 .box3 .box4{
-    position: relative;
-    top: 1000px;
-    }
   }
   
 
