@@ -18,13 +18,11 @@ export default function Auth() {
     setIsLoggedIn(!!token); // Convert token to boolean
   }, []);
 
-  const getApiUrl = () => {
-    return process.env.REACT_APP_API_URL; // This will return the correct URL based on the environment
-  };
+
 
   const authUser = async (username, password) => {
     try {
-      const response = await fetch(`${getApiUrl()}/users/register`, {
+      const response = await fetch(`http://localhost:8080/users/users/register`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, password }),
