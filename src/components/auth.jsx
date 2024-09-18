@@ -9,8 +9,8 @@ export default function Auth() {
   const [isLoginMode, setIsLoginMode] = useState(false);
   const [isGuest, setIsGuest] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false); // Track login status
-  const [newPassword, setNewPassword] = useState('')
-  const [newUsername, setNewUsername] = useState('')
+  // const [newPassword, setNewPassword] = useState('')
+  // const [newUsername, setNewUsername] = useState('')
 
   // Check if the user is logged in when the component mounts
   useEffect(() => {
@@ -18,9 +18,16 @@ export default function Auth() {
     setIsLoggedIn(!!token); // Convert token to boolean
   }, []);
 
+  const getApiUrl = () => {
+    if (process.env.NODE_ENV === 'development') {
+      return 'http://localhost:8080';
+    }
+    return 'https://personal-portfolio-alexaubin.vercel.app/'; // Replace with your actual deployed backend URL
+  };
+
   const authUser = async (username, password) => {
     try {
-      const response = await fetch("http://localhost:8080/users/register", {
+      const response = await fetch(`${getApiUrl()}/users/register`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, password }),
@@ -41,6 +48,7 @@ export default function Auth() {
       alert("Registration failed. Please try again.");
     }
   };
+
 
   const loginUser = async (username, password) => {
     try {
