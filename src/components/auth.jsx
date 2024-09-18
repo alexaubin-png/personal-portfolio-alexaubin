@@ -19,10 +19,7 @@ export default function Auth() {
   }, []);
 
   const getApiUrl = () => {
-    if (process.env.NODE_ENV === 'development') {
-      return 'http://localhost:8080';
-    }
-    return 'https://personal-portfolio-alexaubin.vercel.app/'; // Replace with your actual deployed backend URL
+    return process.env.REACT_APP_API_URL; // This will return the correct URL based on the environment
   };
 
   const authUser = async (username, password) => {
