@@ -45,6 +45,7 @@ function App() {
   const currentModeStyles = isDarkMode ? darkModeStyle : lightModeStyle;
   
   return (
+  <BrowserRouter>
   <Router>
     <Navbar />
     <Routes>
@@ -67,6 +68,7 @@ function App() {
    <HomeFlexBox />
    <Footer />
  </Router>
+ </BrowserRouter>
   );
 }
 
