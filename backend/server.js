@@ -9,7 +9,13 @@ const { connect } = require('./db.js');
 connect();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+    origin: ['http://localhost:5173', 'https://personal-portfolio-alexaubin.vercel.app'],  // replace with your frontend URL
+    credentials: true, // enable cookies
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization']  // replace with your allowed headers
+ 
+}));
 app.use(express.json()); // Correct usage: invoke express.json() to use JSON parsing middleware
 
 // Routes

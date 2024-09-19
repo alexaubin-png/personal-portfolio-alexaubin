@@ -21,7 +21,7 @@ export default function Websites() {
         <h1>DevZone</h1>
         <div className="details">
         <h2>Personal</h2>
-          <p>a website to teach motivated students how to code as rookie</p>
+          <p>a website to teach motivated students how to code</p>
   
         </div>
       </div>
@@ -30,7 +30,7 @@ export default function Websites() {
         <h1>React Chat</h1>
         <div className="details">
         <h2>Personal</h2>
-          <p>A website that allows a user to switch rooms + send messages</p>
+          <p>A website that allows a user to switch rooms</p>
   
         </div>
       </div>
