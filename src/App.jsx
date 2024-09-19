@@ -1,7 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import { useState } from 'react'
-// import {useState} from 'react'
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -45,8 +45,7 @@ function App() {
   const currentModeStyles = isDarkMode ? darkModeStyle : lightModeStyle;
   
   return (
-  <BrowserRouter>
-  <Router>
+<Router>
     <Navbar />
     <Routes>
      <Route path="/" element={<Home />} />
@@ -68,7 +67,7 @@ function App() {
    <HomeFlexBox />
    <Footer />
  </Router>
- </BrowserRouter>
+
   );
 }
 
