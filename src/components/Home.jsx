@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {Link} from 'react-router-dom'
 import "./Home.css";
+import NavBar from './Navbar.jsx'
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);

@@ -1,7 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import { useState } from 'react'
-// import {useState} from 'react'
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -10,7 +10,6 @@ import Navbar from './components/Navbar';
 import ImageGallery from './components/ImageGallery';
 import SocialNavigation2 from './components/SocialNavigation';
 import Footer from './components/footer';
-import RecentProject from './components/RecentProject';
 import Hobbies from './components/Hobbies'
 import Auth from './components/auth.jsx'
 import Blogs from './components/Blogs.jsx'
@@ -45,8 +44,7 @@ function App() {
   const currentModeStyles = isDarkMode ? darkModeStyle : lightModeStyle;
   
   return (
-  <BrowserRouter>
-  <Router>
+<Router>
     <Navbar />
     <Routes>
      <Route path="/" element={<Home />} />
@@ -68,7 +66,7 @@ function App() {
    <HomeFlexBox />
    <Footer />
  </Router>
- </BrowserRouter>
+
   );
 }
 
