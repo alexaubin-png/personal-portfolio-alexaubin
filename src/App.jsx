@@ -10,7 +10,6 @@ import Navbar from './components/Navbar';
 import ImageGallery from './components/ImageGallery';
 import SocialNavigation2 from './components/SocialNavigation';
 import Footer from './components/footer';
-import RecentProject from './components/RecentProject';
 import Hobbies from './components/Hobbies'
 import Auth from './components/auth.jsx'
 import Blogs from './components/Blogs.jsx'
