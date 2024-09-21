@@ -8,7 +8,7 @@ export default function imageGallery() {
       <div className="current-project-container">
         <h1 className='current-project-text'>Current Project</h1>
         <p className='description-current-project'>Im developing a website to teach developers to code</p>
-        <iframe className='current-project'></iframe>
+        <iframe src='' className='current-project'></iframe>
       </div>
     
       <h1 className='pastprojects'>Past Projects</h1>
