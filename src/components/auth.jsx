@@ -24,7 +24,7 @@ export default function Auth() {
 
   const authUser = async (username, password) => {
     try {
-      const response = await fetch(`http://localhost:8080/users/users/register`, {
+      const response = await fetch(`http://localhost:8080/users/users/register`, {//still attempting to find a deployed URL because you need to have cloned to repo to use the current url aka the api only works locally on your machine
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, password }),

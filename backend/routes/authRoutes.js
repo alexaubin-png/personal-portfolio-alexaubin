@@ -7,7 +7,7 @@ const app = express();
 router.post('/login', userControllers.loginUser)
 
 
-router.post('/users/register', userControllers.registerNewUser)
+router.post('/register', userControllers.registerNewUser)
 
 router.put('/update/:id', userControllers.updateUser)
 
