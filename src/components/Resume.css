@@ -145,33 +145,41 @@ margin: 20px;
   @media only screen and (min-width: 1600px){
     .badge-container{
       position: relative;
-      margin: 0px -60px;
       display: flex;
       justify-content: center;
     }
    .resume-page-1{
     position: relative;
     width: 60%;
+    left: 207px;
    
    }.resume-page-2{
     position: relative;
-
+    left: 207px;
     width: 60%;
    }
  
    .Fullstack{
- 
+    position: relative;
+    left: 60px;
    }
    .Javascript{
     border-radius: 40px;
+
+    position: relative;
+    left: 60px;
    }
   
   .badge1{
     border-radius: 40px;
+    position: relative;
+    left: 60px;
   
   }
   .react-badge{
     border-radius: 40px;
+    position: relative;
+    left: 60px;
   }
 }
 @media only screen and (min-width: 2000px){
@@ -185,19 +193,6 @@ margin: 20px;
     width: 80%;
     position: relative;
     right: 100px;
-   }
-   .badge1{
-   width: 100%;
-  
-     }
-   .Fullstack{
- 
-   }
-   .react-badge{
-    width: 100%;
-   }
-   .Javascript{
-   
    }
 }
 

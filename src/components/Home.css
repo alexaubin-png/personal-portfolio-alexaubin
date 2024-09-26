@@ -427,18 +427,8 @@ font-size: 10px;
 
 @media only screen and (min-width:2000px){
 .homePage{
-width: 95%;
-font-size: 50px;
-}
-.Websites{
-  padding: 0px;
-  font-size: 30px;
-  width: 300px;
-}
-.Button-VideoGames{
-  padding: 40px;
-  font-size: 30px;
-  width: 300px;
+width: 100%;
+font-size: 35px;
 }
 .main-image-home{
   width: 800px;

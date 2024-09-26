@@ -320,17 +320,4 @@ width: 100%;
   right: 680px;
 }
 }   
-@media only screen and (min-width: 2000px){
-.container2{
-  width: 100%;
-}
-.second-navbar{     
-  position: relative;
-  width: 100%;
-  font-size: 1.5em;
-}
-.relative-image{
-  font-size: 2em;
-}
-} 
 
