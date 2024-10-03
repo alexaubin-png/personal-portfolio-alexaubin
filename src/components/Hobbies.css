@@ -95,7 +95,7 @@ font-size: 35px;
   .Fitness{
     position: relative;
     bottom: 100px;
-    left: -100px;
+    left: 495px;
     width: 400px;
     height: 300px;
     margin: -50px 900px 20px 0px; /* Adjust margin as needed */
@@ -105,17 +105,16 @@ font-size: 35px;
   .Fitness-Label{
     font-size: 30px;
     position: relative;
+    right: 155px;
     top: -400px;
-    left: 500px;
     color: black;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 35px;
   }
   .Fitness-Text{
     position: relative;
     bottom: 350px;
-    left: 100px;
-    float: right;
-    display: flex;
+    left: 0px;
     width: 60%;
   }
   @media only screen and (max-width: 599px) {

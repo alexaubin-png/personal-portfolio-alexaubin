@@ -26,8 +26,9 @@ const PORT = process.env.PORT
 
 
 //needed middleware to be in server.js for blogs loocated in Routes folder
-;const BlogRoutes = require('./routes/Blog')
-app.use('/blogs', (req, res) => {
+;const blogRoutes = require('./routes/Blog')
+app.use('/api', (req, res) => {
+
 })
 
 // Start the server

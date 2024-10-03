@@ -18,11 +18,10 @@ export default function Auth() {
     setIsLoggedIn(!!token); // Convert token to boolean
   }, []);
 
-
-
   const authUser = async (username, password) => {
     try {
-      const response = await fetch(`http://localhost:8080/users/users/register`, {//still attempting to find a deployed URL because you need to have cloned to repo to use the current url aka the api only works locally on your machine
+      const response = await fetch(`http://localhost:8080/users/register`, {
+        //still attempting to find a deployed URL because you need to have cloned to repo to use the current url aka the api only works locally on your machine
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, password }),
@@ -44,31 +43,29 @@ export default function Auth() {
     }
   };
 
-
   const loginUser = async (username, password) => {
     try {
-        const response = await fetch("http://localhost:8080/users/login", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ username, password }),
-        });
+      const response = await fetch("http://localhost:8080/users/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ username, password }),
+      });
 
-        if (!response.ok) {
-            throw new Error("Login failed");
-        }
+      if (!response.ok) {
+        throw new Error("Login failed");
+      }
 
-        const data = await response.json();
-        localStorage.setItem("token", data.token);
-        localStorage.setItem("username", data.username);
-        setIsLoggedIn(true);
-        alert("Login successful.");
-        navigate("/");
+      const data = await response.json();
+      localStorage.setItem("token", data.token);
+      localStorage.setItem("username", data.username);
+      setIsLoggedIn(true);
+      alert("Login successful.");
+      navigate("/");
     } catch (error) {
-        console.error("Login error:", error);
-        alert("Login failed. Please check your credentials.");
+      console.error("Login error:", error);
+      alert("Login failed. Please check your credentials.");
     }
-};
-  
+  };
 
   const updateUser = async (username, password) => {
     try {
@@ -88,7 +85,7 @@ export default function Auth() {
       console.error("Update user error:", error);
       alert("Failed to update user. Please try again.");
     }
-  }
+  };
   const handleUpdate = async (e) => {
     e.preventDefault();
     if (newUsername || newPassword) {
@@ -153,10 +150,9 @@ export default function Auth() {
               />
             </label>
           </>
-          
         ) : (
           <div>
-               {/* <h2>Update Your Information</h2>
+            {/* <h2>Update Your Information</h2>
               <form onSubmit={handleUpdate}>
                 <label>
                   New Username:
@@ -178,7 +174,7 @@ export default function Auth() {
                 <br />
                 <button type="submit">Update</button>
               </form> */}
-            <label className='username-label-login'>
+            <label className="username-label-login">
               Username:
               <input
                 className="username-input-login"
@@ -226,7 +222,6 @@ export default function Auth() {
           </button>
         </div>
       </form>
-      
     </div>
   );
 }

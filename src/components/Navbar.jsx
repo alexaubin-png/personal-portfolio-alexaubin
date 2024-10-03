@@ -45,6 +45,8 @@ const Navbar = () => {
         <li><Link to='#'>Work History</Link></li>
         <li><Link to='/SocialNavigation'>Socials</Link></li>
         <li><Link to='/Auth'>Login</Link></li>
+        {/* <li><Link to='/blogSection'>Blogs</Link></li> */}
+        <li><Link to='/chatbot'>chatbot</Link></li>
         {/* Toggle mode button */}
         {/* <button  className="mode-toggle-button" onClick={toggleMode}>
           Dark Mode

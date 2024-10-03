@@ -110,6 +110,7 @@ border: 2px solid #FFD700;
 border-radius: 10px;
 border-color: #FFD700; /* Change border color on focus */
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Increase shadow on focus */
+transform: translate(25px)
 };
   
   .content-home-text{

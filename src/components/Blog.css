@@ -1,0 +1,34 @@
+.container-blogs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.589);
+}
+.content-image{
+    width: 50%;
+    height: 300px;
+    object-fit: cover;
+    position: relative;
+    bottom: 65px;
+    filter: brightness(.6);
+}
+.content-header{
+    float:right;
+    width: 35%;
+    margin: 20px 80px;
+}
+.content-text{
+    color: white;
+    position: relative;
+    bottom: 200px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: justify;
+    line-height: 1;
+    padding: 25px;
+    width: 450px;
+ 
+}
