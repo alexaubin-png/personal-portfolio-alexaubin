@@ -2,15 +2,14 @@ import React from 'react';
 
 const Profile = ({ token }) => {
   // Check if token exists to determine if user is logged in
-  const isLoggedIn = !!token;
+
 
   return (
     <>
-      {isLoggedIn && (
+
         <div className="double-container">
           <div className='profile-container'>
             <img src='' className='profile-picture' alt='Profile' />
-            <h1 className='name'>Alex Aubin</h1>
             <h1 className='my-name-profile'>Alex Aubin</h1>
             {/* <label href='' className='profile-Education'>Certificate</label> */}
             {/* <a className='profile-badges' href='https://gyazo.com/4118a7b8c93a4b3173ccd6549e8802ba'>badges</a><br></br> */}
@@ -26,21 +25,8 @@ const Profile = ({ token }) => {
               <p>05452 Vermont</p>
             </div>
           </div>
-          <div className="container">
-            <div className="img-container">
-              <img src='#'></img>
-            </div>
-            <div className="img-section">
-              <img src='#' alt=''></img>
-              <img src='#' alt=''></img>
-              <img src='#' alt=''></img>
-              <img src='#' alt=''></img>
-              <img src='#' alt=''></img>
-            </div>
-          </div>
         </div>
-      )}
-    </>
+        </>
   );
 };
 

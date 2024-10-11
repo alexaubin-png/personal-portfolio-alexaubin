@@ -7,6 +7,61 @@
     text-align: center;
     background-color: rgba(0, 0, 0, 0.589);
 }
+.createblogs-container{
+    width: 100%;
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.update-container{
+    width: 100%;
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.input-blog-title{
+    border: 2px solid gold;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.Update-Blog{
+    background-color: rgba(0, 0, 0, 0.336);
+    color: white;
+    border: .5px solid gold;
+    border-radius: 5px;
+    padding: 10px;
+}
+.input-blog-author{
+border: 2px solid gold;
+border-radius: 5px;
+padding: 10px;
+margin: 10px;
+text-align: center;
+}
+.input-blog-content{
+    border: 2px solid gold;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.button-blog-create{
+    background-color: rgba(0, 0, 0, 0.336);
+    color: white;
+    border: .5px solid gold;
+
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
 .content-image{
     width: 50%;
     height: 300px;

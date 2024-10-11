@@ -1,6 +1,6 @@
 import React from 'react'
 import './ImgGallery.css'
-
+import Chatbot from './chatbot.jsx'
 export default function imageGallery() {
 
   return ( 
@@ -19,6 +19,7 @@ export default function imageGallery() {
       <div className='React-ChatTag'>React-Chat</div>
       <div className='DevzoneTag'>DevZone</div>
       <div className='PineappleTag'>Server-Blog</div>
+      <div className="chatbot"><Chatbot/></div>
     </div>
  
  {/*deploy jeopardy, capstone, react-chat, make frontend for server-blog  and devzone*/}
