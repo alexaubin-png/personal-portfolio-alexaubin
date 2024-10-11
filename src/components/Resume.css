@@ -18,6 +18,25 @@ align-items: center;
   left: 150px;
 
 }
+.download-links{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+}
+.download-button{
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.486);
+  border-radius: 10px;
+  border: 2px solid black;
+  width: 50%;
+  margin: 0px 250px;
+}
+.download-button:hover{
+border-color: #FFD700;
+}
 .badge1{
   width: 30%;
   height: 100%;
