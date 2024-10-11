@@ -5,10 +5,12 @@ const app = express();
 const { connect } = require('./db.js');
 
 
+
 // Connect to MongoDB
 connect();
 
 // Middleware
+
 app.use(cors({
     origin: ['http://localhost:5173', 'https://personal-portfolio-alexaubin.vercel.app'],  // replace with your frontend URL
     credentials: true, // enable cookies
@@ -19,6 +21,9 @@ app.use(cors({
 app.use(express.json()); // Correct usage: invoke express.json() to use JSON parsing middleware
 
 // Routes
+const blogRoutes = require('./routes/Blog'); // Ensure the path is correct
+app.use('/api', blogRoutes);
+
 const authRoutes = require('./routes/authRoutes');
  app.use('/users', authRoutes);
 

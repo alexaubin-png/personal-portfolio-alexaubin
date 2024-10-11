@@ -1,8 +1,8 @@
 //import user schema from models directory, or else our request/response object will not be available.
  require('dotenv').config();
 const bcrypt = require('bcrypt');
-const JWT_SECRET = process.env.JWT_SECRET;
 const jwt = require('jsonwebtoken');
+const JWT_SECRET = process.env.JWT_SECRET;
 const SALT = 10
 const User = require('../models/User');
 const nodemailer = require('nodemailer');
@@ -11,15 +11,15 @@ const Mailgen = require('mailgen');
 
 exports.registerNewUser = async (req,res) => {
 try{
-const hashedPassword = await bcrypt.hash(req.body.password, 10);
-const user = new User({
-username: req.body.username,
-password: hashedPassword,
+    const hashedPassword = await bcrypt.hash(req.body.password, 10);
+    const user = new User({
+                    username: req.body.username,
+                    password: hashedPassword,
 });
 // Validate input data
 
 if (!req.body.username || !req.body.password) {
-throw new Error("Please provide username and password.");
+    throw new Error("Please provide username and password.");
 }
 const newUser = await user.save();//saving our new user because user is already in our database/schema
 res.status(201).json(newUser);//201 for successful registration/creation
@@ -127,7 +127,7 @@ exports.loginUser = async (req, res) => {
             throw new Error('JWT_SECRET is not defined');
         }
 
-        const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: '1h' });
+        const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET);
 
         res.status(200).json({ token });
     } catch (error) {

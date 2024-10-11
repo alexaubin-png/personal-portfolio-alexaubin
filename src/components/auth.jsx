@@ -9,6 +9,8 @@ export default function Auth() {
   const [isLoginMode, setIsLoginMode] = useState(false);
   const [isGuest, setIsGuest] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false); // Track login status
+  const [newUsername, setNewUsername] = useState('')
+  const [newPassword, setNewPassword] = useState('')
   // const [newPassword, setNewPassword] = useState('')
   // const [newUsername, setNewUsername] = useState('')
 
@@ -45,11 +47,13 @@ export default function Auth() {
 
   const loginUser = async (username, password) => {
     try {
+
       const response = await fetch("http://localhost:8080/users/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, password }),
       });
+
 
       if (!response.ok) {
         throw new Error("Login failed");
@@ -70,7 +74,7 @@ export default function Auth() {
   const updateUser = async (username, password) => {
     try {
       const response = await fetch(
-        `http://localhost:8080/users/${localStorage.getItem("username")}`,
+        `http://localhost:8080/users/update:id}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
@@ -152,7 +156,11 @@ export default function Auth() {
           </>
         ) : (
           <div>
+
             {/* <h2>Update Your Information</h2>
+
+                <h2>Update Your Information</h2>
+
               <form onSubmit={handleUpdate}>
                 <label>
                   New Username:
@@ -172,9 +180,15 @@ export default function Auth() {
                   />
                 </label>
                 <br />
+
                 <button type="submit">Update</button>
               </form> */}
             <label className="username-label-login">
+
+                <button onClick={updateUser} type="submit">Update</button>
+              </form> 
+            <label className='username-label-login'>
+
               Username:
               <input
                 className="username-input-login"
