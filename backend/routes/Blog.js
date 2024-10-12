@@ -5,7 +5,7 @@ const BlogPost = require('../models/Blogs.js')
 
 router.post('/posts', async (req, res) => {
     try{
-        const count = await BlogPost.countDoucments()
+        const count = await BlogPost.countDocuments()
         let newEntry = new BlogPost({
                 post_id: count + 1,
                 title: req.body.title,
@@ -44,43 +44,7 @@ router.put('/put', async (req, res) => {
         res.status(500).json({message: 'Server Error'})
     }
 })
-
-const router = require('express').Router();
-const BlogPost = require('../models/Blog.js'); // Check that the path is correct
-
-
-// Create a new post
-router.post('/posts', async (req, res) => {
-    try {
-        const count = await BlogPost.countDocuments();
-        let newEntry = new BlogPost({
-            post_id: count + 1,
-            ...req.body,
-            title: req.body.title,
-            content: req.body.content,
-            author: req.body.author,
-
-        });
-        await newEntry.save();
-        res.status(200).json({
-            message: "New post created",
-            newEntry
-        });
-    } catch (error) {
-    
-        res.status(500).json({ message: `${error}` });
-    }
-});
-
-// Get all comments (you may want to rename this route)
-router.get('/comments', async (req, res) => {
-    try {
-        const results = await BlogPost.find();
-        res.status(200).json(results);
-    } catch (error) {
-        res.status(500).json({ message: `${error}` });
-    }
-});
+;
 
 // Get a specific comment by title
 router.get('/comments/:title', async (req, res) => {
