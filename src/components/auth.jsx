@@ -11,6 +11,8 @@ export default function Auth() {
   const [isLoggedIn, setIsLoggedIn] = useState(false); // Track login status
   const [newUsername, setNewUsername] = useState('')
   const [newPassword, setNewPassword] = useState('')
+  const [profilePicture, setProfilePicture] = useState(null);
+  const [bio, setBio] = useState("");
   // const [newPassword, setNewPassword] = useState('')
   // const [newUsername, setNewUsername] = useState('')
 
@@ -186,7 +188,7 @@ export default function Auth() {
             <label className="username-label-login">
 
                 <button onClick={updateUser} type="submit">Update</button>
-              </form> 
+              </label> 
             <label className='username-label-login'>
 
               Username:
