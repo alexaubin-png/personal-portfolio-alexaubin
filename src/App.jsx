@@ -23,6 +23,7 @@ import Websites from './components/Websites.jsx'
 import BlogSection from './components/Blogs.jsx'
 import Chatbot from './components/chatbot.jsx'
 import Profile from './components/Profile.jsx'
+import Capstone from './components/Capstone.jsx'
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -68,6 +69,7 @@ function App() {
      <Route path='/blogSection' element={<BlogSection/>}></Route>
      <Route path='/chatbot' element={<Chatbot/>}></Route>
      <Route path='/profile' element={<Profile />}></Route>
+     <Route path='/Capstone' element={<Capstone />}></Route>
    </Routes>
    <HomeFlexBox />
    <Footer />

@@ -1,10 +1,19 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './Websites.css'
 export default function Websites() {
   return (
     //a mobile friendly(full screen highresolution clickable images)
     // that link to deployed projects(projects listed in socail nav file)
     <>
+    <div className='websites-container'>
+      <ul className='container-navbar'>
+      <li><Link className='nav-links' to='/Capstone'>Capstone</Link></li>
+      <li><Link className='nav-links' >DevZone</Link></li>
+      <li><Link className='nav-links'>The Barn Screen Door</Link></li>
+      <li><Link className='nav-links'>Freelancing</Link></li>
+      </ul>
     <section className='slider-container'>
     <div className="slider-images">
       <div className="slider-image">
@@ -12,7 +21,7 @@ export default function Websites() {
         <h1>Capstone</h1>
         <div className="details">
         <h2>Indygo</h2>
-          <p>bus stops and map navigation in indianappolis marion county</p>
+          <p>bus stops and map navigation in Indianappolis, Marion County. The website is primarily for users to clean buststop in effect bettering the community</p>
   
         </div>
       </div>
@@ -21,7 +30,7 @@ export default function Websites() {
         <h1>DevZone</h1>
         <div className="details">
         <h2>Personal</h2>
-          <p>a website to teach motivated students how to code</p>
+          <p>a website to teach motivated students how to code, still in development and has yet be deployed</p>
   
         </div>
       </div>
@@ -53,6 +62,8 @@ export default function Websites() {
       </div>
     </div>
     </section>
+    </div>
+  
      </>
    
     
