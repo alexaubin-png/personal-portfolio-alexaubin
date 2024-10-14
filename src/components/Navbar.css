@@ -6,6 +6,9 @@ body{
   background-color: black;
 width: 100%;
 }
+.hamburger{
+  display: none;
+}
   Img{
     width: 30px;
     height: 300px;
@@ -51,7 +54,7 @@ width: 100%;
   letter-spacing: 0.15rem;
   font-weight: 900;
   font-size: 1.75rem;
-  height: 70px;
+  height: 80px;
   width: 20%;
   position: relative;
   bottom: 25px;
@@ -257,37 +260,48 @@ width: 100%;
   }
 }
 
-@media only screen and (max-width: 300px){
-
- 
-}
 @media only screen and (max-width: 599px){
-.navbar{
-  width: 100%;
-}
-.content{
-  width: 100%;
-  background-color: black;
-}
-.second-navbar{
-  width: 100%;
-  font-size: 10px;
-  display: flex;
-  flex-direction: column;
-  height: 300px;
-  width: 100%;
-}
-.HireMeButton{
-  font-size: 15px;
-  width: 20%;
-
- }
- .MenuButton{
-  font-size: 15px;
-  width: 15%;
-  position: relative;
-  right: 40px;
- }
+  .navbar {
+    width: 100%;
+    flex-direction: column;
+    position: relative; /* Adjusted for the absolute positioning of items */
+  }
+  .hamburger {
+    width: 100%;
+    display: block;
+    margin-right: 20px; /* Adjust spacing */
+ 
+    padding: 10px;
+    background-color: black; /* Adjust background color */
+    color: white; /* Adjust text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Add pointer cursor */
+    font-size: 20px; /* Adjust size for visibility */
+  }
+  .menu {
+    display: none; /* Initially hide menu */
+    flex-direction: column;
+    background-color: white; /* Background for the dropdown */
+    position: absolute; /* Position it below the hamburger */
+    top: 50px; /* Adjust based on your navbar height */
+    left: 0;
+    width: 100%;
+    z-index: 100; /* Ensure it appears above other content */
+  }
+  .menu.show {
+    display: flex; /* Show menu when toggled */
+  }
+  .second-navbar {
+    width: 100%;
+    font-size: 6px;
+    display: flex;
+    flex-direction: row;
+  }
+  .HireMeButton, .MenuButton {
+    width: 19%; /* Full width for buttons */
+    font-size: smaller;
+    
+  }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 899px) {
@@ -298,10 +312,6 @@ width: 100%;
     width: 100%;
     background-color: black;
    }
-  .second-navbar{
-
-  }
-
   }
 
 
@@ -320,4 +330,3 @@ width: 100%;
   right: 680px;
 }
 }   
-

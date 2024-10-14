@@ -1,9 +1,10 @@
+
 .parent-container{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
-  margin: 0px 25px;
+  width: 100%; 
+
 }
 .Parent-Social-Container-box1{
 /*coming back to this*/
@@ -16,8 +17,7 @@
   position: relative;
   left: -27px;
   border: 2px solid black;
-  position: relative;
-  left: 20px;
+border-radius: 10px;
 }
 
 .instagram:hover{
@@ -29,8 +29,7 @@
   width: 246px;
   height: 443px;
   border: 2px solid black;
-  position: relative;
-  left: 20px;
+  border-radius: 10px;
 }                                                   
 
 .linked-in:hover{
@@ -44,9 +43,8 @@
 .X-box3{
   width: 246px;
   height: 443px;
-  border: 2px solid black;
-  position: relative;
-  left: 20px;                                                                                                           
+  border: 2px solid black;       
+  border-radius: 10px;                                                                                                 
 }
 .X-box3:hover{
   border-color: black;

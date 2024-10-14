@@ -20,7 +20,10 @@ import FullstackP from './components/FullstackParagraph.jsx'
 import JSDev from './components/JavaScriptDevP.jsx';
 import ReactP from './components/ReactP.jsx'
 import Websites from './components/Websites.jsx'
-
+import BlogSection from './components/Blogs.jsx'
+import Chatbot from './components/chatbot.jsx'
+import Profile from './components/Profile.jsx'
+import Capstone from './components/Capstone.jsx'
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -46,6 +49,7 @@ function App() {
   return (
 <Router>
     <Navbar />
+
     <Routes>
      <Route path="/" element={<Home />} />
       <Route path="/About" element={<About />} />
@@ -62,6 +66,10 @@ function App() {
      <Route path='/JavaScriptFoundations' element={<JSDev/>}></Route>
      <Route path='/ReactParagraph' element={<ReactP/>}></Route>
      <Route path='/Websites' element={<Websites />}></Route>
+     <Route path='/blogSection' element={<BlogSection/>}></Route>
+     <Route path='/chatbot' element={<Chatbot/>}></Route>
+     <Route path='/profile' element={<Profile />}></Route>
+     <Route path='/Capstone' element={<Capstone />}></Route>
    </Routes>
    <HomeFlexBox />
    <Footer />

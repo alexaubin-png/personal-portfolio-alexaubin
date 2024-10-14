@@ -1,0 +1,18 @@
+.chatbot{
+    background-color: rgba(0, 0, 0, 0.527);
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.chatbot ul{
+    list-style-type: none;
+}
+.textarea{
+    width: 100%;
+    background-color: rgba(240, 255, 255, 0);
+    border: .5px solid grey;
+    border-radius: 20px;
+}

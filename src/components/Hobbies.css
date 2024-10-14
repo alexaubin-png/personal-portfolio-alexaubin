@@ -95,7 +95,7 @@ font-size: 35px;
   .Fitness{
     position: relative;
     bottom: 100px;
-    left: -100px;
+    left: 495px;
     width: 400px;
     height: 300px;
     margin: -50px 900px 20px 0px; /* Adjust margin as needed */
@@ -105,17 +105,16 @@ font-size: 35px;
   .Fitness-Label{
     font-size: 30px;
     position: relative;
+    right: 155px;
     top: -400px;
-    left: 500px;
     color: black;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 35px;
   }
   .Fitness-Text{
     position: relative;
     bottom: 350px;
-    left: 100px;
-    float: right;
-    display: flex;
+    left: 0px;
     width: 60%;
   }
   @media only screen and (max-width: 599px) {
@@ -124,7 +123,7 @@ transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
  box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
 width: 100%;
 position: relative;
-margin: 0px 130px;
+margin: 0px 100px;
 
 }
 .Coding-Text{
@@ -132,7 +131,7 @@ width: 150%;
 font-size: 15px;
 position: relative;
 top: 50px;
-left: 50px;
+left: 30px;
 }
 .Coding-Header{
 width: 100%;
@@ -147,7 +146,7 @@ top: 20px;
  width: 100%;
  position: relative;
  top: 80px;
-left: 50px;
+ margin: 0px 130px;
 }
 .Reading-Text{
   width: 150%;
@@ -169,21 +168,21 @@ left: 50px;
  width: 100%;
  position: relative;
  top: 80px;
-left: 50px;
+margin: 0px 100px;
 }
 .cooking-text{
   position: relative;
   width: 150%;
-top: 60px;
-left: 100px;
+top: 100px;
+left: 40px;
   font-size: 15px;
 }
 .cooking-header{
 display: flex;
 justify-content: center;
 position: relative;
-top: 50px;
-left: 0px;
+top: 80px;
+  left: 0px;
 
 }
 .Fitness{
@@ -192,18 +191,19 @@ left: 0px;
  width: 100%;
  position: relative;
  top: 150px;
-left: 50px;
+left: 0px;
 }
 .Fitness-Text{
   position: relative;
   width: 110%;
   top: 170px;
-  left: 40px;
+  left: 0px;
+
 }
 .Fitness-Label{
   position: relative;
   top: 140px;
-  left: 50px;
+  left: 0px;
 }
   }
   @media only screen and (min-width: 600px) and (max-width: 899px) {
