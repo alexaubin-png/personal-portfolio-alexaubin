@@ -55,9 +55,6 @@ const Navbar = () => {
 </div>
       {/* Conditionally render the Profile link */}
       <>
-       {isLoggedIn && (
-        <li><Link to='/profile'>Profile</Link></li>
-      )}
     </>   
     </div>
 

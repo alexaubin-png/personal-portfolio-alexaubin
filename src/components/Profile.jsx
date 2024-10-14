@@ -16,13 +16,13 @@ const Profile = ({ token }) => {
             <a className='profile-certificate' href='https://gyazo.com/fba38f035969bc4cb8049b775c7da68f'>Certificate</a>
             <div className='Profile-Details'>
               <label className='email-label'>EMAIL</label>
-              <p>alexjames4674@gmail.com</p>
+              <p>####</p>
               <label>PHONE</label>
-              <p>802-557-7719</p>
+              <p>#####</p>
               <label>BIRTHDAY</label>
-              <p>01/26/2002</p> 
+              <p>####</p> 
               <label>LOCATION</label>
-              <p>05452 Vermont</p>
+              <p>####</p>
             </div>
           </div>
         </div>

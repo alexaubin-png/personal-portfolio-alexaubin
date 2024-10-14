@@ -7,13 +7,14 @@ export default function imageGallery() {
     <div>
       <div className="current-project-container">
         <h1 className='current-project-text'>Current Project</h1>
-        <p className='description-current-project'>Im developing a website to teach developers to code</p>
-        <iframe src='' className='current-project'></iframe>
+        <p className='description-current-project'>Im developing a website to hold a storefront for a clothing company</p>
+        <iframe src='http://localhost:3000/' className='current-project'></iframe>
       </div>
     
-      <h1 className='pastprojects'>Past Projects</h1>
+
     <div class='content2'>These projects  are very uniqe to me, because they have my name and my passion on them, Ive created a vast amount of projects, click a tag below to check them out</div>
     <div className="tag-container">
+    <h1 className='pastprojects'>Past Projects</h1>
     <div className='CapstoneTag'>Indygo</div><br></br>
       <div className='JeopardyTag'>Jeopardy</div>
       <div className='React-ChatTag'>React-Chat</div>

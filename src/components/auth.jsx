@@ -236,6 +236,9 @@ export default function Auth() {
           <button className="guestButton" onClick={handleGuestLogin}>
             Continue as Guest
           </button>
+          {isLoggedIn && (
+        <li><a href='/profile'>Profile</a></li>
+      )}
         </div>
       </form>
     </div>

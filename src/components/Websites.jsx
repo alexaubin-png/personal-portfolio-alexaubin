@@ -27,10 +27,10 @@ export default function Websites() {
       </div>
       <div className="slider-image">
         <img   className='image3'src='./src/assets/AKMP4147.PNG' alt='3'></img>
-        <h1>React Chat</h1>
+        <h1>Clothing Buisness</h1>
         <div className="details">
-        <h2>Personal</h2>
-          <p>A website that allows a user to switch rooms</p>
+        <h2>professional</h2>
+          <p>A website tat provides users a cart to add items to, and purchase said items.</p>
   
         </div>
       </div>

@@ -10,14 +10,28 @@ import resumepage2 from '../assets/resume pg2.png';
 import ExpressP from './paragrpahExpress.jsx';
 
 export default function Resume() {
+  // Function to scroll to the resume section
+  const scrollToResume = () => {
+    const resumeSection = document.getElementById('resume-section');
+    if (resumeSection) {
+      resumeSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div>
       <div className='Resume-Container'>
-        <h1 className='Resume-Header'>Resume</h1>
-        <div className='download-links'>
-        <a href={resumepage1} download="Resume_Page_1.png" className="download-button">Download Resume Page 1</a><br></br>
-        <a href={resumepage2} download="Resume_Page_2.png" className="download-button">Download Resume Page 2</a>
-      </div>
+
+        <div className="resume-intro-container">
+          <h1 className='Resume-Header'>Resume</h1>
+          <div className='download-links'>
+            <a href={resumepage1} download="Resume_Page_1.png" className="download-button">Download Page 1</a><br></br>
+            <a href={resumepage2} download="Resume_Page_2.png" className="download-button">Download Page 2</a>
+          </div>
+          <button className='scroll-button' onClick={scrollToResume}>&#11015;
+          </button>
+        </div>
+
         <div className="badge-container">
           <Link to='/ExpressP'>
             <img className='badge1' src={badge1} alt="Badge 1" />
@@ -33,11 +47,11 @@ export default function Resume() {
           </Link>
         </div>
       </div>
-      <div className='resume-images'>
+      
+      <div id="resume-section" className='resume-images'>
         <img className='resume-page-1' src={resumepage1} alt='My Resume Page 1' />
         <img className='resume-page-2' src={resumepage2} alt='My Resume Page 2' />
       </div>
-     
     </div>
   );
 }
