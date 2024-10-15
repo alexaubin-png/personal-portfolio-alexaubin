@@ -11,8 +11,9 @@ export default function Auth() {
   const [isLoggedIn, setIsLoggedIn] = useState(false); // Track login status
   const [newUsername, setNewUsername] = useState('')
   const [newPassword, setNewPassword] = useState('')
-  const [profilePicture, setProfilePicture] = useState(null);
+  const [profilePicture, setProfilePicture] = useState(null);  
   const [bio, setBio] = useState("");
+
   // const [newPassword, setNewPassword] = useState('')
   // const [newUsername, setNewUsername] = useState('')
 
@@ -24,6 +25,7 @@ export default function Auth() {
 
   const authUser = async (username, password) => {
     try {
+
       const response = await fetch(`http://localhost:8080/users/register`, {
         //still attempting to find a deployed URL because you need to have cloned to repo to use the current url aka the api only works locally on your machine
         method: "POST",
@@ -76,7 +78,7 @@ export default function Auth() {
   const updateUser = async (username, password) => {
     try {
       const response = await fetch(
-        `http://localhost:8080/users/update:id}`,
+        `http://localhost:8080/users/update/${userId}}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
@@ -186,8 +188,8 @@ export default function Auth() {
                 <button type="submit">Update</button>
               </form> */}
             <label className="username-label-login">
-
-                <button onClick={updateUser} type="submit">Update</button>
+{/* 
+                <button onClick={updateUser} type="submit">Update</button> */}
               </label> 
             <label className='username-label-login'>
 

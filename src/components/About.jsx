@@ -8,9 +8,6 @@ export default function About() {
   
   return (
     <>
-
-      <p className='logo'>Alex</p>
-
   <section clasName='About'>
     <div className="about-img">
       <img className='my-image' src='../src/assets/HFWV2189.png'></img>

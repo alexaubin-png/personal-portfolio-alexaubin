@@ -14,4 +14,9 @@ nav li {
   display: inline-block;
   margin: 1em;
 }
+.dark-mode {
+  background-color: #000000;
+  color: #FFFFFF;
+  transition: background-color 0.3s, color 0.3s;
+}
 

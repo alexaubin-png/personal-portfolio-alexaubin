@@ -33,6 +33,11 @@ export default function Resume() {
         </div>
 
         <div className="badge-container">
+          <div className="header-container">
+          <h1 className='Header-Style'>Badges</h1>
+
+          </div>
+  
           <Link to='/ExpressP'>
             <img className='badge1' src={badge1} alt="Badge 1" />
           </Link>
