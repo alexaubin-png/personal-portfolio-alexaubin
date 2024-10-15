@@ -2,8 +2,6 @@
 
 body{
 overflow-x: hidden;
-color: black;
-background-color: white ;
 }
 
 .DevZone{
@@ -12,7 +10,7 @@ background-color: white ;
   align-items: center;
   padding: 0px;
   font-size: 20px;
-  color: white;
+
 position: relative;
 top: -100px;
 background-color: color;
@@ -27,7 +25,6 @@ background-color: color;
      /* Add extra space at the bottom */
     width: 100%;
     font-size: large;
-    color: black;
     position: relative;
     margin-bottom: -20px; /* Pull the div down */
     animation: fadeIn 1s ease forwards;
@@ -49,7 +46,7 @@ background-color: color;
     align-items: center;
     padding: 0px;
     font-size:20px;
-    color: black;
+    color: wheat;
     position: relative;
     top: 950px;
    /* Pull the div down */
@@ -120,6 +117,7 @@ transform: translate(25px)
     border: 2px solid black;
     text-align: center;
     font-size: 25px;
+  
   }
   .content-home{
     display: flex;
@@ -127,7 +125,7 @@ transform: translate(25px)
     align-items: center;
     padding: 0px;
     font-size: 20px;
-    color: black;
+  
 
    /* Pull the div down */
   }
@@ -310,6 +308,7 @@ font-size: 10px;
   align-items: center;
   padding: 40px;
   margin: 30px 45px;
+
   
   }
   .Button-Container{
@@ -359,7 +358,6 @@ font-size: 10px;
   
   .Name-Header {
     font-family: 'Lobster'; /* Applying the imported font */
-    color: black; /* Text color */
     font-size: 3em; /* Font size */
     text-shadow: 
       1px 1px 0 #000, 
@@ -368,8 +366,11 @@ font-size: 10px;
       4px 4px 0 #999; /* Creating a 3D effect with text-shadow */
     /* Optionally add more shadows for a deeper effect */
   }
-  @media only screen and (max-width: 400px){
-    
+  @media only screen and (max-width: 599px){
+    .homePage{
+      padding: 20px 10px;
+      margin: 10px;
+    }
    
   }
 
@@ -387,8 +388,9 @@ font-size: 10px;
   width: 100%;
   position: relative;
   top: 300px;
-  left: 0px;
+
 }
+
 
   @keyframes typing {
     0% {

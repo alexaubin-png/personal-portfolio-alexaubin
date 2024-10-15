@@ -70,7 +70,7 @@
     align-items: center;
     text-align: center;
     width: 100%;
-    color: white;
+    
   }
   .pastprojects{
     display: flex;
@@ -102,6 +102,7 @@
     text-align: center;
     border: 2px solid rgba(0, 0, 0, 0.2);
     margin: 3px;
+    color: black;
   }
   .CapstoneTag:hover{
     border: 2px solid black;
@@ -120,6 +121,7 @@
     text-align: center;
     border: 2px solid rgba(0, 0, 0, 0.2);
     margin: 3px;
+    color: black
   }
   .JeopardyTag:hover{
     border: 2px solid black;
@@ -135,11 +137,12 @@
     text-align: center;
     border: 2px solid rgba(0, 0, 0, 0.2);
     margin: 3px;
+    color: black
   }.React-ChatTag:hover{
     border: 2px solid black;
   }
   .DevzoneTag{
-    position: relative;
+    position: relative; 
     font-size: 18px;
     font-weight: bold;
     background-color: #f0efeb;
@@ -148,6 +151,7 @@
     text-align: center;
     border: 2px solid rgba(0, 0, 0, 0.2);
     margin: 3px;
+    color: black
   }
   .DevzoneTag:hover{
     border: 2px solid black;
@@ -164,7 +168,6 @@
     font-size: 24px;
     height: 200px;
     font-weight: bold;
-    color: white;
   width: 100%;
   height: auto;
   display: flex;
@@ -176,6 +179,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+ 
   }
   .PineappleTag{
     position: relative;
@@ -187,6 +191,7 @@
     text-align: center;
     border: 2px solid rgba(0, 0, 0, 0.2);
     margin: 3px;
+    color: black
   }
   .tag-container{
     border: 2px solid black;

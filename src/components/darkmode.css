@@ -1,0 +1,46 @@
+.content-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative; /* Allow positioning of child elements */
+    padding: 20px; /* Padding inside the container */
+    margin-top: 50px; /* Add margin to push it down from the navbar */
+}
+
+/* darkmode.css */
+
+body.dark-mode {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.content-container {
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle-style-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.dark .toggle-style-button {
+    background-color: #444;
+    color: #fff;
+}
+
+.light .toggle-style-button {
+    background-color: #ddd;
+    color: #000;
+}

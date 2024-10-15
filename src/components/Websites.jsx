@@ -7,13 +7,7 @@ export default function Websites() {
     //a mobile friendly(full screen highresolution clickable images)
     // that link to deployed projects(projects listed in socail nav file)
     <>
-    <div className='websites-container'>
-      <ul className='container-navbar'>
-      <li><Link className='nav-links' to='/Capstone'>Capstone</Link></li>
-      <li><Link className='nav-links' >DevZone</Link></li>
-      <li><Link className='nav-links'>The Barn Screen Door</Link></li>
-      <li><Link className='nav-links'>Freelancing</Link></li>
-      </ul>
+  
     <section className='slider-container'>
     <div className="slider-images">
       <div className="slider-image">
@@ -62,8 +56,6 @@ export default function Websites() {
       </div>
     </div>
     </section>
-    </div>
-  
      </>
    
     

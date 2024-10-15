@@ -1,8 +1,9 @@
-import React from 'react'
+import {React,  useState} from 'react'
 import {Link} from 'react-router-dom'
 import './footer.css'
 
 export default function footer() {
+
   return (
     <div className='footer-background'>
       <ul className='ul-footer'>

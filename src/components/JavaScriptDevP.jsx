@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './JavascriptDevP.css'
 export default function JavaScriptDevP() {
   return (
     <div className='JS-text-style'>
