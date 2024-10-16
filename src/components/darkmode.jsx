@@ -21,7 +21,7 @@ export default function DarkMode() {
     textAlign: 'center',
     borderRadius: '10px',
     position: 'absolute',
-    top: '8%',
+    top: '2%',
     left: '5%',
     transform: 'translate(-50%, -50%)',
     transition: 'background-color 0.3s, color 0.3s, box-shadow 0.3s',

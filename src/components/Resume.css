@@ -195,29 +195,36 @@ width: 100%;
   width: 100%;
 }
 .badge-container{
-
+width: 100%;
+margin: 0px -170px;
+}
+.download-button{
+  width: 100%;
 }
 .badge1{
   position: relative;
-width: 100%;
-
-left: -200px; 
+  left: -24px;
 }
 .Fullstack{
   position: relative;
-  left: -200px; 
+  left: -24px;
 }
 .Javascript{
   position: relative;
-  left: -200px; 
+  left: -24px;
 }
 .react-badge{
   position: relative;
-  left: -200px; 
+  left: -24px;
 }
+
 .Resume-Header{
 width: 100%;
-margin: 20px;
+margin: 20px
+}
+.Header-Style{
+  width: 100%;
+  margin: 0px -125px;
 }
 }
   @media only screen and (min-width: 600px) and (max-width: 899px){
