@@ -12,7 +12,7 @@ export default function homeFlexBox() {
    
     <div className='box2'>Partners
     
-      <p className='box2-p'>View sagepvps beautiful website.<br></br>   <a className='hyperLinkBox2' href='https://sagepvp.org/'><button className='box2-btn'>here</button></a></p>
+      <p className='box2-p'>NA<br></br>   <a className='hyperLinkBox2' href=''><button className='box2-btn'>here</button></a></p>
     </div>
     <div className='box3'> github<br></br>alexaubinpng
       

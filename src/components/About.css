@@ -146,36 +146,60 @@ width: 100px;
 
 }
 .about-content{
-width: 75%;
+width: 60%;
 margin: 0px -100px;
 }
 .reccomendation-header{
     font-size: 2.5rem;
-    margin: 0px -100px;
+position: relative;
+right: 110px;
 }
 .reccomendation1{
     width: 100%;
-    margin: 0px -300px;
+    margin: 0px -350px;
 }
 }
 
-
-@media only screen and (min-width: 2000px){
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  section{
+    padding: 5rem 10% 8rem;
+  }
+   .about-content{
+   position: relative;
+   bottom: -100px;
+   left: -50px;
+   width: 1000px;
+  }
+  .reccomendation-header{
+    position: relative;
+    right: 125px;
+  }
+.reccomendation1{
+    position: relative;
+    left: 100px;
+}
+  }
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
     section{
-        width: 100%;
-        padding: 10rem 15% 10rem;
+        padding: 5rem 8% 8rem;
+    }
+   .about-content{
+    position: relative;
+    bottom: -100px;
+    left: -50px;
+    width: 1000px;
+   }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+    section{
+        padding: 5rem 10% 8rem;
     }
     .my-image{
-        height: 100%;
+        width: 70%;
+        margin: 0px -80px;        
     }
-.about-content{
-    position: relative;
-    bottom: 550px;
-    left: 700px;
-    font-size: 2.4rem;
-}
-}
-@media only screen and (min-width: 1600px){
+  }
+  @media only screen and (min-width: 1600px){
     section{
         padding: 5rem 0% 8rem;
 
@@ -196,5 +220,10 @@ margin: 0px -100px;
         width: 100%;
         height: 100%;
         margin: 0px -530px;
+    }
+}
+@media only screen and(min-width: 2000px){
+    .text-about{
+        width: 70%;
     }
 }
