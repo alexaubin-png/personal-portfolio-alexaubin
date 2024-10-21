@@ -13,7 +13,7 @@ export default function About() {
       <img className='my-image' src='../src/assets/HFWV2189.png'></img>
     </div>
     <div className="about-content">
-<h1>Hi, its <span>Alex</span></h1>
+<h1 className='relative-header'>Hi, its <span>Alex</span></h1>
 <h3 className='typing-text'>Im a<span></span></h3>
 <p className='text-about'>Dedicated software developer at 22 years old, hailing from a small town in Vermont, 
         I ventured into programming initially drawn by the intensive learning, money to be made, and experience with computers. Over time, my journey has been enriched 

@@ -10,9 +10,9 @@ export default function homeFlexBox() {
       <p className='box1-p'>View my written article!<a><button className='box1-btn'>here</button></a></p>
       </div>
    
-    <div className='box2'>Partners
+    <div className='box2'>Clients Product<br></br><p>Indygo Bus Stops</p>
     
-      <p className='box2-p'>NA<br></br>   <a className='hyperLinkBox2' href=''><button className='box2-btn'>here</button></a></p>
+      <p className='box2-p'>NA<br></br>   <a className='hyperLinkBox2' href='https://capstone-indygo-react-capstone-magic-q6li.onrender.com/'><button className='box2-btn'>here</button></a></p>
     </div>
     <div className='box3'> github<br></br>alexaubinpng
       

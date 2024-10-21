@@ -84,15 +84,23 @@ color: black;
     line-height: 1.3;
     color: #fff;
     text-align: center;
+    
+
  }
  span{
     color: #b74b4b;
+    position: relative;
+bottom: 350px;
+left: 260px;
  }
 .about-content h3{
 font-size: 4rem;
 margin-bottom: 1rem;
 font-weight: 700;
 color: wheat;
+position: relative;
+bottom: 350px;
+left: 260px;
 }
 .about-content{
     position: relative;
@@ -109,6 +117,9 @@ color: wheat;
 }
 .text-about{
     width: 70%;
+    position: relative;
+    bottom: 350px;
+    left: 260px;
 }
 .about-img img:hover{
     font-size: 1.8rem;
@@ -125,6 +136,14 @@ color: wheat;
     margin: 20px auto;
  
 } */
+ .relative-header{
+    font-size: 2.5rem;
+    font-weight: 700;
+    position: relative;
+    bottom: 350px;
+    left: 250px;
+    margin-top: 1rem;
+ }
 .logo{
     font-size: 3rem;
     color: #b74b4b;
@@ -142,12 +161,16 @@ color: wheat;
         width: 140%;
     }
 .about-img .my-image{
-width: 100px;
+width: 150px;
 
 }
 .about-content{
 width: 60%;
-margin: 0px -100px;
+margin: 0px -300px;
+top: 100px;
+position: relative;
+
+
 }
 .reccomendation-header{
     font-size: 2.5rem;
@@ -158,6 +181,13 @@ right: 110px;
     width: 100%;
     margin: 0px -350px;
 }
+span{
+    color: #b74b4b;
+font-size: 35px;
+position: relative;
+left: 0px;
+top: 0px;
+ }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 899px) {
@@ -180,14 +210,26 @@ right: 110px;
 }
   }
 @media only screen and (min-width: 900px) and (max-width: 1199px) {
+
     section{
         padding: 5rem 8% 8rem;
+        overflow-x: hidden;                                                                                                                             
+    }
+    .my-image{
+        width: 120px;
+        margin: 0px;
+        right: 80px;
     }
    .about-content{
     position: relative;
     bottom: -100px;
-    left: -50px;
-    width: 1000px;
+    left: 0px;
+    width: 990px;
+   }
+   span{
+    position: relative;
+    top: 0px;
+    left: 0px;
    }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
