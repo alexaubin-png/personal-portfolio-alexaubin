@@ -218,6 +218,7 @@ width: 100%;
   color: white; /* Text color */
   font-size: 1.9em; /* Font size */
   background-color: red;
+  border-radius: 5px;
   text-shadow: 
     1px 1px 0 #000, 
     2px 2px 0 #333,

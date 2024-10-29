@@ -1,6 +1,9 @@
 import React from 'react';
 
 const Profile = ({ token }) => {
+  const [bio, setBio] = useState('')
+  const [porfilePicture] = useState(null)
+  const [education, setEducation] = useState('')
   // Check if token exists to determine if user is logged in
 
 

@@ -11,8 +11,8 @@ export default function Auth() {
   const [isLoggedIn, setIsLoggedIn] = useState(false); // Track login status
   const [newUsername, setNewUsername] = useState('')
   const [newPassword, setNewPassword] = useState('')
-  const [profilePicture, setProfilePicture] = useState(null);  
-  const [bio, setBio] = useState("");
+  const [profilePicture, setProfilePicture] = useState(null);  //the picutre of the user passed into the navbar defined in profile.jsx
+
 
   // const [newPassword, setNewPassword] = useState('')
   // const [newUsername, setNewUsername] = useState('')

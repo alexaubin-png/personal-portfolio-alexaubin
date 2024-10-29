@@ -17,7 +17,7 @@ body{
     height: 300px;
     margin: -50px 900px 20px 0px; /* Adjust margin as needed */
     transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
-    box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5); /* Add box shadow */
   }
   .Coding-Text{
     position: relative;
@@ -46,7 +46,7 @@ body{
     bottom: 150px;
     left: 130px;
     transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
-    box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5); /* Add box shadow */
   }
   .Reading-Header{
 font-size: 35px;
@@ -72,7 +72,7 @@ font-size: 35px;
     height: 300px;
     margin: -50px 900px 20px 0px; /* Adjust margin as needed */
     transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
-    box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5); /* Add box shadow */
   }
   .cooking-text{
     position: relative;
@@ -98,12 +98,12 @@ font-size: 35px;
     height: 300px;
     margin: -50px 900px 20px 0px; /* Adjust margin as needed */
     transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
-    box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5); /* Add box shadow */
   }
   .Fitness-Label{
     font-size: 30px;
     position: relative;
-    right: 155px;
+    right: 250px;
     top: -400px;
 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -114,6 +114,7 @@ font-size: 35px;
     bottom: 350px;
     left: 0px;
     width: 60%;
+    font-size: 30px;
   }
   @media only screen and (max-width: 599px) {
 .Coding{
@@ -270,6 +271,11 @@ left: 150px;
 .cooking-header{
 position: relative;
 left: 730px;
+}
+.Fitness{
+  position: relative;
+  left: 750px;
+  width: 50%;
 }
   
   }

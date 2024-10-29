@@ -34,9 +34,9 @@
   position: relative;
   top: 220px;
   background-color: #1E1E1F;
-    height: 100px;
-    margin: 0px -3px;
-    width: 102%;
+  height: 100px;
+  margin: 0px 0px;
+  width: 100%;
 }
 .box1-btn{
   padding: 5px 15px;
@@ -66,11 +66,11 @@
     color: white;
     font-size: 15px;
     position: relative;
-    top: 220px;
+    top: 175px;
     background-color: #1E1E1F;
       height: 100px;
-      margin: 0px -3px;
-      width: 102%;
+      margin: 0px 0px;
+      width: 100%;
   }
   .box2-btn{
     padding: 5px 15px;
@@ -95,9 +95,9 @@
   position: relative;
   top: 183px;
   background-color: #1E1E1F;
-    height: 100px;
-    margin: 0px -3px;
-    width: 102%;
+  height: 100px;
+  margin: 0px 0px;
+  width: 100%;
   
 }
 .box3-btn{
@@ -126,11 +126,11 @@
     color: white;
     font-size: 15px;
     position: relative;
-    top: 183px;
+    top: 190px;
     background-color: #1E1E1F;
-      height: 100px;
-      margin: 0px -3px;
-      width: 102%;
+    height: 100px;
+    margin: 0px 0px;
+    width: 100%;
   }
   .box4-btn{
     padding: 5px 15px;
