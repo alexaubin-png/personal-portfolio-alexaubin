@@ -59,8 +59,9 @@ border: 2px solid black;
 font-size: 20px;
 text-align: center;
 border-radius: 10px;
-width: 100%;
-
+width: 200px;
+position: relative;
+right: 400px;
   }
   .container-home{
     float: right;
@@ -108,11 +109,6 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Increase shadow on focus */
 transform: translate(25px)
 };
   
-  .content-home-text{
-  
-   
-    
-  }
   .article-header{
     border: 2px solid black;
     text-align: center;
@@ -250,6 +246,13 @@ font-size: 10px;
    text-align: center;
    font-size: 10px;
   }  
+  .content-header1{
+border: 2px solid black;
+padding: 10px;
+width: 100%;
+border-radius: 20px;
+text-align: center;
+  }
   .profile-picture{
     width: 35px;
     height: 35px;

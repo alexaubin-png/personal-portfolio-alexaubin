@@ -28,15 +28,15 @@ export default function Resume() {
             <a href={resumepage1} download="Resume_Page_1.png" className="download-button">Download Page 1</a><br></br>
             <a href={resumepage2} download="Resume_Page_2.png" className="download-button">Download Page 2</a>
           </div>
-          <button className='scroll-button' onClick={scrollToResume}>&#11015;
-          </button>
+          {/* <button className='scroll-button' onClick={scrollToResume}>&#11015;
+          </button> */}
         </div>
 
         <div className="badge-container">
-          <div className="header-container">
+       
           <h1 className='Header-Style'>Badges</h1>
 
-          </div>
+        
   
           <Link to='/ExpressP'>
             <img className='badge1' src={badge1} alt="Badge 1" />

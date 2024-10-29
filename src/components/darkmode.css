@@ -34,7 +34,7 @@ body {
     border-radius: 5px;
     transition: background-color 0.3s;
     position: relative;
-    top: 0px;
+    top: -40px;
 }
 
 .dark .toggle-style-button {
@@ -54,10 +54,7 @@ body {
  }
  
  @media only screen and (min-width: 600px) and (max-width: 899px) {
-    .toggle-style-button{
-        position: relative;
-     top: -120px;
-       }
+  
    }
  @media only screen and (min-width: 900px) and (max-width: 1199px) {
     .toggle-style-button{
@@ -69,12 +66,12 @@ body {
  @media only screen and (min-width: 1200px) and (max-width: 1599px) {
     .toggle-style-button{
         position: relative;
-     top: -120px;
+     top: -150px;
        }
  }
  @media only screen and(min-width: 2000px){
     .toggle-style-button{
         position: relative;
-    top: -100px;
+    top: -150px;
        }
  }

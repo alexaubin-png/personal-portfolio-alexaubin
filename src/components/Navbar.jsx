@@ -3,10 +3,25 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 import myFace from '../assets/HFWV2189.png';
 
+
 const Navbar = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // New state for menu visibility
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const logout = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("username");
+    localStorage.clear();
+    setIsLoggedIn(false); // Update login status
+    alert("Successfully logged out!");
+    navigate("/");
+  }  
+const isGuestMode = () => {
+  localStorage.setItem("token");
+  setIsLoggedIn(true); // Update login status
+  navigate("/");
+}
+
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen); // Toggle menu visibility
@@ -48,7 +63,8 @@ const Navbar = () => {
         <li><Link to='/SocialNavigation'>Socials</Link></li>
         <li><Link to='/Auth'>Login</Link></li>
         <li><Link to='/blogSection'>Blogs</Link></li>
-   
+        {localStorage.getItem('token')  && (  <button className='logout-button' id='logout-button' onClick={logout} >logout</button>)}
+
 
       </div>
       
