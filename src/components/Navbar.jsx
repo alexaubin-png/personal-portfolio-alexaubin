@@ -10,7 +10,6 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const logout = () => {
     localStorage.removeItem("token");
-    localStorage.removeItem("username");
     localStorage.clear();
     setIsLoggedIn(false); // Update login status
     alert("Successfully logged out!");
