@@ -149,7 +149,6 @@ border: 10px solid grey;
 }
 .Resume-Header{
   font-family: 'Lobster', cursive; /* Applying the imported font */
-  color: wheat; /* Text color */ /* Font size */
   text-shadow: 
     1px 1px 0 #000, 
     2px 2px 0 #333,
@@ -165,7 +164,7 @@ bottom: 25px;
 .scroll-button{
   position: absolute;
   bottom: 25px;
-  right: 450px;
+  right: 483px;
   font-size: 25px;
   color: white;
   background-color: rgba(0, 0, 0, 0.8);
@@ -241,12 +240,12 @@ margin: 20px
    .resume-page-1{
     position: relative;
     width: 60%;
-    left: 207px;
+    left: 230px;
    
    }.resume-page-2{
     position: relative;
-    left: 207px;
     width: 60%;
+    left: 230px;
    }
  
    .Fullstack{
@@ -270,6 +269,15 @@ margin: 20px
     border-radius: 40px;
     position: relative;
     left: 60px;
+  }
+  .Header-Style{
+position: relative;
+left: 680px;
+  }
+  .scroll-button{
+    position: relative;
+    left: 755px;
+    top: 100px;
   }
 }
 @media only screen and (min-width: 2000px){

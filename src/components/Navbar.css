@@ -213,6 +213,19 @@ width: 100%;
   background-color: black;
   height: 70px;
 }
+.logout-button{
+  font-family: 'Lobster'; /* Applying the imported font */
+  color: white; /* Text color */
+  font-size: 1.9em; /* Font size */
+  background-color: red;
+  text-shadow: 
+    1px 1px 0 #000, 
+    2px 2px 0 #333,
+    3px 1.5px 0 #333, 
+    1.5px 1.5px 0 #333; /* Creating a 3D effect with text-shadow */
+  /* Optionally add more shadows for a deeper effect */
+  width: 100px;
+}
 /* .hireme-background{
   background: url('/src\assets\LIQL6416.PNG');
   background-size: cover;
@@ -322,10 +335,10 @@ width: 100%;
   width: 90%;
 }
 .second-navbar {
-  margin: 0px 15px;
   width: 100%;
 }
 .Profile-Details{
   right: 680px;
 }
+
 }   

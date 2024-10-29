@@ -32,7 +32,7 @@ export default function Home() {
       <a className='DevZone' href='#'>GitHub</a>
     </div>
     <div className="content-home">
-      <h2 className='content-header'>Who I am + my skiils</h2>
+      <h2 className='content-header1'>Who I am + my skiils</h2>
       <p className='content-home-text' alt='#'>As a software developer/web developer, I specialize in creating, designing, and maintaining software applications and websites tailored to meet specific user needs and business objectives. For my freelancing clients, I will provide a range of services including developing custom websites and web applications, optimizing user interfaces for enhanced functionality and performance, integrating backend systems, and ensuring robust security measures.  </p>
     </div>
 
