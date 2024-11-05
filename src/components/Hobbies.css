@@ -186,7 +186,7 @@ top: 80px;
 }
 .Fitness{
   transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
-  box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add box shadow */
  width: 100%;
  position: relative;
  top: 150px;
@@ -197,6 +197,7 @@ left: 0px;
   width: 110%;
   top: 170px;
   left: 0px;
+  font-size: 20px;
 
 }
 .Fitness-Label{
@@ -206,7 +207,17 @@ left: 0px;
 }
   }
   @media only screen and (min-width: 600px) and (max-width: 899px) {
-
+.Fitness{
+  transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
+ width: 60%;
+}
+.Fitness-Label{
+  
+}
+.Fitness-Text{
+  font-size: 20px;
+}
   }
   
 

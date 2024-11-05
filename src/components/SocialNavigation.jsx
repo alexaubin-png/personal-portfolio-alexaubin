@@ -8,17 +8,17 @@ export default function SocialNavigation() {
      <div className="parent-container">
       <div className='Parent-Social-Container-box1'>
       <a href='#'>  
-        <img className='instagram' src={'src/assets/IMG_1594.PNG'} alt='my instagram' />
+        <img className='instagram' src={'/src/assets/IMG_1594.PNG'} alt='my instagram' />
         </a> 
       </div>
       <div className='linked-in-box2'><a href='#'> 
-        <img className='linked-in' src='src\assets\IMG_1595.PNG' alt='my linked-in' />
+        <img className='linked-in' src='./src/assets/IMG_1595.PNG' alt='my linked-in' />
         </a>
         </div>
       
       <div classname='X'>
       <a href='#'>
-        <img className='X-box3' src='src\assets\IMG_1596.PNG' alt='my x/twitter account' />
+        <img className='X-box3' src='src/assets/IMG_1596.PNG' alt='my x/twitter account' />
         </a>
       </div>
      </div>
