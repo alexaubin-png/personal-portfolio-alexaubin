@@ -78,74 +78,13 @@ border: 10px solid grey;
   border: 2px solid black;
   width: 15%;
   padding: 10px;
+  margin: 10px;
   transition: background-color 0.3s, border-color 0.3s;
 }
 .download-button:hover{
   border-color: #FFD700; /* Gold color on hover */
   background-color: black; /* Solid black on hover */
-  transform: scale(1.05); /*
-}
-.badge1{
-  width: 30%;
-  height: 100%;
-  border: 2px solid #FFD700; 
-  border-radius: 8px; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
-  resize: none; 
-  transition: border-color 0.3s, box-shadow 0.3s; 
-  position: relative;
-  right: 50px;
-} 
-.badge1:focus{
-  border-color: #FFD700; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
-}
-.Fullstack{
-  width: 30%;
-  height: 100%;
-  border: 2px solid #FFD700; 
-  border-radius: 8px; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
-  resize: none;
-  transition: border-color 0.3s, box-shadow 0.3s; 
-  position: relative;
-  right: 50px;
-}
-.Fullstack:focus{
-  border-color: #FFD700; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
-}
-.Javascript{
-  width: 30%;
-  height: 100%;
-  border: 2px solid #FFD700; 
-  border-radius: 8px; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
-  resize: none; 
-  transition: border-color 0.3s, box-shadow 0.3s; 
-  position: relative;
-  right: 50px;
-}
-.Javascript:focus{
-  border-color: #FFD700; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
- 
-}
-
-.react-badge{
-  width: 30%;
-  height: 100%;
-  border: 2px solid #FFD700; 
-  border-radius: 8px; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
-  resize: none; 
-  transition: border-color 0.3s, box-shadow 0.3s; 
-  position: relative;
- right: 50px;
-}
-.react-badge:focus{
-  border-color: #FFD700; /* Change border color on focus */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Increase shadow on focus */
+  transform: scale(1.05); 
 }
 .Resume-Header{
   font-family: 'Lobster', cursive; /* Applying the imported font */
