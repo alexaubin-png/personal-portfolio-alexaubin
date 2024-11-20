@@ -11,6 +11,7 @@ connect();
 
 // Middleware
 
+
 app.use(cors({
     origin: ['http://localhost:5173', 'https://personal-portfolio-alexaubin.vercel.app'],  // replace with your frontend URL
     credentials: true, // enable cookies

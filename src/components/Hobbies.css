@@ -207,21 +207,102 @@ left: 0px;
 }
   }
   @media only screen and (min-width: 600px) and (max-width: 899px) {
-.Fitness{
-  transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
-  box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
- width: 60%;
-}
-.Fitness-Label{
-  
-}
-.Fitness-Text{
-  font-size: 20px;
-}
+    .Coding{
+      transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
+       box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
+      width: 100%;
+      position: relative;
+      margin: 0px 100px;
+      top: -100px;
+      }
+      .Coding-Text{
+      width: 100%;
+      font-size: 15px;
+      position: relative;
+      top: -90px;
+      left: 0px;
+      }
+      .Coding-Header{
+      width: 100%;
+      position: relative;
+      left: 0px;
+      top: -100px;
+      
+      }
+      .Reading{
+        transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
+        box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
+       width: 100%;
+       position: relative;
+       top: -80px;
+       margin: 0px 130px;
+      }
+      .Reading-Text{
+        width: 100%;
+        font-size: 15px;
+        position: relative;
+        top: -120px;
+        left: 0px;
+      }
+      .Reading-Header{
+        position: relative;
+        top: -50px;
+        left: -80px;
+        width: 100%;
+      
+      }
+      .Cooking{
+        transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
+        box-shadow: 0 0 100px rgba(0, 0, 0, 0.2); /* Add box shadow */
+       width: 100%;
+       position: relative;
+       top: -100px;
+      margin: 0px 100px;
+      }
+      .cooking-text{
+        position: relative;
+        width: 100%;
+      top: -100px;
+      left: 0px;
+        font-size: 15px;
+      }
+      .cooking-header{
+      display: flex;
+      justify-content: center;
+      position: relative;
+      top: -100px;
+        left: 0px;
+      
+      }
+      .Fitness{
+        transform: perspective(1100px) rotateY(10deg); /* Apply 3D transform */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add box shadow */
+       width: 100%;
+       position: relative;
+       top: -40px;
+      left: 0px;
+      }
+      .Fitness-Text{
+        position: relative;
+        width: 110%;
+        top: -40px;
+        left: 0px;
+        font-size: 20px;
+      
+      }
+      .Fitness-Label{
+        position: relative;
+        top: -40px;
+        left: 0px;
+      }
   }
   
 
   @media only screen and (min-width: 900px) and (max-width: 1199px) {
+    .Fitness-Label{
+      position: relative;
+      left: -100px;
+    }
   }
 
   @media only screen and (min-width: 1200px) and (max-width: 1599px) {
@@ -255,38 +336,54 @@ margin: 0px 90px;
 
   @media only screen and (min-width: 1600px) {
     .Coding{
-      width: 50%;
+      width: 30%;
     }
     .Coding-Text{
   font-size: 25px;
 }
+.Coding-Header{
+  position: relative;
+  left: 400px;
+}
 .Reading{
   position: relative;
-  width: 50%;
-  left: 200px;
+  width: 30%;
+  left: 1100px;
+  top: 0px;
 }
-
+.Reading-Header{
+  position: relative;
+  right: 450px;
+  bottom: 270px;
+}
 .Reading-Text{
   font-size: 25px;
   width: 65%;
 margin: 0px -90px;  
 }
 .Cooking{
-width: 50%;
+width: 30%;
 }
 .cooking-text{
   font-size: 25px;
 position: relative;
-left: 150px;
+left: -100px;
+width: 50%;
 }
+
 .cooking-header{
 position: relative;
-left: 730px;
+left: -350px;
+top: -370px;
 }
 .Fitness{
   position: relative;
-  left: 750px;
-  width: 50%;
+  left: 1110px;
+  width: 30%;
+}
+.Fitness-Label{
+  position: relative;
+  right: 1100px;
 }
   
   }

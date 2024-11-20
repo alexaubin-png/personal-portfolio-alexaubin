@@ -5,13 +5,14 @@ import './footer.css'
 export default function footer() {
 
   return (
-    <div className='footer-background'>
-      <ul className='ul-footer'>
-        <li>Essex Junction</li>
-        <li>Vermont</li>
-        <li>Alex Aubin</li>
-        <li>Burlington Coding Academy</li>
-      </ul>    
-    </div>
+    <>
+    <div class="main-content">
+<footer>
+<p>&copy; 2024 Alex Aubin. All Rights Reserved.</p>
+</footer>
+</div>
+    </>
+
+
   )
 }

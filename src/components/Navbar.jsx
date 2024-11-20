@@ -43,6 +43,9 @@ const isGuestMode = () => {
 
   return (
     <div style={styles} className="navbar">
+       <p>Hello Im writing to say this website is still obviously in development, Im in the process of deploying my API to a cloud service... Full website functionality coming soon
+
+[Developer]Alex J. Aubin</p>
       <div className="hamburger" onClick={toggleMenu}>
       &#9776; {/* Hamburger icon */}
 

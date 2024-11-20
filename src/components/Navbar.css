@@ -296,7 +296,7 @@ width: 100%;
     flex-direction: column;
     background-color: white; /* Background for the dropdown */
     position: absolute; /* Position it below the hamburger */
-    top: 50px; /* Adjust based on your navbar height */
+    top: 115px; /* Adjust based on your navbar height */
     left: 0;
     width: 100%;
     z-index: 100; /* Ensure it appears above other content */
