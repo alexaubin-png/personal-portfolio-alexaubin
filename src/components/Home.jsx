@@ -17,7 +17,7 @@ export default function Home() {
    <h1 className="Name-Header">Alex J. Aubin</h1>
    <div className="Button-Container">
    <Link to="/Websites"><button className="Button-VideoGames">Websites</button></Link>
-   <button className="Websites">Video Games</button>
+   <Link to='/Videogames-Gallery'><button className="Websites">Video Games</button></Link>
    </div>
    <h1 className="Personal-Header">Personal Portfolio</h1>
    <p>Ive created from scratch, A MERN stack APP to hold my portfolio. On This website you can find all all my porjects and view them, view my resume/badges/certificates. Or print physical copies of my reume, effectivley to contact me and hopefully hire me. </p>

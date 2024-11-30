@@ -13,9 +13,9 @@ export default function homeFlexBox() {
 
 <p className='box2-p'>My Proudest and most robust project<br></br>provided to a client<br></br>   <a className='hyperLinkBox2' href='https://capstone-indygo-react-capstone-magic-q6li.onrender.com/'><button className='box2-btn'>here</button></a></p>
 </div>
-<div className='box3'> N/A<br></br>N/A
+<div className='box3'> Upright Education<br></br>
 
-<p className='box3-p'>Immerse into my open source projects.<br></br><a className='hyperLinkBox3' href='https://github.com/alexaubin-png'><button className='box3-btn'>here</button></a></p>
+<p className='box3-p'>This is the academy that educated me in software.<br></br><a className='hyperLinkBox3' href='https://github.com/alexaubin-png'><button className='box3-btn'>here</button></a></p>
 </div>
 <div className='box4'>Youtube Channel
 

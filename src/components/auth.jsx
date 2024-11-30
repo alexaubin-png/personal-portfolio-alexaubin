@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./auth.css";
+import '../assets/auth background.avif'
 
 export default function Auth() {
   const navigate = useNavigate();
@@ -13,10 +14,6 @@ export default function Auth() {
   const [newPassword, setNewPassword] = useState('')
   const [profilePicture, setProfilePicture] = useState(null);  //the picutre of the user passed into the navbar defined in profile.jsx
 
-
-  // const [newPassword, setNewPassword] = useState('')
-  // const [newUsername, setNewUsername] = useState('')
-
   // Check if the user is logged in when the component mounts
   useEffect(() => {
     const token = localStorage.getItem("token");
@@ -25,9 +22,7 @@ export default function Auth() {
 
   const authUser = async (username, password) => {
     try {
-
-      const response = await fetch(`http://localhost:8080/users/register`, {
-        //still attempting to find a deployed URL because you need to have cloned to repo to use the current url aka the api only works locally on your machine
+      const response = await fetch(`https://personal-portfolio-alexaubin.vercel.app/users/register`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, password }),
@@ -40,9 +35,9 @@ export default function Auth() {
       localStorage.setItem("username", data.username);
       setIsLoggedIn(true); // Update login status
       alert("Registration successful.");
-      navigate("/");
-      setUsername("");
-      setPassword("");
+      navigate("/"); // Redirect to the home page or appropriate route
+      setUsername(""); // Clear input fields
+      setPassword(""); // Clear input fields
     } catch (error) {
       console.error("Registration error:", error);
       alert("Registration failed. Please try again.");
@@ -51,13 +46,11 @@ export default function Auth() {
 
   const loginUser = async (username, password) => {
     try {
-
       const response = await fetch("http://localhost:8080/users/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, password }),
       });
-
 
       if (!response.ok) {
         throw new Error("Login failed");
@@ -78,7 +71,7 @@ export default function Auth() {
   const updateUser = async (username, password) => {
     try {
       const response = await fetch(
-        `http://localhost:8080/users/update/${userId}}`,
+        `http://localhost:8080/users/update/${userId}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
@@ -92,14 +85,6 @@ export default function Auth() {
     } catch (error) {
       console.error("Update user error:", error);
       alert("Failed to update user. Please try again.");
-    }
-  };
-  const handleUpdate = async (e) => {
-    e.preventDefault();
-    if (newUsername || newPassword) {
-      await updateUser(newUsername || username, newPassword || password);
-    } else {
-      alert("Please provide at least one field to update.");
     }
   };
 
@@ -157,42 +142,11 @@ export default function Auth() {
                 required
               />
             </label>
+            <br />
           </>
         ) : (
-          <div>
-
-            {/* <h2>Update Your Information</h2>
-
-                <h2>Update Your Information</h2>
-
-              <form onSubmit={handleUpdate}>
-                <label>
-                  New Username:
-                  <input
-                    type="text"
-                    value={newUsername}
-                    onChange={(e) => setNewUsername(e.target.value)}
-                  />
-                </label>
-                <br />
-                <label>
-                  New Password:
-                  <input
-                    type="password"
-                    value={newPassword}
-                    onChange={(e) => setNewPassword(e.target.value)}
-                  />
-                </label>
-                <br />
-
-                <button type="submit">Update</button>
-              </form> */}
+          <>
             <label className="username-label-login">
-{/* 
-                <button onClick={updateUser} type="submit">Update</button> */}
-              </label> 
-            <label className='username-label-login'>
-
               Username:
               <input
                 className="username-input-login"
@@ -213,7 +167,8 @@ export default function Auth() {
                 required
               />
             </label>
-          </div>
+            <br />
+          </>
         )}
         <div className="button-container">
           <button
@@ -226,7 +181,7 @@ export default function Auth() {
           <button
             className="signup-or-login"
             type="button"
-            onClick={() => toggleLoginMode(!isLoginMode)}
+            onClick={toggleLoginMode}
           >
             {isLoginMode ? "Sign Up" : "Login"}
           </button>
@@ -239,8 +194,8 @@ export default function Auth() {
             Continue as Guest
           </button>
           {isLoggedIn && (
-        <li><a href='/profile'>Profile</a></li>
-      )}
+            <li><a href='/profile'>Profile</a></li>
+          )}
         </div>
       </form>
     </div>

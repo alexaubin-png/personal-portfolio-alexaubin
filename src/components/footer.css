@@ -6,24 +6,28 @@ html, body {
 }
 
 /* Main content area - take all available space */
-
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
 /* Footer styling */
-footer {
-  background-color: #333;  /* Example background color, replace with your color */
-  color: #fff;             /* Text color for the footer */
-  padding: 20px 0;
+.main-content {
+  border-top: 4px solid #FFD700;
+  background-color: #333;
+  color: white;
   text-align: center;
-  position: relative;
+  padding: 1rem 0;
+  bottom: 0;
   width: 100%;
-  bottom: 0px;
-  height: 150px;
+  margin-top: auto;
 }
 
 
 .footer-background {
     position: relative;
-bottom: 0px;
+    bottom: 0px;
     height: 150px;
     width: 100%;
     font-weight: 900;
