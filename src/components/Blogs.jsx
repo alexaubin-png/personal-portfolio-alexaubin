@@ -66,13 +66,11 @@ const response = await fetch(`http://localhost:8080/api/comments/${posts.title}`
   };
 
   const createBlogPost = async () => {
-    if (newPost.title.length < 10) {
-      setMessage('Please make your title longer');
-      return;
-    }
+    const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:8080';
+
     
     try {
-      const response = await fetch('http://localhost:8080/api/posts', {
+      const response = await fetch(`${apiUrl}/api/posts`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

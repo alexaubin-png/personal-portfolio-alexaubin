@@ -102,7 +102,6 @@ transform: translateX(-.5px);
     font-family: monospace;
   }
   .password-signup-label{
-color: black;
 font-family: 'lobster';
     font-size: 20px;
   }
@@ -111,6 +110,10 @@ font-family: 'lobster';
     width: 250px;
     padding: 10px 20px;
     margin: 10px 0;
+  }
+  .username-label{
+    font-size: 20px;
+    font-family: 'lobster';
   }
   .username-input-signup:focus{
     border-color: #DAA520; /* Change border color on focus */
@@ -131,7 +134,6 @@ font-family: 'lobster';
   .username-label{
   font-size: 20px;
   font-family: 'lobster';
-  color: black;
   }
   .icon-password{
     width: 20%;
@@ -168,6 +170,7 @@ font-family: 'lobster';
     position: relative;
   }
 
+
   
   @media only screen and (min-width: 1600px) {
     .container-section {
@@ -190,7 +193,8 @@ font-family: 'lobster';
       font-weight: 600;margin-bottom: 20px;
       position: relative;right: 340px;
       bottom: 30%;
-    }}
+    }
+  }
   
   @media only screen and (min-width: 600px) and (max-width: 1222px){
     .container-section{
@@ -211,7 +215,6 @@ font-family: 'lobster';
   }
   
   .Login-Title{
-    color: black;
     font-family: 'Times New Roman', Times, serif;
     font-size: 35px;
   }
@@ -272,6 +275,7 @@ font-family: 'lobster';
     padding: 10px 20px;
     margin: 10px 0;
     border-radius: 10px;
+    font-family: 'lobster';
   }
   .username-input-login:hover{
 border:#FFD700 2px solid

@@ -10,9 +10,8 @@ export default function DarkMode() {
 
     return (
    
-  <section  className='content-container' style={{
+  <div  className='content-container' style={{
     width: '250px',
-
     height: '200px',
     display: 'flex',
     justifyContent: 'center',
@@ -21,16 +20,13 @@ export default function DarkMode() {
     textAlign: 'center',
     borderRadius: '10px',
     position: 'absolute',
-    top: '8%',
-    left: '5%',
+     top: '8%',
+     left: '5%',
     transform: 'translate(-50%, -50%)',
     transition: 'background-color 0.3s, color 0.3s, box-shadow 0.3s',
-
-
     background: 'transparent',
     backgroundColor: 'none',
     color: isDarkMode ? '#FFFFFF' : '#000000',
-           
         }}>
       <button 
     className='toggle-style-button' 
@@ -47,6 +43,6 @@ export default function DarkMode() {
 >
     <FontAwesomeIcon icon={isDarkMode ? faSun : faMoon} size="lg" />
 </button>
-        </section>
+        </div>
     );
 }

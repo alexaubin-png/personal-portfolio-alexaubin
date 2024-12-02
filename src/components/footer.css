@@ -1,7 +1,33 @@
 
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif; /* or whatever your base font is */
+}
+
+/* Main content area - take all available space */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Footer styling */
+.main-content {
+  border-top: 4px solid #FFD700;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+
 .footer-background {
     position: relative;
-    bottom: -1530px;
+    bottom: 0px;
     height: 150px;
     width: 100%;
     font-weight: 900;

@@ -1,0 +1,97 @@
+/* General Styles for the Slider Container */
+.slider-image-videogames {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #111; /* Dark background to make the images pop */
+    overflow: hidden;
+    border-radius: 15px; /* Rounded corners for a modern feel */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Add subtle shadow around the slider */
+    text-align: center;
+    color: #fff;
+}
+
+/* Styling for the Image */
+.slider-image-videogames .image4 {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    transition: transform 0.5s ease; /* Smooth zoom-in effect on hover */
+    border-radius: 15px 15px 0 0;
+}
+
+/* Hover Effect on Image */
+
+
+/* Title Styling */
+.slider-image-videogames h1 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    color: #ffcc00; /* Bright gold color for the title */
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+/* Details Section */
+.details-videogames {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for the details */
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+/* Styling for Game Category and Description */
+.details-videogames h2 {
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: #ffcc00;
+    margin: 0;
+}
+
+.details-videogames p {
+    font-size: 1.1rem;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    margin-top: 5px;
+}
+
+/* Add a smooth fade-in effect for the details section */
+.slider-image-videogames .details-videogames {
+    opacity: 0;
+    animation: fadeInDetails 1s forwards;
+    animation-delay: 0.5s;
+}
+
+/* Fade-in Animation for Details */
+@keyframes fadeInDetails {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Optional - Add a glowing border when hovering over the whole slider */
+
+.button-download{
+    padding: 20px;
+    
+}
+.image1{
+    background-image: url('https://gyazo.com/adeed875413e3094cc6744921411b033');
+    background-size: cover;
+    position: relative;
+    bottom: 1000px;
+    width: 80%;
+}
