@@ -15,7 +15,7 @@ export default function Websites() {
             className="website-iframe"
           ></iframe>
           <div className="website-description">
-            <h3>Indygo BusStops</h3>
+            <h3>Indygo Bus Stops</h3>
             <p>
               This project is about Cleaning and bettering the community in indianaappolis. It features Maps of marion county, over 2,400 bus stops,
               and was built using ReactJS and Map API's.

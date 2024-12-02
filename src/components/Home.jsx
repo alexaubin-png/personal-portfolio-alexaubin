@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {Link} from 'react-router-dom'
 import HomeFlexBox from './HomeFlexBox.jsx'
+import OpenToNetwork from '../assets/porfile-image.png'
 import "./Home.css";
 import NavBar from './Navbar.jsx'
 
@@ -23,8 +24,8 @@ export default function Home() {
    <p>Ive created from scratch, A MERN stack APP to hold my portfolio. On This website you can find all all my porjects and view them, view my resume/badges/certificates. Or print physical copies of my reume, effectivley to contact me and hopefully hire me. </p>
      </div>
      <div className="article-container">
-     <h1 className='article-header'>Schedule a appointment with me</h1>
-   <Link to='/Contact'><img src='https://i.gyazo.com/b1fd172fcc2ff613949dac8a388e9202.png' alt='email-link' className='main-image-home' /></Link> 
+     <h1 className='article-header'>Desired, Dedicated, and Diciplined Software Development</h1>
+   <Link to='/Contact'><img src={OpenToNetwork} alt='email-link' className='main-image-home' /></Link> 
     <div className="container-home">
       <img src='https://i.gyazo.com/250f47e97cc602665e226ed2b18b8f2f.png' className='homeImage-1' alt='#'></img>
       <a className="DevZone" href='#'>Checkout my coding course</a>
