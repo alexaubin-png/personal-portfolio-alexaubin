@@ -46,7 +46,7 @@ export default function Auth() {
 
   const loginUser = async (username, password) => {
     try {
-      const response = await fetch("http://localhost:8080/users/login", {
+      const response = await fetch("https://personal-portfolio-alexaubin.vercel.app/users/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, password }),
@@ -71,7 +71,7 @@ export default function Auth() {
   const updateUser = async (username, password) => {
     try {
       const response = await fetch(
-        `http://localhost:8080/users/update/${userId}`,
+        `https://personal-portfolio-alexaubin.vercel.app/users/update/${userId}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },

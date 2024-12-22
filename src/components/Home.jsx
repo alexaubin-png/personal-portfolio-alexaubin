@@ -23,7 +23,7 @@ export default function Home() {
    <h1 className="Personal-Header">Personal Portfolio</h1>
    <p>Ive created from scratch, A MERN stack APP to hold my portfolio. On This website you can find all all my porjects and view them, view my resume/badges/certificates. Or print physical copies of my reume, effectivley to contact me and hopefully hire me. </p>
      </div>
-     <div className="article-container">
+     {/* <div className="article-container">
      <h1 className='article-header'>Desired, Dedicated, and Diciplined Software Development</h1>
    <Link to='/Contact'><img src={OpenToNetwork} alt='email-link' className='main-image-home' /></Link> 
     <div className="container-home">
@@ -40,7 +40,7 @@ export default function Home() {
       
     </div>
    
-     </div>
+     </div> */}
   
      </div>
  

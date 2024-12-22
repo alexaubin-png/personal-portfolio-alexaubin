@@ -12,7 +12,7 @@ const Blogs = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await fetch('http://localhost:8080/api/comments', {
+        const response = await fetch('https://personal-portfolio-alexaubin.vercel.app/api/comments', {
           method: 'GET', // Changed to GET since you want to fetch posts
           headers: {
             'Content-Type': 'application/json'
@@ -37,13 +37,13 @@ const Blogs = () => {
   }, []);
 
   const fetchPostId = async () => {
-const response = await fetch(`http://localhost:8080/api/comments/${posts.title}`)
+const response = await fetch(`https://personal-portfolio-alexaubin.vercel.app/api/comments/${posts.title}`)
 
   }
 
   const updateBlogPost = async () => {
     try {
-      const response = await fetch(`http://localhost:8080/api/put/${updatePost.title}`, {
+      const response = await fetch(`https://personal-portfolio-alexaubin.vercel.app/api/put/${updatePost.title}`, {
         method: 'PUT', // Use PUT to update the post
         headers: {
           'Content-Type': 'application/json',
@@ -66,7 +66,7 @@ const response = await fetch(`http://localhost:8080/api/comments/${posts.title}`
   };
 
   const createBlogPost = async () => {
-    const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:8080';
+    const apiUrl = process.env.REACT_APP_API_URL || 'https://personal-portfolio-alexaubin.vercel.app';
 
     
     try {
