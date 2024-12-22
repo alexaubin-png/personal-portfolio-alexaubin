@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './components/Home';
@@ -8,7 +9,7 @@ import Resume from './components/Resume';
 import Navbar from './components/Navbar';
 import ImageGallery from './components/ImageGallery';
 import SocialNavigation2 from './components/SocialNavigation';
-import Footer from './components/footer';
+import Footer from './components/Footer.jsx';
 import Hobbies from './components/Hobbies';
 import Auth from './components/auth.jsx';
 import Blogs from './components/Blogs.jsx';
